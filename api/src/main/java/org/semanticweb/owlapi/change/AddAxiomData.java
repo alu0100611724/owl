@@ -45,7 +45,7 @@ import org.semanticweb.owlapi.model.OWLOntology;
 
 /**
  * 
- * Esto es una prueba
+ * Esto es una prueba 
  * 
  * Author: Matthew Horridge<br>
  * Stanford University<br>
