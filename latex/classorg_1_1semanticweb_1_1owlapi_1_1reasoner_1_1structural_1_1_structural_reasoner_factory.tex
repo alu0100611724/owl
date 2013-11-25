@@ -1,0 +1,220 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory@{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_aee6fd6d27fd4f29246797c8e279b59f8}{get\-Reasoner\-Name} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a747a448d807d10abdda95af1fba78df5}{create\-Non\-Buffering\-Reasoner} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a88c377aabdd13914fd8d6c341aa6f513}{create\-Reasoner} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a188a967446c57945fc24aea18008480e}{create\-Non\-Buffering\-Reasoner} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration}{O\-W\-L\-Reasoner\-Configuration} config)  throws Illegal\-Configuration\-Exception 
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a2c1f13e068987545a04bd9aa43c62e1f}{create\-Reasoner} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration}{O\-W\-L\-Reasoner\-Configuration} config)  throws Illegal\-Configuration\-Exception 
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Information Management Group\par
+ Date\-: 25-\/\-Jan-\/2010 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a747a448d807d10abdda95af1fba78df5}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}!create\-Non\-Buffering\-Reasoner@{create\-Non\-Buffering\-Reasoner}}
+\index{create\-Non\-Buffering\-Reasoner@{create\-Non\-Buffering\-Reasoner}!org::semanticweb::owlapi::reasoner::structural::StructuralReasonerFactory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}}
+\subsubsection[{create\-Non\-Buffering\-Reasoner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Reasoner} org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory.\-create\-Non\-Buffering\-Reasoner (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a747a448d807d10abdda95af1fba78df5}
+Creates an \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} that reasons over the imports closure of the specified ontology. The reasoner will obtain the imports closure from the ontology manager associated with {\ttfamily ontology}. The reasoner will listen for ontology changes to the ontologies that it is reasoning over and will always answer queries with respect to the changed ontologies (see \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner} for further details).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ontology} & The ontology whose imports closure will be reasoned over by the reasoner that is created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reasoner that reasons over the imports closure of the specified ontology. Note that calling this method multiple times with the same manager and ontology will return {\bfseries fresh} instances of \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\-Pointer\-Exception} & if the
+\begin{DoxyCode}
+manager 
+\end{DoxyCode}
+ or
+\begin{DoxyCode}
+ontology 
+\end{DoxyCode}
+ are
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory_a2b119c65105b4b219b8d7920a17a0f7b}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a188a967446c57945fc24aea18008480e}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}!create\-Non\-Buffering\-Reasoner@{create\-Non\-Buffering\-Reasoner}}
+\index{create\-Non\-Buffering\-Reasoner@{create\-Non\-Buffering\-Reasoner}!org::semanticweb::owlapi::reasoner::structural::StructuralReasonerFactory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}}
+\subsubsection[{create\-Non\-Buffering\-Reasoner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Reasoner} org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory.\-create\-Non\-Buffering\-Reasoner (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology, }
+\item[{{\bf O\-W\-L\-Reasoner\-Configuration}}]{config}
+\end{DoxyParamCaption}
+) throws {\bf Illegal\-Configuration\-Exception}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a188a967446c57945fc24aea18008480e}
+Creates an \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} that reasons over the imports closure of the specified ontology. The reasoner will obtain the imports closure from the ontology manager associated with {\ttfamily ontology}. The reasoner will listen for ontology changes to the ontologies that it is reasoning over and will always answer queries with respect to the changed ontologies (see \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner} for further details).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ontology} & The ontology whose imports closure will be reasoned over by the reasoner that is created. \\
+\hline
+{\em config} & A configuration object that can be used to customise the setup of the reasoner that will be created by calling this method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reasoner that reasons over the imports closure of the specified ontology. Note that calling this method multiple times with the same manager and ontology will return {\bfseries fresh} instances of \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_illegal_configuration_exception}{Illegal\-Configuration\-Exception}} & if the configuration object is inappropriate for reasoners created by this factory, or if there is an illegal setting on the configuration. \\
+\hline
+{\em Null\-Pointer\-Exception} & if any of
+\begin{DoxyCode}
+manager 
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}
+ontology 
+\end{DoxyCode}
+ or
+\begin{DoxyCode}
+config 
+\end{DoxyCode}
+ are
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory_aa74a06753d0f56db29d01ea28b03497e}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a88c377aabdd13914fd8d6c341aa6f513}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}!create\-Reasoner@{create\-Reasoner}}
+\index{create\-Reasoner@{create\-Reasoner}!org::semanticweb::owlapi::reasoner::structural::StructuralReasonerFactory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}}
+\subsubsection[{create\-Reasoner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Reasoner} org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory.\-create\-Reasoner (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a88c377aabdd13914fd8d6c341aa6f513}
+Creates a buffering reasoner that reasons over the imports closure of the specified ontology. The reasoner will obtain the imports closure from the ontology manager associated with {\ttfamily ontology}. The reasoner will listen for ontology changes to the ontologies it is reasoning over but will only answer queries with respect to the changed ontologies when the \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_ad2d99b8530c4b07c34ff11fdc02a8979}{O\-W\-L\-Reasoner\#flush()} method is called (see \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner} for further details).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ontology} & The ontology whose imports closure will be reasoned over by the reasoner that is created. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reasoner that reasons over the imports closure of the specified ontology. Note that calling this method multiple times with the same manager and ontology will return {\bfseries fresh} instances of \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\-Pointer\-Exception} & if the
+\begin{DoxyCode}
+manager 
+\end{DoxyCode}
+ or
+\begin{DoxyCode}
+ontology 
+\end{DoxyCode}
+ are
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory_a48bc5b1f96b78f756f84b3f1f7d58a66}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a2c1f13e068987545a04bd9aa43c62e1f}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}!create\-Reasoner@{create\-Reasoner}}
+\index{create\-Reasoner@{create\-Reasoner}!org::semanticweb::owlapi::reasoner::structural::StructuralReasonerFactory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}}
+\subsubsection[{create\-Reasoner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Reasoner} org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory.\-create\-Reasoner (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology, }
+\item[{{\bf O\-W\-L\-Reasoner\-Configuration}}]{config}
+\end{DoxyParamCaption}
+) throws {\bf Illegal\-Configuration\-Exception}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_a2c1f13e068987545a04bd9aa43c62e1f}
+Creates a buffering reasoner that reasons over the imports closure of the specified ontology. The reasoner will obtain the imports closure from the ontology manager associated with {\ttfamily ontology}. The reasoner will listen for ontology changes to the ontologies it is reasoning over but will only answer queries with respect to the changed ontologies when the \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_ad2d99b8530c4b07c34ff11fdc02a8979}{O\-W\-L\-Reasoner\#flush()} method is called (see \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner} for further details).
+
+
+\begin{DoxyParams}{Parameters}
+{\em ontology} & The ontology whose imports closure will be reasoned over by the reasoner that is created. \\
+\hline
+{\em config} & A configuration object that can be used to customise the setup of the reasoner that will be created by calling this method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The reasoner that reasons over the imports closure of the specified ontology. Note that calling this method multiple times with the same manager and ontology will return {\bfseries fresh} instances of \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner}. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_illegal_configuration_exception}{Illegal\-Configuration\-Exception}} & if the configuration object is inappropriate for reasoners created by this factory, or if there is an illegal setting on the configuration. \\
+\hline
+{\em Null\-Pointer\-Exception} & if any of
+\begin{DoxyCode}
+manager 
+\end{DoxyCode}
+ ,
+\begin{DoxyCode}
+ontology 
+\end{DoxyCode}
+ or
+\begin{DoxyCode}
+config 
+\end{DoxyCode}
+ are
+\begin{DoxyCode}
+null 
+\end{DoxyCode}
+ . \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory_aa2b67bfa8d6f7c28f44d21126188d939}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_aee6fd6d27fd4f29246797c8e279b59f8}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}!get\-Reasoner\-Name@{get\-Reasoner\-Name}}
+\index{get\-Reasoner\-Name@{get\-Reasoner\-Name}!org::semanticweb::owlapi::reasoner::structural::StructuralReasonerFactory@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-Factory}}
+\subsubsection[{get\-Reasoner\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner\-Factory.\-get\-Reasoner\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_factory_aee6fd6d27fd4f29246797c8e279b59f8}
+Gets the name of the reasoner created by this factory. \begin{DoxyReturn}{Returns}
+A string that represents the name of the reasoner created by this factory. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory_a4b84ad313506d9feeef49ace704bc4df}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+impl/src/main/java/org/semanticweb/owlapi/reasoner/structural/\hyperlink{_structural_reasoner_factory_8java}{Structural\-Reasoner\-Factory.\-java}\end{DoxyCompactItemize}

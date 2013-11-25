@@ -1,0 +1,254 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$ Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad18275796d0f9469415216ee563f2b83}{Hierarchy\-Info} (String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad1112099a477ba419c5fd321ee18254c}{name}, T top\-Entity, T bottom\-Entity, Raw\-Hierarchy\-Provider$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a8c9b9e46034c5a8ed13b731f455d22b5}{raw\-Parent\-Child\-Provider})
+\item 
+Raw\-Hierarchy\-Provider$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af68737e7693e95132f7bc45c85136459}{get\-Raw\-Parent\-Child\-Provider} ()
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a2fdb39438c76ca6aa03b3676a0b18602}{compute\-Hierarchy} ()
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_afab9df4b05d63d4b16cb57c7d22bd7bd}{process\-Changes} (Set$<$ T $>$ signature, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ added, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ removed)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af5604a6e71ad518720f39940ca690b66}{tarjan} (T entity, int index, Stack$<$ T $>$ stack, Map$<$ T, Integer $>$ index\-Map, Map$<$ T, Integer $>$ lowlink\-Map, Set$<$ Set$<$ T $>$$>$ result, Set$<$ T $>$ processed, Set$<$ T $>$ stack\-Entities, Map$<$ T, Collection$<$ T $>$$>$ cache, Set$<$ T $>$ children\-Of\-Top, Set$<$ T $>$ parents\-Of\-Bottom)
+\item 
+Node\-Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af0fa6cc534abebb6f1a4260f94d63038}{get\-Node\-Hierarchy\-Children} (T parent, boolean direct, Default\-Node\-Set$<$ T $>$ ns)
+\item 
+Node\-Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a5e66dab0fdac68d3b114650f2b64e63c}{get\-Node\-Hierarchy\-Parents} (T child, boolean direct, Default\-Node\-Set$<$ T $>$ ns)
+\item 
+Node$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_adac852cb5a7edb8a0b69d637e3d59450}{get\-Equivalents} (T element)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a07bc07b120040db08b586709c06d83eb}{get\-Entities} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ont)
+\item 
+abstract Default\-Node$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad26a5bc1ade7764410c7ed2f1f92ae03}{create\-Node} (Set$<$ T $>$ cycle)
+\item 
+abstract Default\-Node$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a5c902e63e4cc2f328573333342c14dc6}{create\-Node} ()
+\item 
+abstract Set$<$?extends T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a253da46eb32664de4c4d9f083ab3d6db}{get\-Entities\-In\-Signature} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} ax)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ab804fa9f36af7505c2d16e761f2d5519}{update\-For\-Signature} (Set$<$ T $>$ signature, Map$<$ T, Collection$<$ T $>$$>$ cache)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Raw\-Hierarchy\-Provider$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a8c9b9e46034c5a8ed13b731f455d22b5}{raw\-Parent\-Child\-Provider}
+\item 
+Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a2b7a2925cb0de4b39bcdc13c957cc7f3}{direct\-Children\-Of\-Top\-Node} = new Hash\-Set$<$T$>$()
+\item 
+Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a7bc0005010eb2fdcecc1a890ccf802b0}{direct\-Parents\-Of\-Bottom\-Node} = new Hash\-Set$<$T$>$()
+\item 
+Node\-Cache$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a0698fd48aeb9fcfecc3fe71ae7c6b089}{node\-Cache}
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad1112099a477ba419c5fd321ee18254c}{name}
+\item 
+int \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ae3bfdd510124845776771b1b7bfdd376}{classification\-Size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad18275796d0f9469415216ee563f2b83}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!Hierarchy\-Info@{Hierarchy\-Info}}
+\index{Hierarchy\-Info@{Hierarchy\-Info}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{Hierarchy\-Info}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.Hierarchy\-Info (
+\begin{DoxyParamCaption}
+\item[{String}]{name, }
+\item[{T}]{top\-Entity, }
+\item[{T}]{bottom\-Entity, }
+\item[{Raw\-Hierarchy\-Provider$<$ T $>$}]{raw\-Parent\-Child\-Provider}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad18275796d0f9469415216ee563f2b83}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a2fdb39438c76ca6aa03b3676a0b18602}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!compute\-Hierarchy@{compute\-Hierarchy}}
+\index{compute\-Hierarchy@{compute\-Hierarchy}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{compute\-Hierarchy}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.compute\-Hierarchy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a2fdb39438c76ca6aa03b3676a0b18602}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad26a5bc1ade7764410c7ed2f1f92ae03}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!create\-Node@{create\-Node}}
+\index{create\-Node@{create\-Node}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{create\-Node}]{\setlength{\rightskip}{0pt plus 5cm}abstract Default\-Node$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.create\-Node (
+\begin{DoxyParamCaption}
+\item[{Set$<$ T $>$}]{cycle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad26a5bc1ade7764410c7ed2f1f92ae03}
+Creates a node for a given set of entities 
+\begin{DoxyParams}{Parameters}
+{\em cycle} & The set of entities \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A node 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a5c902e63e4cc2f328573333342c14dc6}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!create\-Node@{create\-Node}}
+\index{create\-Node@{create\-Node}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{create\-Node}]{\setlength{\rightskip}{0pt plus 5cm}abstract Default\-Node$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.create\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a5c902e63e4cc2f328573333342c14dc6}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a07bc07b120040db08b586709c06d83eb}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!get\-Entities@{get\-Entities}}
+\index{get\-Entities@{get\-Entities}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}abstract Set$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.get\-Entities (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ont}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a07bc07b120040db08b586709c06d83eb}
+Gets the set of relevant entities from the specified ontology 
+\begin{DoxyParams}{Parameters}
+{\em ont} & The ontology \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A set of entities to be \char`\"{}classified\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a253da46eb32664de4c4d9f083ab3d6db}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!get\-Entities\-In\-Signature@{get\-Entities\-In\-Signature}}
+\index{get\-Entities\-In\-Signature@{get\-Entities\-In\-Signature}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Entities\-In\-Signature}]{\setlength{\rightskip}{0pt plus 5cm}abstract Set$<$? extends T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.get\-Entities\-In\-Signature (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Axiom}}]{ax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a253da46eb32664de4c4d9f083ab3d6db}
+Gets the set of relevant entities in a particular axiom 
+\begin{DoxyParams}{Parameters}
+{\em ax} & The axiom \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The set of relevant entities in the signature of the specified axiom 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_adac852cb5a7edb8a0b69d637e3d59450}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!get\-Equivalents@{get\-Equivalents}}
+\index{get\-Equivalents@{get\-Equivalents}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Equivalents}]{\setlength{\rightskip}{0pt plus 5cm}Node$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.get\-Equivalents (
+\begin{DoxyParamCaption}
+\item[{T}]{element}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_adac852cb5a7edb8a0b69d637e3d59450}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af0fa6cc534abebb6f1a4260f94d63038}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!get\-Node\-Hierarchy\-Children@{get\-Node\-Hierarchy\-Children}}
+\index{get\-Node\-Hierarchy\-Children@{get\-Node\-Hierarchy\-Children}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Node\-Hierarchy\-Children}]{\setlength{\rightskip}{0pt plus 5cm}Node\-Set$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.get\-Node\-Hierarchy\-Children (
+\begin{DoxyParamCaption}
+\item[{T}]{parent, }
+\item[{boolean}]{direct, }
+\item[{Default\-Node\-Set$<$ T $>$}]{ns}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af0fa6cc534abebb6f1a4260f94d63038}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a5e66dab0fdac68d3b114650f2b64e63c}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!get\-Node\-Hierarchy\-Parents@{get\-Node\-Hierarchy\-Parents}}
+\index{get\-Node\-Hierarchy\-Parents@{get\-Node\-Hierarchy\-Parents}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Node\-Hierarchy\-Parents}]{\setlength{\rightskip}{0pt plus 5cm}Node\-Set$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.get\-Node\-Hierarchy\-Parents (
+\begin{DoxyParamCaption}
+\item[{T}]{child, }
+\item[{boolean}]{direct, }
+\item[{Default\-Node\-Set$<$ T $>$}]{ns}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a5e66dab0fdac68d3b114650f2b64e63c}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af68737e7693e95132f7bc45c85136459}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!get\-Raw\-Parent\-Child\-Provider@{get\-Raw\-Parent\-Child\-Provider}}
+\index{get\-Raw\-Parent\-Child\-Provider@{get\-Raw\-Parent\-Child\-Provider}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Raw\-Parent\-Child\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}Raw\-Hierarchy\-Provider$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.get\-Raw\-Parent\-Child\-Provider (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af68737e7693e95132f7bc45c85136459}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_afab9df4b05d63d4b16cb57c7d22bd7bd}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!process\-Changes@{process\-Changes}}
+\index{process\-Changes@{process\-Changes}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{process\-Changes}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.process\-Changes (
+\begin{DoxyParamCaption}
+\item[{Set$<$ T $>$}]{signature, }
+\item[{Set$<$ {\bf O\-W\-L\-Axiom} $>$}]{added, }
+\item[{Set$<$ {\bf O\-W\-L\-Axiom} $>$}]{removed}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_afab9df4b05d63d4b16cb57c7d22bd7bd}
+Processes the specified signature that represents the signature of potential changes 
+\begin{DoxyParams}{Parameters}
+{\em signature} & The signature \\
+\hline
+{\em added} & added axioms \\
+\hline
+{\em removed} & removed axioms \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af5604a6e71ad518720f39940ca690b66}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!tarjan@{tarjan}}
+\index{tarjan@{tarjan}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{tarjan}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.tarjan (
+\begin{DoxyParamCaption}
+\item[{T}]{entity, }
+\item[{int}]{index, }
+\item[{Stack$<$ T $>$}]{stack, }
+\item[{Map$<$ T, Integer $>$}]{index\-Map, }
+\item[{Map$<$ T, Integer $>$}]{lowlink\-Map, }
+\item[{Set$<$ Set$<$ T $>$$>$}]{result, }
+\item[{Set$<$ T $>$}]{processed, }
+\item[{Set$<$ T $>$}]{stack\-Entities, }
+\item[{Map$<$ T, Collection$<$ T $>$$>$}]{cache, }
+\item[{Set$<$ T $>$}]{children\-Of\-Top, }
+\item[{Set$<$ T $>$}]{parents\-Of\-Bottom}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_af5604a6e71ad518720f39940ca690b66}
+Applies the tarjan algorithm for a given entity. This computes the cycle that the entity is involved in (if any). 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity \\
+\hline
+{\em index} & index \\
+\hline
+{\em stack} & stack \\
+\hline
+{\em index\-Map} & index map \\
+\hline
+{\em lowlink\-Map} & low link map \\
+\hline
+{\em result} & result \\
+\hline
+{\em processed} & processed \\
+\hline
+{\em stack\-Entities} & stack entities \\
+\hline
+{\em cache} & A cache of children to parents -\/ may be {\ttfamily null} if no caching is to take place. \\
+\hline
+{\em children\-Of\-Top} & A set of entities that have a raw parent that is the top entity \\
+\hline
+{\em parents\-Of\-Bottom} & A set of entities that have a raw parent that is the bottom entity \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ab804fa9f36af7505c2d16e761f2d5519}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!update\-For\-Signature@{update\-For\-Signature}}
+\index{update\-For\-Signature@{update\-For\-Signature}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{update\-For\-Signature}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.update\-For\-Signature (
+\begin{DoxyParamCaption}
+\item[{Set$<$ T $>$}]{signature, }
+\item[{Map$<$ T, Collection$<$ T $>$$>$}]{cache}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ab804fa9f36af7505c2d16e761f2d5519}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ae3bfdd510124845776771b1b7bfdd376}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!classification\-Size@{classification\-Size}}
+\index{classification\-Size@{classification\-Size}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{classification\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.classification\-Size\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ae3bfdd510124845776771b1b7bfdd376}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a2b7a2925cb0de4b39bcdc13c957cc7f3}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!direct\-Children\-Of\-Top\-Node@{direct\-Children\-Of\-Top\-Node}}
+\index{direct\-Children\-Of\-Top\-Node@{direct\-Children\-Of\-Top\-Node}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{direct\-Children\-Of\-Top\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.direct\-Children\-Of\-Top\-Node = new Hash\-Set$<$T$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a2b7a2925cb0de4b39bcdc13c957cc7f3}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a7bc0005010eb2fdcecc1a890ccf802b0}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!direct\-Parents\-Of\-Bottom\-Node@{direct\-Parents\-Of\-Bottom\-Node}}
+\index{direct\-Parents\-Of\-Bottom\-Node@{direct\-Parents\-Of\-Bottom\-Node}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{direct\-Parents\-Of\-Bottom\-Node}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.direct\-Parents\-Of\-Bottom\-Node = new Hash\-Set$<$T$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a7bc0005010eb2fdcecc1a890ccf802b0}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad1112099a477ba419c5fd321ee18254c}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!name@{name}}
+\index{name@{name}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.name\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_ad1112099a477ba419c5fd321ee18254c}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a0698fd48aeb9fcfecc3fe71ae7c6b089}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!node\-Cache@{node\-Cache}}
+\index{node\-Cache@{node\-Cache}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{node\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}Node\-Cache$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.node\-Cache\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a0698fd48aeb9fcfecc3fe71ae7c6b089}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a8c9b9e46034c5a8ed13b731f455d22b5}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}!raw\-Parent\-Child\-Provider@{raw\-Parent\-Child\-Provider}}
+\index{raw\-Parent\-Child\-Provider@{raw\-Parent\-Child\-Provider}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::HierarchyInfo< T extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Hierarchy\-Info$<$ T extends O\-W\-L\-Object $>$}}
+\subsubsection[{raw\-Parent\-Child\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}Raw\-Hierarchy\-Provider$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Hierarchy\-Info$<$ T extends {\bf O\-W\-L\-Object} $>$.raw\-Parent\-Child\-Provider\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_hierarch7d8ade138c58c437609a51314b153fe1_a8c9b9e46034c5a8ed13b731f455d22b5}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+impl/src/main/java/org/semanticweb/owlapi/reasoner/structural/\hyperlink{_structural_reasoner_8java}{Structural\-Reasoner.\-java}\end{DoxyCompactItemize}

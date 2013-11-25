@@ -1,0 +1,121 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element}{\section{org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element}\index{org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element@{org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element}}
+}
+
+
+Inherits org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-State.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_aedfd5262c335ac7849fbb06c8bd30455}{start\-Dummy\-Element} (Attributes atts)  throws S\-A\-X\-Exception 
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a5e61dcb77b4b95d091b5732d6c93bbc1}{get\-Subject\-I\-R\-I} ()
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a3fac260b6e92ef73c87e4dd1fd3f7cfa}{get\-Reification\-I\-D} (Attributes atts)  throws S\-A\-X\-Exception 
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a02a6bfb5050ca8c8c6934c86bdc638e0}{get\-Next\-Li} ()
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_ab8f876b935c99c21aa2b3a1d7b3a7f65}{get\-Property\-I\-R\-I} (String uri)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a0c095bb85decb6f0e435974631f9e781}{start\-Element} (String namespace\-I\-R\-I, String local\-Name, String q\-Name, Attributes atts)  throws S\-A\-X\-Exception 
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a9b76cb6008d03d78aa640b79266056f7}{end\-Element} (String namespace\-I\-R\-I, String local\-Name, String q\-Name)  throws S\-A\-X\-Exception 
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_aa48cd2c006fd7fa298c55d0521deba7e}{characters} (char\mbox{[}$\,$\mbox{]} data, int start, int length)  throws S\-A\-X\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a89ba49419b7d16f00594dfd813eb995d}{m\-\_\-subject\-I\-R\-I}
+\item 
+Reification\-Manager \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a800102f236804042a6649bd92b731b9b}{m\-\_\-reification\-Manager}
+\item 
+int \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_afa88025c467c0d6b851a7f5f9c8d6727}{m\-\_\-next\-Li} = 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Parses the node\-Element production. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_aa48cd2c006fd7fa298c55d0521deba7e}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!characters@{characters}}
+\index{characters@{characters}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{characters}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-characters (
+\begin{DoxyParamCaption}
+\item[{char\mbox{[}$\,$\mbox{]}}]{data, }
+\item[{int}]{start, }
+\item[{int}]{length}
+\end{DoxyParamCaption}
+) throws S\-A\-X\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_aa48cd2c006fd7fa298c55d0521deba7e}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a9b76cb6008d03d78aa640b79266056f7}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!end\-Element@{end\-Element}}
+\index{end\-Element@{end\-Element}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{end\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-end\-Element (
+\begin{DoxyParamCaption}
+\item[{String}]{namespace\-I\-R\-I, }
+\item[{String}]{local\-Name, }
+\item[{String}]{q\-Name}
+\end{DoxyParamCaption}
+) throws S\-A\-X\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a9b76cb6008d03d78aa640b79266056f7}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a02a6bfb5050ca8c8c6934c86bdc638e0}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!get\-Next\-Li@{get\-Next\-Li}}
+\index{get\-Next\-Li@{get\-Next\-Li}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{get\-Next\-Li}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-get\-Next\-Li (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a02a6bfb5050ca8c8c6934c86bdc638e0}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_ab8f876b935c99c21aa2b3a1d7b3a7f65}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!get\-Property\-I\-R\-I@{get\-Property\-I\-R\-I}}
+\index{get\-Property\-I\-R\-I@{get\-Property\-I\-R\-I}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{get\-Property\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-get\-Property\-I\-R\-I (
+\begin{DoxyParamCaption}
+\item[{String}]{uri}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_ab8f876b935c99c21aa2b3a1d7b3a7f65}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a3fac260b6e92ef73c87e4dd1fd3f7cfa}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!get\-Reification\-I\-D@{get\-Reification\-I\-D}}
+\index{get\-Reification\-I\-D@{get\-Reification\-I\-D}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{get\-Reification\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-get\-Reification\-I\-D (
+\begin{DoxyParamCaption}
+\item[{Attributes}]{atts}
+\end{DoxyParamCaption}
+) throws S\-A\-X\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a3fac260b6e92ef73c87e4dd1fd3f7cfa}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a5e61dcb77b4b95d091b5732d6c93bbc1}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!get\-Subject\-I\-R\-I@{get\-Subject\-I\-R\-I}}
+\index{get\-Subject\-I\-R\-I@{get\-Subject\-I\-R\-I}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{get\-Subject\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-get\-Subject\-I\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a5e61dcb77b4b95d091b5732d6c93bbc1}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_aedfd5262c335ac7849fbb06c8bd30455}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!start\-Dummy\-Element@{start\-Dummy\-Element}}
+\index{start\-Dummy\-Element@{start\-Dummy\-Element}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{start\-Dummy\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-start\-Dummy\-Element (
+\begin{DoxyParamCaption}
+\item[{Attributes}]{atts}
+\end{DoxyParamCaption}
+) throws S\-A\-X\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_aedfd5262c335ac7849fbb06c8bd30455}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a0c095bb85decb6f0e435974631f9e781}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!start\-Element@{start\-Element}}
+\index{start\-Element@{start\-Element}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{start\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-start\-Element (
+\begin{DoxyParamCaption}
+\item[{String}]{namespace\-I\-R\-I, }
+\item[{String}]{local\-Name, }
+\item[{String}]{q\-Name, }
+\item[{Attributes}]{atts}
+\end{DoxyParamCaption}
+) throws S\-A\-X\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a0c095bb85decb6f0e435974631f9e781}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_afa88025c467c0d6b851a7f5f9c8d6727}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!m\-\_\-next\-Li@{m\-\_\-next\-Li}}
+\index{m\-\_\-next\-Li@{m\-\_\-next\-Li}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{m\-\_\-next\-Li}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-m\-\_\-next\-Li = 1\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_afa88025c467c0d6b851a7f5f9c8d6727}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a800102f236804042a6649bd92b731b9b}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!m\-\_\-reification\-Manager@{m\-\_\-reification\-Manager}}
+\index{m\-\_\-reification\-Manager@{m\-\_\-reification\-Manager}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{m\-\_\-reification\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Reification\-Manager org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-m\-\_\-reification\-Manager\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a800102f236804042a6649bd92b731b9b}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a89ba49419b7d16f00594dfd813eb995d}{\index{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}!m\-\_\-subject\-I\-R\-I@{m\-\_\-subject\-I\-R\-I}}
+\index{m\-\_\-subject\-I\-R\-I@{m\-\_\-subject\-I\-R\-I}!org::semanticweb::owlapi::rdf::syntax::RDFParser::NodeElement@{org\-::semanticweb\-::owlapi\-::rdf\-::syntax\-::\-R\-D\-F\-Parser\-::\-Node\-Element}}
+\subsubsection[{m\-\_\-subject\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-rdf.\-syntax.\-R\-D\-F\-Parser.\-Node\-Element.\-m\-\_\-subject\-I\-R\-I\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1rdf_1_1syntax_1_1_r_d_f_parser_1_1_node_element_a89ba49419b7d16f00594dfd813eb995d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/semanticweb/owlapi/rdf/syntax/\hyperlink{_r_d_f_parser_8java}{R\-D\-F\-Parser.\-java}\end{DoxyCompactItemize}

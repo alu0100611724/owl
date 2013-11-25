@@ -1,0 +1,82 @@
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger}{\section{uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger Class Reference}
+\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger}\index{uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger@{uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a227918c2aa2cb96ac9abcdf1f2fdb7e6}{Debugger} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} manager, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_abe5953cbf19fbd3d397e6affdbf5549d}{ontology}, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory}{O\-W\-L\-Reasoner\-Factory} reasoner\-Factory)
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a9ffdfb6c2f96e85d8582a6b7c0093dd1}{report} (Print\-Writer writer)  throws O\-W\-L\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_abe5953cbf19fbd3d397e6affdbf5549d}{ontology}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1debugging_1_1_o_w_l_debugger}{O\-W\-L\-Debugger} \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a1706d3312bff99dff48664f0ecea3e6b}{debugger}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a330a1d7ab3b02b010fdcfbd03c4ff51b}{checker}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_af6629b3b3252290ba70bbe5ac098c573}{bottom}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class demonstrates some aspects of the O\-W\-L A\-P\-I. It expects three arguments\-: 
+
+
+\begin{DoxyEnumerate}
+\item The U\-R\-I of an ontology 
+\item The U\-R\-I of a reasoner 
+\item A location to place the results. 
+\end{DoxyEnumerate}
+
+When executed, the class will find all inconsistent classes in the ontology. For each inconsistent class, the debugger will be used to determine the set of support for the inconsistency. A report will then be written to the outpur file. 
+
+Author\-: Sean Bechhofer\par
+ The University Of Manchester\par
+ Information Management Group\par
+ Date\-: 24-\/\-April-\/2007\par
+ \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a227918c2aa2cb96ac9abcdf1f2fdb7e6}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}!Debugger@{Debugger}}
+\index{Debugger@{Debugger}!uk::ac::manchester::owl::owlapi::tutorial::Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}}
+\subsubsection[{Debugger}]{\setlength{\rightskip}{0pt plus 5cm}uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger.\-Debugger (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology\-Manager}}]{manager, }
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology, }
+\item[{{\bf O\-W\-L\-Reasoner\-Factory}}]{reasoner\-Factory}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a227918c2aa2cb96ac9abcdf1f2fdb7e6}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a9ffdfb6c2f96e85d8582a6b7c0093dd1}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}!report@{report}}
+\index{report@{report}!uk::ac::manchester::owl::owlapi::tutorial::Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}}
+\subsubsection[{report}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger.\-report (
+\begin{DoxyParamCaption}
+\item[{Print\-Writer}]{writer}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Exception}}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a9ffdfb6c2f96e85d8582a6b7c0093dd1}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_af6629b3b3252290ba70bbe5ac098c573}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}!bottom@{bottom}}
+\index{bottom@{bottom}!uk::ac::manchester::owl::owlapi::tutorial::Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}}
+\subsubsection[{bottom}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Class} uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger.\-bottom\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_af6629b3b3252290ba70bbe5ac098c573}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a330a1d7ab3b02b010fdcfbd03c4ff51b}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}!checker@{checker}}
+\index{checker@{checker}!uk::ac::manchester::owl::owlapi::tutorial::Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}}
+\subsubsection[{checker}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Reasoner} uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger.\-checker\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a330a1d7ab3b02b010fdcfbd03c4ff51b}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a1706d3312bff99dff48664f0ecea3e6b}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}!debugger@{debugger}}
+\index{debugger@{debugger}!uk::ac::manchester::owl::owlapi::tutorial::Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}}
+\subsubsection[{debugger}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Debugger} uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger.\-debugger\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_a1706d3312bff99dff48664f0ecea3e6b}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_abe5953cbf19fbd3d397e6affdbf5549d}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}!ontology@{ontology}}
+\index{ontology@{ontology}!uk::ac::manchester::owl::owlapi::tutorial::Debugger@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Debugger}}
+\subsubsection[{ontology}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Ontology} uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Debugger.\-ontology\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_debugger_abe5953cbf19fbd3d397e6affdbf5549d}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+contract/src/test/java/uk/ac/manchester/owl/owlapi/tutorial/\hyperlink{test_2java_2uk_2ac_2manchester_2owl_2owlapi_2tutorial_2_debugger_8java}{Debugger.\-java}\end{DoxyCompactItemize}

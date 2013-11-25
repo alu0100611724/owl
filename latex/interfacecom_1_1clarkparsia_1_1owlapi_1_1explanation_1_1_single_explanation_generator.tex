@@ -1,0 +1,110 @@
+\hypertarget{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator}{\section{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator Interface Reference}
+\label{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator}\index{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator@{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator}}
+}
+Inheritance diagram for com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.848185cm]{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a6a0bc863be0d37cdf6bb6f1a310c2702}{get\-Ontology\-Manager} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_aa96cdb99bc3118ac79aca687eccb9000}{get\-Ontology} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_ae8770f4cba7f2222dfe6bbce2bcbc1e1}{get\-Reasoner} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory}{O\-W\-L\-Reasoner\-Factory} \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a58adb5aadcb57d6098b5735c582bfcf1}{get\-Reasoner\-Factory} ()
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a830a20b5e3d896ab49d20c02ce74c3d0}{get\-Explanation} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class_expression}{O\-W\-L\-Class\-Expression} unsat\-Class)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Explanation generator for a single explanation 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a830a20b5e3d896ab49d20c02ce74c3d0}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}!get\-Explanation@{get\-Explanation}}
+\index{get\-Explanation@{get\-Explanation}!com::clarkparsia::owlapi::explanation::SingleExplanationGenerator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}}
+\subsubsection[{get\-Explanation}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Axiom}$>$ com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator.\-get\-Explanation (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Class\-Expression}}]{unsat\-Class}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a830a20b5e3d896ab49d20c02ce74c3d0}
+Get a single explanation for an arbitrary class expression, or empty set if the given expression is satisfiable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em unsat\-Class} & arbitrary class expression whose unsatisfiability will be explained \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+set of axioms explaining the unsatisfiability of given class expression, or empty set if the given expression is satisfiable. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_black_box_explanation_a917461a1cd8681b95fe3e8ceb10db7d8}{com.\-clarkparsia.\-owlapi.\-explanation.\-Black\-Box\-Explanation}, and \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_h_s_t_explanation_generator_a72a9283a5fc35489c4ee4c4cfb847b69}{com.\-clarkparsia.\-owlapi.\-explanation.\-H\-S\-T\-Explanation\-Generator}.
+
+\hypertarget{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_aa96cdb99bc3118ac79aca687eccb9000}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}!get\-Ontology@{get\-Ontology}}
+\index{get\-Ontology@{get\-Ontology}!com::clarkparsia::owlapi::explanation::SingleExplanationGenerator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}}
+\subsubsection[{get\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology} com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator.\-get\-Ontology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_aa96cdb99bc3118ac79aca687eccb9000}
+\begin{DoxyReturn}{Returns}
+the ontology according to which the explanations are generated 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_h_s_t_explanation_generator_a30856bbde825071eefd3da4b8c90f54a}{com.\-clarkparsia.\-owlapi.\-explanation.\-H\-S\-T\-Explanation\-Generator}, and \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_impl_a86505a0b5175a58c353bed9f4f742bd6}{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator\-Impl}.
+
+\hypertarget{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a6a0bc863be0d37cdf6bb6f1a310c2702}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}!get\-Ontology\-Manager@{get\-Ontology\-Manager}}
+\index{get\-Ontology\-Manager@{get\-Ontology\-Manager}!com::clarkparsia::owlapi::explanation::SingleExplanationGenerator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}}
+\subsubsection[{get\-Ontology\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology\-Manager} com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator.\-get\-Ontology\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a6a0bc863be0d37cdf6bb6f1a310c2702}
+\begin{DoxyReturn}{Returns}
+the ontology manager for this explanation generator. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_h_s_t_explanation_generator_ab84e904a9a87868d3e761e0cee8429c6}{com.\-clarkparsia.\-owlapi.\-explanation.\-H\-S\-T\-Explanation\-Generator}, and \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_impl_a714b5e72b29a583f180fc5ab4b94e1a5}{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator\-Impl}.
+
+\hypertarget{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_ae8770f4cba7f2222dfe6bbce2bcbc1e1}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}!get\-Reasoner@{get\-Reasoner}}
+\index{get\-Reasoner@{get\-Reasoner}!com::clarkparsia::owlapi::explanation::SingleExplanationGenerator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}}
+\subsubsection[{get\-Reasoner}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Reasoner} com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator.\-get\-Reasoner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_ae8770f4cba7f2222dfe6bbce2bcbc1e1}
+dispose of the reasoners and ontologies \begin{DoxyReturn}{Returns}
+the reasoner associated with this generator. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_h_s_t_explanation_generator_ad6a3cfea526d13e606a01593a75a7571}{com.\-clarkparsia.\-owlapi.\-explanation.\-H\-S\-T\-Explanation\-Generator}, and \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_impl_aacc5dbe06c4ddbd58aeeaa723c305761}{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator\-Impl}.
+
+\hypertarget{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a58adb5aadcb57d6098b5735c582bfcf1}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}!get\-Reasoner\-Factory@{get\-Reasoner\-Factory}}
+\index{get\-Reasoner\-Factory@{get\-Reasoner\-Factory}!com::clarkparsia::owlapi::explanation::SingleExplanationGenerator@{com\-::clarkparsia\-::owlapi\-::explanation\-::\-Single\-Explanation\-Generator}}
+\subsubsection[{get\-Reasoner\-Factory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Reasoner\-Factory} com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator.\-get\-Reasoner\-Factory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_a58adb5aadcb57d6098b5735c582bfcf1}
+\begin{DoxyReturn}{Returns}
+the reasoner factory used to create fresh reasoners. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_h_s_t_explanation_generator_a8eb59697e652c8b50080377837447ec7}{com.\-clarkparsia.\-owlapi.\-explanation.\-H\-S\-T\-Explanation\-Generator}, and \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1_single_explanation_generator_impl_a641cb92e1445533f6b4acaf231efa8c3}{com.\-clarkparsia.\-owlapi.\-explanation.\-Single\-Explanation\-Generator\-Impl}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/com/clarkparsia/owlapi/explanation/\hyperlink{_single_explanation_generator_8java}{Single\-Explanation\-Generator.\-java}\end{DoxyCompactItemize}

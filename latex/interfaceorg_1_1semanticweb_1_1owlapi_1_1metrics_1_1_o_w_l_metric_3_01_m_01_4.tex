@@ -1,0 +1,160 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4}{\section{org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$ Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4}\index{org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$@{org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a2bf46b53dac8e60a31442bf46b2933a9}{get\-Name} ()
+\item 
+M \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a875b24183291649a805fe49b73b93af8}{get\-Value} ()
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a01d38442080ecb44c5d913b053a20469}{set\-Ontology} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a1c3359b061237c78123264f4d8273e57}{get\-Ontology} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_ae3f1a381328e8e98788ec3d41a8e2fae}{is\-Imports\-Closure\-Used} ()
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a03337a673dc761335f8987965130a762}{set\-Imports\-Closure\-Used} (boolean b)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a4063f1c9d6ed73a04a964e434f0c9a67}{get\-Manager} ()
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a86f5b6832be5abd7b5db9d47ab3f8b3f}{dispose} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 27-\/\-Jul-\/2007\par
+\par
+ 
+
+Represents a metric about some aspect of an ontology and possibly its imports closure. 
+\begin{DoxyParams}{Parameters}
+{\em $<$\-M$>$} & the metric type \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a86f5b6832be5abd7b5db9d47ab3f8b3f}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!dispose@{dispose}}
+\index{dispose@{dispose}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{dispose}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a86f5b6832be5abd7b5db9d47ab3f8b3f}
+Diposes of the metric. If the metric attaches itself as a listener to an ontology manager then this will cause the metric to detach itself and stop listening for ontology changes. 
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_ac2752f8b0ef563313621d80ad22f51af}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a4063f1c9d6ed73a04a964e434f0c9a67}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!get\-Manager@{get\-Manager}}
+\index{get\-Manager@{get\-Manager}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{get\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology\-Manager} org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.get\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a4063f1c9d6ed73a04a964e434f0c9a67}
+Gets the ontology manager which, amongst other things can be used to obtain the imports closure of the current ontology. \begin{DoxyReturn}{Returns}
+An {\ttfamily O\-W\-L\-Ontology\-Manager}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_a0fd1721839a0c2cca9304406b7c0568b}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a2bf46b53dac8e60a31442bf46b2933a9}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a2bf46b53dac8e60a31442bf46b2933a9}
+Gets the human readable name of this metric \begin{DoxyReturn}{Returns}
+A label which represents the human readable name of this metric. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a1c3359b061237c78123264f4d8273e57}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!get\-Ontology@{get\-Ontology}}
+\index{get\-Ontology@{get\-Ontology}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{get\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology} org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.get\-Ontology (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a1c3359b061237c78123264f4d8273e57}
+Gets the ontology which the value of the metric should be based on. \begin{DoxyReturn}{Returns}
+The ontology. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_a26886da3d160778aca2e51cc82861b95}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a875b24183291649a805fe49b73b93af8}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}M org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a875b24183291649a805fe49b73b93af8}
+Gets the value of this metric. This value is computed w.\-r.\-t. the current ontology and possibly the imports closure (if specified). \begin{DoxyReturn}{Returns}
+An object which represents the value of this metric -\/ calling the {\ttfamily to\-String} method of the object returned by this method will result in a human readable string that displays the value of the metric. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_a011fcebbac266b90df45a12a468a817a}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_ae3f1a381328e8e98788ec3d41a8e2fae}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!is\-Imports\-Closure\-Used@{is\-Imports\-Closure\-Used}}
+\index{is\-Imports\-Closure\-Used@{is\-Imports\-Closure\-Used}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{is\-Imports\-Closure\-Used}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.is\-Imports\-Closure\-Used (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_ae3f1a381328e8e98788ec3d41a8e2fae}
+Determines if the computation of the metric should take into account the imports closure of the current ontology. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if the imports closure of the current ontology is taken into account when computing the value of this metric, or {\ttfamily false} if the imports closure isn't taken into account when computing this metric. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_a3b2d413d3fce38068f161edd67569b96}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a03337a673dc761335f8987965130a762}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!set\-Imports\-Closure\-Used@{set\-Imports\-Closure\-Used}}
+\index{set\-Imports\-Closure\-Used@{set\-Imports\-Closure\-Used}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{set\-Imports\-Closure\-Used}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.set\-Imports\-Closure\-Used (
+\begin{DoxyParamCaption}
+\item[{boolean}]{b}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a03337a673dc761335f8987965130a762}
+Sets whether this metric uses the imports closure of the current ontology 
+\begin{DoxyParams}{Parameters}
+{\em b} & {\ttfamily true} if this metric uses the imports closure of the current ontology, otherwise false. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_a835b0657c6ad7d1e5c8fab8e9f752838}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a01d38442080ecb44c5d913b053a20469}{\index{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}!set\-Ontology@{set\-Ontology}}
+\index{set\-Ontology@{set\-Ontology}!org::semanticweb::owlapi::metrics::OWLMetric< M >@{org\-::semanticweb\-::owlapi\-::metrics\-::\-O\-W\-L\-Metric$<$ M $>$}}
+\subsubsection[{set\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-metrics.\-O\-W\-L\-Metric$<$ M $>$.set\-Ontology (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_o_w_l_metric_3_01_m_01_4_a01d38442080ecb44c5d913b053a20469}
+Sets the \char`\"{}root\char`\"{} ontology. The metric will be recomputed from this ontology (and potentially its imports closure if selected). 
+\begin{DoxyParams}{Parameters}
+{\em ontology} & The ontology for which the metric should be computed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1metrics_1_1_abstract_o_w_l_metric_3_01_m_01_4_ab6f12915419f326fe4f5afc342571854}{org.\-semanticweb.\-owlapi.\-metrics.\-Abstract\-O\-W\-L\-Metric$<$ M $>$}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/org/semanticweb/owlapi/metrics/\hyperlink{_o_w_l_metric_8java}{O\-W\-L\-Metric.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_filtering_o_w_l_ontology_change_listener}{\section{org.\-semanticweb.\-owlapi.\-util.\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_filtering_o_w_l_ontology_change_listener}\index{org.\-semanticweb.\-owlapi.\-util.\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener@{org.\-semanticweb.\-owlapi.\-util.\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-util.\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.374894cm]{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_filtering_o_w_l_ontology_change_listener}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_filtering_o_w_l_ontology_change_listener_a92143f67ceeefe3002bb758d628ea2cc}{ontologies\-Changed} (List$<$?extends \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ changes)  throws O\-W\-L\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 17-\/\-Dec-\/2006\par
+\par
+
+
+Incorporates a listener into an {\ttfamily \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_ontology_change_filter}{O\-W\-L\-Ontology\-Change\-Filter}}. This listener listens to and processes axiom added and axiom removed changes. To filter out axioms of interest, override the appropriate {\ttfamily visit} method -\/ see {\ttfamily \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_ontology_change_filter}{O\-W\-L\-Ontology\-Change\-Filter}} for more details. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_filtering_o_w_l_ontology_change_listener_a92143f67ceeefe3002bb758d628ea2cc}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener@{org\-::semanticweb\-::owlapi\-::util\-::\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener}!ontologies\-Changed@{ontologies\-Changed}}
+\index{ontologies\-Changed@{ontologies\-Changed}!org::semanticweb::owlapi::util::FilteringOWLOntologyChangeListener@{org\-::semanticweb\-::owlapi\-::util\-::\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener}}
+\subsubsection[{ontologies\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}final void org.\-semanticweb.\-owlapi.\-util.\-Filtering\-O\-W\-L\-Ontology\-Change\-Listener.\-ontologies\-Changed (
+\begin{DoxyParamCaption}
+\item[{List$<$?extends {\bf O\-W\-L\-Ontology\-Change} $>$}]{changes}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Exception}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_filtering_o_w_l_ontology_change_listener_a92143f67ceeefe3002bb758d628ea2cc}
+Called when some changes have been applied to various ontologies. These may be an axiom added or an axiom removed changes. 
+\begin{DoxyParams}{Parameters}
+{\em changes} & A list of changes that have occurred. Each change may be examined to determine which ontology it was applied to. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change_listener_a1b799247b850f5731783b5b7167a8642}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Ontology\-Change\-Listener}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_filtering_o_w_l_ontology_change_listener_8java}{Filtering\-O\-W\-L\-Ontology\-Change\-Listener.\-java}\end{DoxyCompactItemize}

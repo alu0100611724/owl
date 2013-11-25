@@ -1,0 +1,64 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable}{\section{org.\-semanticweb.\-owlapi.\-util.\-Monitorable Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable}\index{org.\-semanticweb.\-owlapi.\-util.\-Monitorable@{org.\-semanticweb.\-owlapi.\-util.\-Monitorable}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a878ff3634ea68610ef8028d8dd34584b}{set\-Progress\-Monitor} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_progress_monitor}{Progress\-Monitor} progress\-Monitor)
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a12bff92a0513f851881c570d168062ed}{interrupt} ()  throws Interrupted\-Exception
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a298c8819dda5f215a95b318fc4fd8330}{can\-Interrupt} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 04-\/\-Jan-\/2007\par
+\par
+
+
+Certain tasks or algorithms may take some time to accomplish. For example parsing, saving etc. In some situations, it is desirable to monitor the progress of such tasks, for example to provide feedback in user interfaces. Interfaces which represent long tasks can implement this progress monitor interface to provide a hook for a progress monitor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a298c8819dda5f215a95b318fc4fd8330}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable@{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable}!can\-Interrupt@{can\-Interrupt}}
+\index{can\-Interrupt@{can\-Interrupt}!org::semanticweb::owlapi::util::Monitorable@{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable}}
+\subsubsection[{can\-Interrupt}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-util.\-Monitorable.\-can\-Interrupt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a298c8819dda5f215a95b318fc4fd8330}
+\begin{DoxyReturn}{Returns}
+true if this long running task can be cancelled. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a12bff92a0513f851881c570d168062ed}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable@{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable}!interrupt@{interrupt}}
+\index{interrupt@{interrupt}!org::semanticweb::owlapi::util::Monitorable@{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable}}
+\subsubsection[{interrupt}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Monitorable.\-interrupt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws Interrupted\-Exception}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a12bff92a0513f851881c570d168062ed}
+Interrupts the long running task (if possible). 
+\begin{DoxyExceptions}{Exceptions}
+{\em Interrupted\-Exception} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a878ff3634ea68610ef8028d8dd34584b}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable@{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable}!set\-Progress\-Monitor@{set\-Progress\-Monitor}}
+\index{set\-Progress\-Monitor@{set\-Progress\-Monitor}!org::semanticweb::owlapi::util::Monitorable@{org\-::semanticweb\-::owlapi\-::util\-::\-Monitorable}}
+\subsubsection[{set\-Progress\-Monitor}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Monitorable.\-set\-Progress\-Monitor (
+\begin{DoxyParamCaption}
+\item[{{\bf Progress\-Monitor}}]{progress\-Monitor}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_monitorable_a878ff3634ea68610ef8028d8dd34584b}
+Sets the progress monitor which receives information about the progress of the this object which represents a long running task. 
+\begin{DoxyParams}{Parameters}
+{\em progress\-Monitor} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_monitorable_8java}{Monitorable.\-java}\end{DoxyCompactItemize}

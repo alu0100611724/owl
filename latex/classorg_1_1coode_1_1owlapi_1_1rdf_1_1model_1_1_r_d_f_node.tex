@@ -1,0 +1,76 @@
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node}{\section{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node Class Reference}
+\label{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node}\index{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node@{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node}}
+}
+Inheritance diagram for org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.944445cm]{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract boolean \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_acc84d2483ab6c0829fba71b449c56c38}{is\-Literal} ()
+\item 
+abstract \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_a908d4e6952226fb4a0693c31d55aabcc}{get\-I\-R\-I} ()
+\item 
+abstract boolean \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_a35c8342de82f53426a9cca449a877c15}{is\-Anonymous} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 06-\/\-Dec-\/2006\par
+\par
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_a908d4e6952226fb4a0693c31d55aabcc}{\index{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node@{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node}!get\-I\-R\-I@{get\-I\-R\-I}}
+\index{get\-I\-R\-I@{get\-I\-R\-I}!org::coode::owlapi::rdf::model::RDFNode@{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node}}
+\subsubsection[{get\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}abstract {\bf I\-R\-I} org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node.\-get\-I\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_a908d4e6952226fb4a0693c31d55aabcc}
+Gets the U\-R\-I of the resource. \begin{DoxyReturn}{Returns}
+The U\-R\-I or {\ttfamily null} if this is an anonymous resource. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_resource_node_aaeb4e3bd9f3952be6d8b6b60c50bda40}{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Resource\-Node}, and \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_literal_node_af14da8db766145036b70bef66e47a9b7}{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Literal\-Node}.
+
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_a35c8342de82f53426a9cca449a877c15}{\index{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node@{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node}!is\-Anonymous@{is\-Anonymous}}
+\index{is\-Anonymous@{is\-Anonymous}!org::coode::owlapi::rdf::model::RDFNode@{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node}}
+\subsubsection[{is\-Anonymous}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node.\-is\-Anonymous (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_a35c8342de82f53426a9cca449a877c15}
+Determines if this node is a resource and is anonymous. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this is a resource node (i.\-e. {\ttfamily is\-Literal} returns {\ttfamily false}) and the node is anonymous, or {\ttfamily false} if this is a resource node and is not anonymous. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_resource_node_a6b195943405a67b97cc1fe3789f03a31}{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Resource\-Node}, and \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_literal_node_a5046ac0dead7d66f1b3a616978646758}{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Literal\-Node}.
+
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_acc84d2483ab6c0829fba71b449c56c38}{\index{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node@{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node}!is\-Literal@{is\-Literal}}
+\index{is\-Literal@{is\-Literal}!org::coode::owlapi::rdf::model::RDFNode@{org\-::coode\-::owlapi\-::rdf\-::model\-::\-R\-D\-F\-Node}}
+\subsubsection[{is\-Literal}]{\setlength{\rightskip}{0pt plus 5cm}abstract boolean org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Node.\-is\-Literal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_node_acc84d2483ab6c0829fba71b449c56c38}
+\begin{DoxyReturn}{Returns}
+true if the node is a literal 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_literal_node_a085a77d78b6e15a5b7e1585bbb9c613e}{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Literal\-Node}, and \hyperlink{classorg_1_1coode_1_1owlapi_1_1rdf_1_1model_1_1_r_d_f_resource_node_aa785d399ea85ee39581b10b4830cbd04}{org.\-coode.\-owlapi.\-rdf.\-model.\-R\-D\-F\-Resource\-Node}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/owlapi/rdf/model/\hyperlink{parsers_2src_2main_2java_2org_2coode_2owlapi_2rdf_2model_2_r_d_f_node_8java}{R\-D\-F\-Node.\-java}\end{DoxyCompactItemize}

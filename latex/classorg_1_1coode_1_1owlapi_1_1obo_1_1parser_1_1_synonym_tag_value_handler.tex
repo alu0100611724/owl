@@ -1,0 +1,154 @@
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler}{\section{org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler Class Reference}
+\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler}\index{org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler@{org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler}}
+}
+Inheritance diagram for org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a183631b8759024d5cb2558d9d12644c0}{Synonym\-Tag\-Value\-Handler} (\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_o_b_o_consumer}{O\-B\-O\-Consumer} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_abstract_tag_value_handler_ab27f1ff22d15640c5f81585f18265137}{consumer})
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a739d01f16460d14388d1826d45a20a43}{handle} (String current\-Id, String value, String qualifier\-Block, String comment)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_ae93ffc065e9676250659002037c4039d}{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I} = O\-B\-O\-Vocabulary.\-S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E.\-get\-I\-R\-I()
+\item 
+static final \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a57fda867a26e9336c4c52b1d08ef62bb}{X\-R\-E\-F\-\_\-\-I\-R\-I} = O\-B\-O\-Vocabulary.\-X\-R\-E\-F.\-get\-I\-R\-I()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a2e54dcf8155b24189bd23c370109ff88}{get\-Synonym\-Type\-Annotations} (Matcher matcher)
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_aaf46aa5b3ae68706edfbb1af9308fcf6}{get\-X\-Ref\-Annotations} (Matcher matcher)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_property}{O\-W\-L\-Annotation\-Property} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a9f306fa6afd19119f69b3ba53535ef52}{get\-Synonym\-Annotation\-Property} (Matcher matcher)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a28ced8c2f85e9207e880c8ef5499966c}{get\-Synonym\-Type\-Annotation} (Matcher matcher)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a99f03f6aec50622d32483163a0c23bff}{T\-A\-G\-\_\-\-N\-A\-M\-E} = O\-B\-O\-Vocabulary.\-S\-Y\-N\-O\-N\-Y\-M.\-to\-String()
+\item 
+static final Pattern \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a98c2b94399a8dbd8f6fa68ea0d3d7d31}{value\-Pattern} = Pattern.\-compile(\char`\"{}\textbackslash{}\char`\"{}(\mbox{[}$^\wedge$\textbackslash{}\char`\"{}\mbox{]}$\ast$)\textbackslash{}\char`\"{}\textbackslash{}\textbackslash{}s$\ast$(\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}s\mbox{]}$\ast$)\textbackslash{}\textbackslash{}s$\ast$(\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}\textbackslash{}s\mbox{]}+)?\textbackslash{}\textbackslash{}s$\ast$\textbackslash{}\textbackslash{}\mbox{[}(\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]}\mbox{]}$\ast$)\textbackslash{}\textbackslash{}\mbox{]}\char`\"{})
+\item 
+static final int \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a8969c4a717a326d828b467c0a3d08365}{V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P} = 1
+\item 
+static final int \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a045842482f10e39e7844b2f787b9d415}{S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P} = 2
+\item 
+static final int \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a74b3b0f4476867ebc99468a42e7bcdc7}{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P} = 3
+\item 
+static final int \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a8157f2a65073ab74daedb7e8ce33e3d7}{X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P} = 4
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 03/02/2011 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a183631b8759024d5cb2558d9d12644c0}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!Synonym\-Tag\-Value\-Handler@{Synonym\-Tag\-Value\-Handler}}
+\index{Synonym\-Tag\-Value\-Handler@{Synonym\-Tag\-Value\-Handler}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{Synonym\-Tag\-Value\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-Synonym\-Tag\-Value\-Handler (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-B\-O\-Consumer}}]{consumer}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a183631b8759024d5cb2558d9d12644c0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a9f306fa6afd19119f69b3ba53535ef52}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!get\-Synonym\-Annotation\-Property@{get\-Synonym\-Annotation\-Property}}
+\index{get\-Synonym\-Annotation\-Property@{get\-Synonym\-Annotation\-Property}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{get\-Synonym\-Annotation\-Property}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Annotation\-Property} org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-get\-Synonym\-Annotation\-Property (
+\begin{DoxyParamCaption}
+\item[{Matcher}]{matcher}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a9f306fa6afd19119f69b3ba53535ef52}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a28ced8c2f85e9207e880c8ef5499966c}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!get\-Synonym\-Type\-Annotation@{get\-Synonym\-Type\-Annotation}}
+\index{get\-Synonym\-Type\-Annotation@{get\-Synonym\-Type\-Annotation}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{get\-Synonym\-Type\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Annotation} org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-get\-Synonym\-Type\-Annotation (
+\begin{DoxyParamCaption}
+\item[{Matcher}]{matcher}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a28ced8c2f85e9207e880c8ef5499966c}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a2e54dcf8155b24189bd23c370109ff88}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!get\-Synonym\-Type\-Annotations@{get\-Synonym\-Type\-Annotations}}
+\index{get\-Synonym\-Type\-Annotations@{get\-Synonym\-Type\-Annotations}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{get\-Synonym\-Type\-Annotations}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Annotation}$>$ org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-get\-Synonym\-Type\-Annotations (
+\begin{DoxyParamCaption}
+\item[{Matcher}]{matcher}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a2e54dcf8155b24189bd23c370109ff88}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_aaf46aa5b3ae68706edfbb1af9308fcf6}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!get\-X\-Ref\-Annotations@{get\-X\-Ref\-Annotations}}
+\index{get\-X\-Ref\-Annotations@{get\-X\-Ref\-Annotations}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{get\-X\-Ref\-Annotations}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Annotation}$>$ org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-get\-X\-Ref\-Annotations (
+\begin{DoxyParamCaption}
+\item[{Matcher}]{matcher}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_aaf46aa5b3ae68706edfbb1af9308fcf6}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a739d01f16460d14388d1826d45a20a43}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!handle@{handle}}
+\index{handle@{handle}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-handle (
+\begin{DoxyParamCaption}
+\item[{String}]{current\-Id, }
+\item[{String}]{value, }
+\item[{String}]{qualifier\-Block, }
+\item[{String}]{comment}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a739d01f16460d14388d1826d45a20a43}
+Handles a tag. This is called by the \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_o_b_o_consumer}{O\-B\-O\-Consumer} during parsing to handle tags that match the value returned by the \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_abstract_tag_value_handler_ab2cb02762280ec948aecd850f13b91d5}{get\-Tag\-Name()} method. 
+\begin{DoxyParams}{Parameters}
+{\em current\-Id} & The id of the current frame. \\
+\hline
+{\em value} & The value of the tag \\
+\hline
+{\em qualifier\-Block} & \\
+\hline
+{\em comment} & The hidden comment. This is made up of any characters between ! and the end of line. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_ada360977867550649d701384c224a601}{org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a045842482f10e39e7844b2f787b9d415}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P@{S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P}}
+\index{S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P@{S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-S\-C\-O\-P\-E\-\_\-\-G\-R\-O\-U\-P = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a045842482f10e39e7844b2f787b9d415}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a74b3b0f4476867ebc99468a42e7bcdc7}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P@{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P}}
+\index{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P@{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-G\-R\-O\-U\-P = 3\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a74b3b0f4476867ebc99468a42e7bcdc7}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_ae93ffc065e9676250659002037c4039d}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I@{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I}}
+\index{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I@{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf I\-R\-I} org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E\-\_\-\-I\-R\-I = O\-B\-O\-Vocabulary.\-S\-Y\-N\-O\-N\-Y\-M\-\_\-\-T\-Y\-P\-E.\-get\-I\-R\-I()\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_ae93ffc065e9676250659002037c4039d}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a99f03f6aec50622d32483163a0c23bff}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!T\-A\-G\-\_\-\-N\-A\-M\-E@{T\-A\-G\-\_\-\-N\-A\-M\-E}}
+\index{T\-A\-G\-\_\-\-N\-A\-M\-E@{T\-A\-G\-\_\-\-N\-A\-M\-E}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{T\-A\-G\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}final String org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-T\-A\-G\-\_\-\-N\-A\-M\-E = O\-B\-O\-Vocabulary.\-S\-Y\-N\-O\-N\-Y\-M.\-to\-String()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a99f03f6aec50622d32483163a0c23bff}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a8969c4a717a326d828b467c0a3d08365}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P@{V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P}}
+\index{V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P@{V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-V\-A\-L\-U\-E\-\_\-\-G\-R\-O\-U\-P = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a8969c4a717a326d828b467c0a3d08365}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a98c2b94399a8dbd8f6fa68ea0d3d7d31}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!value\-Pattern@{value\-Pattern}}
+\index{value\-Pattern@{value\-Pattern}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{value\-Pattern}]{\setlength{\rightskip}{0pt plus 5cm}final Pattern org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-value\-Pattern = Pattern.\-compile(\char`\"{}\textbackslash{}\char`\"{}(\mbox{[}$^\wedge$\textbackslash{}\char`\"{}\mbox{]}$\ast$)\textbackslash{}\char`\"{}\textbackslash{}\textbackslash{}s$\ast$(\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}s\mbox{]}$\ast$)\textbackslash{}\textbackslash{}s$\ast$(\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}\textbackslash{}s\mbox{]}+)?\textbackslash{}\textbackslash{}s$\ast$\textbackslash{}\textbackslash{}\mbox{[}(\mbox{[}$^\wedge$\textbackslash{}\textbackslash{}\mbox{]}\mbox{]}$\ast$)\textbackslash{}\textbackslash{}\mbox{]}\char`\"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a98c2b94399a8dbd8f6fa68ea0d3d7d31}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a8157f2a65073ab74daedb7e8ce33e3d7}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P@{X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P}}
+\index{X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P@{X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P}]{\setlength{\rightskip}{0pt plus 5cm}final int org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-X\-R\-E\-F\-\_\-\-G\-R\-O\-U\-P = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a8157f2a65073ab74daedb7e8ce33e3d7}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a57fda867a26e9336c4c52b1d08ef62bb}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}!X\-R\-E\-F\-\_\-\-I\-R\-I@{X\-R\-E\-F\-\_\-\-I\-R\-I}}
+\index{X\-R\-E\-F\-\_\-\-I\-R\-I@{X\-R\-E\-F\-\_\-\-I\-R\-I}!org::coode::owlapi::obo::parser::SynonymTagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Synonym\-Tag\-Value\-Handler}}
+\subsubsection[{X\-R\-E\-F\-\_\-\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf I\-R\-I} org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler.\-X\-R\-E\-F\-\_\-\-I\-R\-I = O\-B\-O\-Vocabulary.\-X\-R\-E\-F.\-get\-I\-R\-I()\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a57fda867a26e9336c4c52b1d08ef62bb}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/owlapi/obo/parser/\hyperlink{_synonym_tag_value_handler_8java}{Synonym\-Tag\-Value\-Handler.\-java}\end{DoxyCompactItemize}

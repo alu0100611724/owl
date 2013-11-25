@@ -1,0 +1,283 @@
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl}{\section{uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl Class Reference}
+\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl}\index{uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl@{uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl}}
+}
+Inheritance diagram for uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_1_1_axiom_map_builder}{Axiom\-Map\-Builder}
+\item 
+class {\bfseries O\-W\-L\-Axiom\-Tree\-Comparator}
+\item 
+class {\bfseries Properties\-First\-Comparator}
+\item 
+class {\bfseries Seed\-Extractor}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_adac72703ad272f4c8c35333705f56a5d}{Explanation\-Orderer\-Impl} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} m)
+\item 
+\hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_tree}{Explanation\-Tree} \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a4d7b8ad9c2b34faac784bbb8f819736a}{get\-Ordered\-Explanation} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} entailment, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ axioms)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_af8e0686cae19c16eaaf119cf9c85f6a5}{get\-Axioms\-For\-L\-H\-S} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} lhs)
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a84a9958055156b50488b2542c92e708c}{index\-Axioms\-By\-R\-H\-S\-Entities} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object}{O\-W\-L\-Object} rhs, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} axiom)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a65449cf9dbff0d86f45dfcc72c409244}{reset} ()
+\item 
+List$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a27e6684b0b2fb16a50dafde170ffaae5}{get\-R\-H\-S\-Entities\-Sorted} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} ax)
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a56b1472f20c71931db552edff07a7387}{insert\-Children} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} entity, \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_tree}{Explanation\-Tree} tree)
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a65c792e55d9bacb7de7f8001e585eeda}{sort\-Children\-Axioms} (\hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_tree}{Explanation\-Tree} tree)
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ac72fec2515922ba7afa8faec13dac488}{build\-Indices} ()
+\item 
+Collection$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a95a4f0eb942775c68cb7972586c4fe97}{get\-R\-H\-S\-Entities} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} axiom)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static$<$ K, E $>$ Set$<$ E $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a4b2724a444e40608b123da2d7cb2392b}{get\-Indexed\-Set} (K obj, Map$<$ K, Set$<$ E $>$$>$ map, boolean add\-If\-Empty)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_adbfa1214554d64e8f15f4f82a0256da8}{current\-Explanation}
+\item 
+final Map$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity}, Set\\*
+$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a16560c38d78b404226e611c5c7dd4af8}{lhs2\-Axiom\-Map}
+\item 
+final Map$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom}, Set\\*
+$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} $>$ $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a7b9a6f68da33f506bb5da7120bbc7353}{entities\-By\-Axiom\-R\-H\-S}
+\item 
+final Seed\-Extractor \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_abffbe10be5964218fa0dac101204bcc1}{seed\-Extractor}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a0c69e2de5c5df818ff2e396a99d2b74b}{man}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a10de710fc8b35006e8580abb530553a4}{ont}
+\item 
+final Map$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object}{O\-W\-L\-Object}, Set\\*
+$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa781437e2d364dac770eadbf3a4d3b21}{mapped\-Axioms}
+\item 
+final Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa4c9b2b9fcb307b4aca00f16e71ddd2b}{consumed\-Axioms}
+\item 
+final Set$<$ Axiom\-Type$<$?$>$ $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ae1c41bfcdb01a5d2e48adec3612c2a4e}{pass\-Types}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa2fb21f559b3871a5a647a798abc3771}{current\-Source}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a97d9298f9ac6dd4692c71d389c5fd3ac}{current\-Target}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static Comparator$<$ Tree\\*
+$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ade5175f3f478af965367a825d2688313}{comparator} = new O\-W\-L\-Axiom\-Tree\-Comparator()
+\item 
+static Atomic\-Long \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a14a20bc03b84b7431e38e518c862b92f}{randomstart} = new Atomic\-Long(System.\-current\-Time\-Millis())
+\item 
+static Properties\-First\-Comparator \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_af6203b221e1aadc6bbf0c31abb1d4d51}{properties\-First\-Comparator} = new Properties\-First\-Comparator()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 11-\/\-Jan-\/2008\par
+ \par
+ 
+
+Provides ordering and indenting of explanations based on various ordering heuristics. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_adac72703ad272f4c8c35333705f56a5d}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!Explanation\-Orderer\-Impl@{Explanation\-Orderer\-Impl}}
+\index{Explanation\-Orderer\-Impl@{Explanation\-Orderer\-Impl}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{Explanation\-Orderer\-Impl}]{\setlength{\rightskip}{0pt plus 5cm}uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-Explanation\-Orderer\-Impl (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology\-Manager}}]{m}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_adac72703ad272f4c8c35333705f56a5d}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the manager to use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ac72fec2515922ba7afa8faec13dac488}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!build\-Indices@{build\-Indices}}
+\index{build\-Indices@{build\-Indices}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{build\-Indices}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-build\-Indices (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ac72fec2515922ba7afa8faec13dac488}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_af8e0686cae19c16eaaf119cf9c85f6a5}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!get\-Axioms\-For\-L\-H\-S@{get\-Axioms\-For\-L\-H\-S}}
+\index{get\-Axioms\-For\-L\-H\-S@{get\-Axioms\-For\-L\-H\-S}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{get\-Axioms\-For\-L\-H\-S}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Axiom}$>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-get\-Axioms\-For\-L\-H\-S (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Entity}}]{lhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_af8e0686cae19c16eaaf119cf9c85f6a5}
+Gets axioms that have a L\-H\-S corresponding to the specified entity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & The entity that occurs on the left hand side of the axiom. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A set of axioms that have the specified entity as their left hand side. 
+\end{DoxyReturn}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a4b2724a444e40608b123da2d7cb2392b}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!get\-Indexed\-Set@{get\-Indexed\-Set}}
+\index{get\-Indexed\-Set@{get\-Indexed\-Set}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{get\-Indexed\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$K,E$>$ Set$<$E$>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-get\-Indexed\-Set (
+\begin{DoxyParamCaption}
+\item[{K}]{obj, }
+\item[{Map$<$ K, Set$<$ E $>$$>$}]{map, }
+\item[{boolean}]{add\-If\-Empty}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a4b2724a444e40608b123da2d7cb2392b}
+A utility method that obtains a set of axioms that are indexed by some object
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & The object that indexed the axioms \\
+\hline
+{\em map} & The map that provides the index structure \\
+\hline
+{\em add\-If\-Empty} & A flag that indicates whether an empty set of axiom should be added to the index if there is not value present for the indexing object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A set of axioms (may be empty) 
+\end{DoxyReturn}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a4d7b8ad9c2b34faac784bbb8f819736a}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!get\-Ordered\-Explanation@{get\-Ordered\-Explanation}}
+\index{get\-Ordered\-Explanation@{get\-Ordered\-Explanation}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{get\-Ordered\-Explanation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Explanation\-Tree} uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-get\-Ordered\-Explanation (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Axiom}}]{entailment, }
+\item[{Set$<$ {\bf O\-W\-L\-Axiom} $>$}]{axioms}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a4d7b8ad9c2b34faac784bbb8f819736a}
+Gets an ordered (and possibly indented) explanation. The orderer really provides some kind of \char`\"{}presentation\char`\"{} layer to make an explanation easier to read. 
+\begin{DoxyParams}{Parameters}
+{\em entailment} & The axiom that represents the entailment that the explanation being ordered is a justification for. \\
+\hline
+{\em axioms} & The axioms that constitute the unordered explanation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An order explanation. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_a66b1b088219ba3434a5bd66a193ead40}{uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer}.
+
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a95a4f0eb942775c68cb7972586c4fe97}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!get\-R\-H\-S\-Entities@{get\-R\-H\-S\-Entities}}
+\index{get\-R\-H\-S\-Entities@{get\-R\-H\-S\-Entities}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{get\-R\-H\-S\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}Collection$<${\bf O\-W\-L\-Entity}$>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-get\-R\-H\-S\-Entities (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Axiom}}]{axiom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a95a4f0eb942775c68cb7972586c4fe97}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a27e6684b0b2fb16a50dafde170ffaae5}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!get\-R\-H\-S\-Entities\-Sorted@{get\-R\-H\-S\-Entities\-Sorted}}
+\index{get\-R\-H\-S\-Entities\-Sorted@{get\-R\-H\-S\-Entities\-Sorted}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{get\-R\-H\-S\-Entities\-Sorted}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf O\-W\-L\-Entity}$>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-get\-R\-H\-S\-Entities\-Sorted (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Axiom}}]{ax}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a27e6684b0b2fb16a50dafde170ffaae5}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a84a9958055156b50488b2542c92e708c}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!index\-Axioms\-By\-R\-H\-S\-Entities@{index\-Axioms\-By\-R\-H\-S\-Entities}}
+\index{index\-Axioms\-By\-R\-H\-S\-Entities@{index\-Axioms\-By\-R\-H\-S\-Entities}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{index\-Axioms\-By\-R\-H\-S\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-index\-Axioms\-By\-R\-H\-S\-Entities (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Object}}]{rhs, }
+\item[{{\bf O\-W\-L\-Axiom}}]{axiom}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a84a9958055156b50488b2542c92e708c}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a56b1472f20c71931db552edff07a7387}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!insert\-Children@{insert\-Children}}
+\index{insert\-Children@{insert\-Children}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{insert\-Children}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-insert\-Children (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Entity}}]{entity, }
+\item[{{\bf Explanation\-Tree}}]{tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a56b1472f20c71931db552edff07a7387}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a65449cf9dbff0d86f45dfcc72c409244}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!reset@{reset}}
+\index{reset@{reset}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a65449cf9dbff0d86f45dfcc72c409244}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a65c792e55d9bacb7de7f8001e585eeda}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!sort\-Children\-Axioms@{sort\-Children\-Axioms}}
+\index{sort\-Children\-Axioms@{sort\-Children\-Axioms}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{sort\-Children\-Axioms}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-sort\-Children\-Axioms (
+\begin{DoxyParamCaption}
+\item[{{\bf Explanation\-Tree}}]{tree}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a65c792e55d9bacb7de7f8001e585eeda}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ade5175f3f478af965367a825d2688313}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!comparator@{comparator}}
+\index{comparator@{comparator}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{comparator}]{\setlength{\rightskip}{0pt plus 5cm}Comparator$<$Tree$<${\bf O\-W\-L\-Axiom}$>$ $>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-comparator = new O\-W\-L\-Axiom\-Tree\-Comparator()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ade5175f3f478af965367a825d2688313}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa4c9b2b9fcb307b4aca00f16e71ddd2b}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!consumed\-Axioms@{consumed\-Axioms}}
+\index{consumed\-Axioms@{consumed\-Axioms}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{consumed\-Axioms}]{\setlength{\rightskip}{0pt plus 5cm}final Set$<${\bf O\-W\-L\-Axiom}$>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-consumed\-Axioms\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa4c9b2b9fcb307b4aca00f16e71ddd2b}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_adbfa1214554d64e8f15f4f82a0256da8}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!current\-Explanation@{current\-Explanation}}
+\index{current\-Explanation@{current\-Explanation}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{current\-Explanation}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Axiom}$>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-current\-Explanation\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_adbfa1214554d64e8f15f4f82a0256da8}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa2fb21f559b3871a5a647a798abc3771}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!current\-Source@{current\-Source}}
+\index{current\-Source@{current\-Source}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{current\-Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Entity} uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-current\-Source\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa2fb21f559b3871a5a647a798abc3771}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a97d9298f9ac6dd4692c71d389c5fd3ac}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!current\-Target@{current\-Target}}
+\index{current\-Target@{current\-Target}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{current\-Target}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Entity} uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-current\-Target\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a97d9298f9ac6dd4692c71d389c5fd3ac}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a7b9a6f68da33f506bb5da7120bbc7353}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!entities\-By\-Axiom\-R\-H\-S@{entities\-By\-Axiom\-R\-H\-S}}
+\index{entities\-By\-Axiom\-R\-H\-S@{entities\-By\-Axiom\-R\-H\-S}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{entities\-By\-Axiom\-R\-H\-S}]{\setlength{\rightskip}{0pt plus 5cm}final Map$<${\bf O\-W\-L\-Axiom}, Set$<${\bf O\-W\-L\-Entity}$>$ $>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-entities\-By\-Axiom\-R\-H\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a7b9a6f68da33f506bb5da7120bbc7353}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a16560c38d78b404226e611c5c7dd4af8}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!lhs2\-Axiom\-Map@{lhs2\-Axiom\-Map}}
+\index{lhs2\-Axiom\-Map@{lhs2\-Axiom\-Map}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{lhs2\-Axiom\-Map}]{\setlength{\rightskip}{0pt plus 5cm}final Map$<${\bf O\-W\-L\-Entity}, Set$<${\bf O\-W\-L\-Axiom}$>$ $>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-lhs2\-Axiom\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a16560c38d78b404226e611c5c7dd4af8}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a0c69e2de5c5df818ff2e396a99d2b74b}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!man@{man}}
+\index{man@{man}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{man}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Ontology\-Manager} uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-man\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a0c69e2de5c5df818ff2e396a99d2b74b}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa781437e2d364dac770eadbf3a4d3b21}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!mapped\-Axioms@{mapped\-Axioms}}
+\index{mapped\-Axioms@{mapped\-Axioms}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{mapped\-Axioms}]{\setlength{\rightskip}{0pt plus 5cm}final Map$<${\bf O\-W\-L\-Object}, Set$<${\bf O\-W\-L\-Axiom}$>$ $>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-mapped\-Axioms\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_aa781437e2d364dac770eadbf3a4d3b21}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a10de710fc8b35006e8580abb530553a4}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!ont@{ont}}
+\index{ont@{ont}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{ont}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology} uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-ont\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a10de710fc8b35006e8580abb530553a4}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ae1c41bfcdb01a5d2e48adec3612c2a4e}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!pass\-Types@{pass\-Types}}
+\index{pass\-Types@{pass\-Types}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{pass\-Types}]{\setlength{\rightskip}{0pt plus 5cm}final Set$<$Axiom\-Type$<$?$>$ $>$ uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-pass\-Types\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_ae1c41bfcdb01a5d2e48adec3612c2a4e}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_af6203b221e1aadc6bbf0c31abb1d4d51}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!properties\-First\-Comparator@{properties\-First\-Comparator}}
+\index{properties\-First\-Comparator@{properties\-First\-Comparator}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{properties\-First\-Comparator}]{\setlength{\rightskip}{0pt plus 5cm}Properties\-First\-Comparator uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-properties\-First\-Comparator = new Properties\-First\-Comparator()\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_af6203b221e1aadc6bbf0c31abb1d4d51}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a14a20bc03b84b7431e38e518c862b92f}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!randomstart@{randomstart}}
+\index{randomstart@{randomstart}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{randomstart}]{\setlength{\rightskip}{0pt plus 5cm}Atomic\-Long uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-randomstart = new Atomic\-Long(System.\-current\-Time\-Millis())\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_a14a20bc03b84b7431e38e518c862b92f}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_abffbe10be5964218fa0dac101204bcc1}{\index{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}!seed\-Extractor@{seed\-Extractor}}
+\index{seed\-Extractor@{seed\-Extractor}!uk::ac::manchester::cs::owl::explanation::ordering::ExplanationOrdererImpl@{uk\-::ac\-::manchester\-::cs\-::owl\-::explanation\-::ordering\-::\-Explanation\-Orderer\-Impl}}
+\subsubsection[{seed\-Extractor}]{\setlength{\rightskip}{0pt plus 5cm}final Seed\-Extractor uk.\-ac.\-manchester.\-cs.\-owl.\-explanation.\-ordering.\-Explanation\-Orderer\-Impl.\-seed\-Extractor\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1explanation_1_1ordering_1_1_explanation_orderer_impl_abffbe10be5964218fa0dac101204bcc1}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/uk/ac/manchester/cs/owl/explanation/ordering/\hyperlink{_explanation_orderer_impl_8java}{Explanation\-Orderer\-Impl.\-java}\end{DoxyCompactItemize}

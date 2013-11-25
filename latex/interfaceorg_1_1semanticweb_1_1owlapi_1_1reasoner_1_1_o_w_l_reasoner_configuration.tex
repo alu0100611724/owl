@@ -1,0 +1,105 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration@{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_reasoner_progress_monitor}{Reasoner\-Progress\-Monitor} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a9d398599041c110b704b810fe05e3a10}{get\-Progress\-Monitor} ()
+\item 
+long \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_abe360b719e310b935dd1dcb8fb6b5869}{get\-Time\-Out} ()
+\item 
+\hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_fresh_entity_policy}{Fresh\-Entity\-Policy} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a46c2caa3b80be560650ec6b787f753c7}{get\-Fresh\-Entity\-Policy} ()
+\item 
+\hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy}{Individual\-Node\-Set\-Policy} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a210902b91658a84a04d9bc616f13c12a}{get\-Individual\-Node\-Set\-Policy} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Information Management Group\par
+ Date\-: 21-\/\-Jan-\/2009 
+
+An \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration}{O\-W\-L\-Reasoner\-Configuration} can be used to customise the setup of a reasoner at reasoner creation time via an \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory}. Specific reasoners may define their own configuration objects with configuration options particular to the reasoner. There are also a set of general options defined by this configuration object. 
+
+Note that once a reasoner has been created, changing fields (via setter methods or directly) on the configuration object will have no effect.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_factory}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Factory} 
+
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_simple_configuration}{org.\-semanticweb.\-owlapi.\-reasoner.\-Simple\-Configuration} 
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a46c2caa3b80be560650ec6b787f753c7}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}!get\-Fresh\-Entity\-Policy@{get\-Fresh\-Entity\-Policy}}
+\index{get\-Fresh\-Entity\-Policy@{get\-Fresh\-Entity\-Policy}!org::semanticweb::owlapi::reasoner::OWLReasonerConfiguration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}}
+\subsubsection[{get\-Fresh\-Entity\-Policy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fresh\-Entity\-Policy} org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration.\-get\-Fresh\-Entity\-Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a46c2caa3b80be560650ec6b787f753c7}
+Gets the fresh entity policy that should be used. By default this is set to \hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_fresh_entity_policy_a8f3d06d4ac09dbdb0e9d8da43e06cfc5}{Fresh\-Entity\-Policy\#\-A\-L\-L\-O\-W}. \begin{DoxyReturn}{Returns}
+The fresh entity policy. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_simple_configuration_a9a26727cbc0c9b64b2c0f4332eed085f}{org.\-semanticweb.\-owlapi.\-reasoner.\-Simple\-Configuration}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a210902b91658a84a04d9bc616f13c12a}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}!get\-Individual\-Node\-Set\-Policy@{get\-Individual\-Node\-Set\-Policy}}
+\index{get\-Individual\-Node\-Set\-Policy@{get\-Individual\-Node\-Set\-Policy}!org::semanticweb::owlapi::reasoner::OWLReasonerConfiguration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}}
+\subsubsection[{get\-Individual\-Node\-Set\-Policy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Individual\-Node\-Set\-Policy} org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration.\-get\-Individual\-Node\-Set\-Policy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a210902b91658a84a04d9bc616f13c12a}
+Gets the \hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy}{org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy} which determines how {\ttfamily Node\-Set}s of named individuals are returned from the reasoner. \begin{DoxyReturn}{Returns}
+The {\ttfamily \hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy}{Individual\-Node\-Set\-Policy}} that should be used. By default the policy is \hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_a1fbf26b542eea4dd37010729986bce6c}{org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy\#\-B\-Y\-\_\-\-N\-A\-M\-E} i.\-e. by default individuals that are the same as each other are not grouped into the same node within a node set. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_simple_configuration_ab8f5cd056e81c29ba1eb76f7ea4bc5cf}{org.\-semanticweb.\-owlapi.\-reasoner.\-Simple\-Configuration}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a9d398599041c110b704b810fe05e3a10}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}!get\-Progress\-Monitor@{get\-Progress\-Monitor}}
+\index{get\-Progress\-Monitor@{get\-Progress\-Monitor}!org::semanticweb::owlapi::reasoner::OWLReasonerConfiguration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}}
+\subsubsection[{get\-Progress\-Monitor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Reasoner\-Progress\-Monitor} org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration.\-get\-Progress\-Monitor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_a9d398599041c110b704b810fe05e3a10}
+Gets a progress monitor that the reasoner may update with information about the progress of its reasoning process. \begin{DoxyReturn}{Returns}
+A progress monitor. By default this returns \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor}{Null\-Reasoner\-Progress\-Monitor} 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_simple_configuration_a9d5f3c595dd226c342ea5a07cf5d2203}{org.\-semanticweb.\-owlapi.\-reasoner.\-Simple\-Configuration}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_abe360b719e310b935dd1dcb8fb6b5869}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}!get\-Time\-Out@{get\-Time\-Out}}
+\index{get\-Time\-Out@{get\-Time\-Out}!org::semanticweb::owlapi::reasoner::OWLReasonerConfiguration@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-O\-W\-L\-Reasoner\-Configuration}}
+\subsubsection[{get\-Time\-Out}]{\setlength{\rightskip}{0pt plus 5cm}long org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\-Configuration.\-get\-Time\-Out (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_configuration_abe360b719e310b935dd1dcb8fb6b5869}
+Gets the timeout in milliseconds for basic single reasoner operations (satisfiability check time out). If the value is equal to \hyperlink{}{Long\#\-M\-A\-X\-\_\-\-V\-A\-L\-U\-E} then this means that the reasoner should never time out. 
+
+The reasoner will monitor the elapsed time during a satisfiability check (attempt to build a model for example) and if the elapsed time exceeds the timeout then it will abort the test as soon as possible and terminate all reasoning. A \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_time_out_exception}{org.\-semanticweb.\-owlapi.\-reasoner.\-Time\-Out\-Exception} will be thrown in the thread that invoked the last reasoner operation. 
+
+Note that this is not a timeout for method calls such as \char`\"{}get\-Sub\-Classes\char`\"{}, which may involve many satisfiability (or other basic reasoning task) checks, the sum of which may well exceed the timeout. \begin{DoxyReturn}{Returns}
+The time out in milliseconds. By default this is set to the value of \hyperlink{}{Long\#\-M\-A\-X\-\_\-\-V\-A\-L\-U\-E}, which means the reasoner S\-H\-O\-U\-L\-D N\-O\-T timeout. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_simple_configuration_afc6a806b0bec095a1dfd3771ad14509b}{org.\-semanticweb.\-owlapi.\-reasoner.\-Simple\-Configuration}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/reasoner/\hyperlink{_o_w_l_reasoner_configuration_8java}{O\-W\-L\-Reasoner\-Configuration.\-java}\end{DoxyCompactItemize}

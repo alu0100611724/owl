@@ -1,0 +1,97 @@
+\hypertarget{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler}{\section{org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler Interface Reference}
+\label{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler}\index{org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler@{org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler}}
+}
+Inheritance diagram for org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_a052d43d1b97011c56a92c068565a7feb}{get\-Tag\-Name} ()
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_ada360977867550649d701384c224a601}{handle} (String current\-Id, String value, String qualifier\-Block, String comment)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 10-\/\-Jan-\/2007\par
+\par
+ 
+
+Concrete implementations of this interface allow specific behaviour for processing specific tag value pairs in an O\-B\-O file to be specified. 
+
+\paragraph*{Tag-\/\-Value Pairs (From the O\-B\-O 1.\-4 Guide)}
+
+Tag-\/value pairs consist of a tag name, an unescaped colon, the tag value, and a newline\-: 
+
+$<$tag$>$\-: $<$value$>$ \{$<$trailing modifiers$>$\} ! $<$comment$>$ The tag name is always a string. The value is always a string, but the value string may require special parsing depending on the tag with which it is associated. 
+
+In general, tag-\/value pairs occur on a single line. Multi-\/line values are possible using escape characters (see escape characters). 
+
+In general, each stanza type expects a particular set of pre-\/defined tags. However, a stanza may contain any tag. If a parser does not recognize a tag name for a particular stanza, no error will be generated. This allows new experimental tags to be added without breaking existing parsers. See handling unrecognized tags for specifics. 
+
+\paragraph*{Trailing \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_modifiers}{Modifiers}}
+
+Any tag-\/value pair may be followed by a trailing modifier. Trailing modifiers have been introduced into the O\-B\-O 1.\-2 Specification to allow the graceful addition of new features to existing tags. 
+
+A trailing modifier has the following structure\-: 
+
+\{$<$name$>$=$<$value$>$, $<$name=value$>$, $<$name=value$>$\} That is, trailing modifiers are lists of name-\/value pairs. 
+
+Parser implementations may choose to decode and/or round-\/trip these trailing modifiers. However, this is not required. A parser may choose to ignore or strip away trailing modifiers. 
+
+For this reason, trailing modifiers should only include information that is optional or experimental. 
+
+Trailing modifiers may also occur within dbxref definitions (see dbxref formatting). 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_a052d43d1b97011c56a92c068565a7feb}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Tag\-Value\-Handler}!get\-Tag\-Name@{get\-Tag\-Name}}
+\index{get\-Tag\-Name@{get\-Tag\-Name}!org::coode::owlapi::obo::parser::TagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Tag\-Value\-Handler}}
+\subsubsection[{get\-Tag\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler.\-get\-Tag\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_a052d43d1b97011c56a92c068565a7feb}
+Gets the name of the tag handled by this tag value handler \begin{DoxyReturn}{Returns}
+The name of the tag 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_abstract_tag_value_handler_ab2cb02762280ec948aecd850f13b91d5}{org.\-coode.\-owlapi.\-obo.\-parser.\-Abstract\-Tag\-Value\-Handler}.
+
+\hypertarget{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_ada360977867550649d701384c224a601}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Tag\-Value\-Handler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Tag\-Value\-Handler}!handle@{handle}}
+\index{handle@{handle}!org::coode::owlapi::obo::parser::TagValueHandler@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Tag\-Value\-Handler}}
+\subsubsection[{handle}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-obo.\-parser.\-Tag\-Value\-Handler.\-handle (
+\begin{DoxyParamCaption}
+\item[{String}]{current\-Id, }
+\item[{String}]{value, }
+\item[{String}]{qualifier\-Block, }
+\item[{String}]{comment}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_ada360977867550649d701384c224a601}
+Handles a tag. This is called by the \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_o_b_o_consumer}{O\-B\-O\-Consumer} during parsing to handle tags that match the value returned by the \hyperlink{interfaceorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_tag_value_handler_a052d43d1b97011c56a92c068565a7feb}{get\-Tag\-Name()} method. 
+\begin{DoxyParams}{Parameters}
+{\em current\-Id} & The id of the current frame. \\
+\hline
+{\em value} & The value of the tag \\
+\hline
+{\em qualifier\-Block} & \\
+\hline
+{\em comment} & The hidden comment. This is made up of any characters between ! and the end of line. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_default_namespace_tag_value_handler_a34d1ff79b90a8343c87b7fbf14fe0c8d}{org.\-coode.\-owlapi.\-obo.\-parser.\-Default\-Namespace\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_tag_value_handler_a739d01f16460d14388d1826d45a20a43}{org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_def_tag_value_handler_a1954c24976b5fcd2a39017c8e08c3fbf}{org.\-coode.\-owlapi.\-obo.\-parser.\-Def\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_synonym_type_def_tag_handler_a4b90032bcc19a3eca4d4576be1b30501}{org.\-coode.\-owlapi.\-obo.\-parser.\-Synonym\-Type\-Def\-Tag\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_relationship_tag_value_handler_ae022ccb8d93671830a4c88935c8a425c}{org.\-coode.\-owlapi.\-obo.\-parser.\-Relationship\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_tag_value_handler_abc0887be1addaf88d917ee910ce44d68}{org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_part_of_tag_value_handler_a492b4816fd23a3c3635e6c4d55f093f2}{org.\-coode.\-owlapi.\-obo.\-parser.\-Part\-Of\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_transitive_over_handler_a7e61ef4998f2bf7e57248efb2301b067}{org.\-coode.\-owlapi.\-obo.\-parser.\-Transitive\-Over\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_name_tag_value_handler_ac9857d956de40fa84f5fbeb874565940}{org.\-coode.\-owlapi.\-obo.\-parser.\-Name\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_asymmetric_handler_a4ebf954900049e045631f12b6a6fa433}{org.\-coode.\-owlapi.\-obo.\-parser.\-Asymmetric\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_is_obsolete_tag_value_handler_a43fb8e7e217bff135ab0ad76d21244c4}{org.\-coode.\-owlapi.\-obo.\-parser.\-Is\-Obsolete\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_disjoint_from_handler_a8192541420ccc29eec936dd827593f62}{org.\-coode.\-owlapi.\-obo.\-parser.\-Disjoint\-From\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_domain_handler_aa485544c0f560f586c0652aed085e15e}{org.\-coode.\-owlapi.\-obo.\-parser.\-Domain\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_reflexive_handler_a7237018242f888e3695d75aa829d6111}{org.\-coode.\-owlapi.\-obo.\-parser.\-Reflexive\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_symmetric_tag_value_handler_a1ece03d5ac2c402ef7a279d34e593338}{org.\-coode.\-owlapi.\-obo.\-parser.\-Symmetric\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_transitive_tag_value_handler_ace95c091ba188a4a79622edc48ff0433}{org.\-coode.\-owlapi.\-obo.\-parser.\-Transitive\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_inverse_handler_a71cbb89660a62d5fc87d2c08cdfb5382}{org.\-coode.\-owlapi.\-obo.\-parser.\-Inverse\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_x_ref_tag_handler_a3c14e926789eb2b68371f0f01e082840}{org.\-coode.\-owlapi.\-obo.\-parser.\-X\-Ref\-Tag\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_tag_value_handler_ae37f8af373b1ab11738e9858086868ca}{org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_is_a_tag_value_handler_a49b83e67e2ce13a4952af942a9227f10}{org.\-coode.\-owlapi.\-obo.\-parser.\-Is\-A\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_alt_id_tag_value_handler_a7dcfae6b5a38e4b47dbdfecb536bb99f}{org.\-coode.\-owlapi.\-obo.\-parser.\-Alt\-Id\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_intersection_of_handler_a06a45f946c737e3483deb830721e4644}{org.\-coode.\-owlapi.\-obo.\-parser.\-Intersection\-Of\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_ontology_tag_value_handler_a9e3180ae94d3d4e4cac47596ece91e0c}{org.\-coode.\-owlapi.\-obo.\-parser.\-Ontology\-Tag\-Value\-Handler}, \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_union_of_handler_a7bc4c35d4059d86abaed2adee06fe5d1}{org.\-coode.\-owlapi.\-obo.\-parser.\-Union\-Of\-Handler}, and \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_data_version_tag_value_handler_a055fd84037ae2b82afca6397c0fd719a}{org.\-coode.\-owlapi.\-obo.\-parser.\-Data\-Version\-Tag\-Value\-Handler}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/owlapi/obo/parser/\hyperlink{_tag_value_handler_8java}{Tag\-Value\-Handler.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,194 @@
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager}{\section{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager Class Reference}
+\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager}\index{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager@{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager}}
+}
+Inheritance diagram for org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ab5e0f228da5825cf527496657fb8598d}{X\-M\-L\-Writer\-Namespace\-Manager} (String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a25840a2b26dff4709e9406e09809c006}{default\-Namespace})
+\item 
+void \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a9334edb298a313772d3538c0929d8b0f}{add\-Well\-Known\-Namespace} (String prefix, String namespace)
+\item 
+void \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a8be4144f9d23484e8590b25c0f3523fd}{set\-Prefix} (String prefix, String namespace)
+\item 
+String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_aeb72290106c0c465d35a595a68953d89}{get\-Prefix\-For\-Namespace} (String namespace)
+\item 
+void \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a676c5a44d6b423f4796642dfd698ebb3}{set\-Default\-Namespace} (String namespace)
+\item 
+String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ad2dacccd3f64648bd8fbb5a3fb3c638b}{get\-Namespace\-For\-Prefix} (String prefix)
+\item 
+String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_abbd6067bf53651befe1b5d1454bc4854}{get\-Q\-Name} (String name)
+\item 
+void \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a14c5ec0a0a147bc43c4e49bdcf8f3e76}{create\-Prefix\-For\-Namespace} (String namespace)
+\item 
+String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_adae9fc4370cbb4fae39b355f4b908c85}{get\-Default\-Namespace} ()
+\item 
+Set$<$ String $>$ \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a51baeabee191a80f9c0a7b674fe70d26}{get\-Prefixes} ()
+\item 
+Set$<$ String $>$ \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a293f43c730ff2e615323c76d69e5bb24}{get\-Namespaces} ()
+\item 
+Map$<$ String, String $>$ \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ab9751322b567dc60707ee6e916b085be}{get\-Prefix\-Namespace\-Map} ()
+\item 
+String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a825e80aae44062ee91041c6965ffb714}{get\-Default\-Prefix} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ String, String $>$ \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a4bbd74743172ebf80872d914c3542bcd}{prefix\-Namespace\-Map}
+\item 
+Map$<$ String, String $>$ \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ad64c1116e21ba5a5b953194393b896ff}{namespace\-Prefix\-Map}
+\item 
+Map$<$ String, String $>$ \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_aef8ff8e61dfde90b957f474c38fe0b24}{wellknown\-Namespaces}
+\item 
+String \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a25840a2b26dff4709e9406e09809c006}{default\-Namespace}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Medical Informatics Group\par
+ Date\-: 30-\/\-May-\/2006\par
+\par
+ 
+
+\href{mailto:matthew.horridge@cs.man.ac.uk}{\tt matthew.\-horridge@cs.\-man.\-ac.\-uk}\par
+ www.\-cs.\-man.\-ac.\-uk/$\sim$horridgm\par
+\par
+ Developed as part of the C\-O-\/\-O\-D\-E project \href{http://www.co-ode.org}{\tt http\-://www.\-co-\/ode.\-org} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ab5e0f228da5825cf527496657fb8598d}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!X\-M\-L\-Writer\-Namespace\-Manager@{X\-M\-L\-Writer\-Namespace\-Manager}}
+\index{X\-M\-L\-Writer\-Namespace\-Manager@{X\-M\-L\-Writer\-Namespace\-Manager}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{X\-M\-L\-Writer\-Namespace\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-X\-M\-L\-Writer\-Namespace\-Manager (
+\begin{DoxyParamCaption}
+\item[{String}]{default\-Namespace}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ab5e0f228da5825cf527496657fb8598d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a9334edb298a313772d3538c0929d8b0f}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!add\-Well\-Known\-Namespace@{add\-Well\-Known\-Namespace}}
+\index{add\-Well\-Known\-Namespace@{add\-Well\-Known\-Namespace}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{add\-Well\-Known\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-add\-Well\-Known\-Namespace (
+\begin{DoxyParamCaption}
+\item[{String}]{prefix, }
+\item[{String}]{namespace}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a9334edb298a313772d3538c0929d8b0f}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a14c5ec0a0a147bc43c4e49bdcf8f3e76}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!create\-Prefix\-For\-Namespace@{create\-Prefix\-For\-Namespace}}
+\index{create\-Prefix\-For\-Namespace@{create\-Prefix\-For\-Namespace}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{create\-Prefix\-For\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-create\-Prefix\-For\-Namespace (
+\begin{DoxyParamCaption}
+\item[{String}]{namespace}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a14c5ec0a0a147bc43c4e49bdcf8f3e76}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_adae9fc4370cbb4fae39b355f4b908c85}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Default\-Namespace@{get\-Default\-Namespace}}
+\index{get\-Default\-Namespace@{get\-Default\-Namespace}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Default\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Default\-Namespace (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_adae9fc4370cbb4fae39b355f4b908c85}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a825e80aae44062ee91041c6965ffb714}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Default\-Prefix@{get\-Default\-Prefix}}
+\index{get\-Default\-Prefix@{get\-Default\-Prefix}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Default\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Default\-Prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a825e80aae44062ee91041c6965ffb714}
+Search for a prefix other than \char`\"{}\char`\"{} for the default namespace \begin{DoxyReturn}{Returns}
+the first prefix found for the default namespace that is not \char`\"{}\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ad2dacccd3f64648bd8fbb5a3fb3c638b}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Namespace\-For\-Prefix@{get\-Namespace\-For\-Prefix}}
+\index{get\-Namespace\-For\-Prefix@{get\-Namespace\-For\-Prefix}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Namespace\-For\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Namespace\-For\-Prefix (
+\begin{DoxyParamCaption}
+\item[{String}]{prefix}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ad2dacccd3f64648bd8fbb5a3fb3c638b}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a293f43c730ff2e615323c76d69e5bb24}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Namespaces@{get\-Namespaces}}
+\index{get\-Namespaces@{get\-Namespaces}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Namespaces}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$String$>$ org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Namespaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a293f43c730ff2e615323c76d69e5bb24}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a51baeabee191a80f9c0a7b674fe70d26}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Prefixes@{get\-Prefixes}}
+\index{get\-Prefixes@{get\-Prefixes}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Prefixes}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$String$>$ org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Prefixes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a51baeabee191a80f9c0a7b674fe70d26}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_aeb72290106c0c465d35a595a68953d89}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Prefix\-For\-Namespace@{get\-Prefix\-For\-Namespace}}
+\index{get\-Prefix\-For\-Namespace@{get\-Prefix\-For\-Namespace}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Prefix\-For\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Prefix\-For\-Namespace (
+\begin{DoxyParamCaption}
+\item[{String}]{namespace}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_aeb72290106c0c465d35a595a68953d89}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ab9751322b567dc60707ee6e916b085be}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Prefix\-Namespace\-Map@{get\-Prefix\-Namespace\-Map}}
+\index{get\-Prefix\-Namespace\-Map@{get\-Prefix\-Namespace\-Map}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Prefix\-Namespace\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, String$>$ org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Prefix\-Namespace\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ab9751322b567dc60707ee6e916b085be}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_abbd6067bf53651befe1b5d1454bc4854}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!get\-Q\-Name@{get\-Q\-Name}}
+\index{get\-Q\-Name@{get\-Q\-Name}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{get\-Q\-Name}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-get\-Q\-Name (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_abbd6067bf53651befe1b5d1454bc4854}
+Gets a Q\-Name for a full U\-R\-I.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name which represents the full name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Q\-Name representation or {\ttfamily null} if a Q\-Name could not be generated. 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a676c5a44d6b423f4796642dfd698ebb3}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!set\-Default\-Namespace@{set\-Default\-Namespace}}
+\index{set\-Default\-Namespace@{set\-Default\-Namespace}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{set\-Default\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-set\-Default\-Namespace (
+\begin{DoxyParamCaption}
+\item[{String}]{namespace}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a676c5a44d6b423f4796642dfd698ebb3}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a8be4144f9d23484e8590b25c0f3523fd}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!set\-Prefix@{set\-Prefix}}
+\index{set\-Prefix@{set\-Prefix}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{set\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-set\-Prefix (
+\begin{DoxyParamCaption}
+\item[{String}]{prefix, }
+\item[{String}]{namespace}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a8be4144f9d23484e8590b25c0f3523fd}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a25840a2b26dff4709e9406e09809c006}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!default\-Namespace@{default\-Namespace}}
+\index{default\-Namespace@{default\-Namespace}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{default\-Namespace}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-default\-Namespace\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a25840a2b26dff4709e9406e09809c006}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ad64c1116e21ba5a5b953194393b896ff}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!namespace\-Prefix\-Map@{namespace\-Prefix\-Map}}
+\index{namespace\-Prefix\-Map@{namespace\-Prefix\-Map}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{namespace\-Prefix\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, String$>$ org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-namespace\-Prefix\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_ad64c1116e21ba5a5b953194393b896ff}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a4bbd74743172ebf80872d914c3542bcd}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!prefix\-Namespace\-Map@{prefix\-Namespace\-Map}}
+\index{prefix\-Namespace\-Map@{prefix\-Namespace\-Map}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{prefix\-Namespace\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, String$>$ org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-prefix\-Namespace\-Map\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_a4bbd74743172ebf80872d914c3542bcd}
+\hypertarget{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_aef8ff8e61dfde90b957f474c38fe0b24}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}!wellknown\-Namespaces@{wellknown\-Namespaces}}
+\index{wellknown\-Namespaces@{wellknown\-Namespaces}!org::coode::xml::XMLWriterNamespaceManager@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer\-Namespace\-Manager}}
+\subsubsection[{wellknown\-Namespaces}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, String$>$ org.\-coode.\-xml.\-X\-M\-L\-Writer\-Namespace\-Manager.\-wellknown\-Namespaces\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager_aef8ff8e61dfde90b957f474c38fe0b24}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/xml/\hyperlink{_x_m_l_writer_namespace_manager_8java}{X\-M\-L\-Writer\-Namespace\-Manager.\-java}\end{DoxyCompactItemize}

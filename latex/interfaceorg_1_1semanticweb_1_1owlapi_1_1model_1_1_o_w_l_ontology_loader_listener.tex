@@ -1,0 +1,61 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener}{\section{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Ontology\-Loader\-Listener Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener}\index{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Ontology\-Loader\-Listener@{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Ontology\-Loader\-Listener}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Loading\-Event}
+\item 
+class {\bfseries Loading\-Finished\-Event}
+\item 
+class {\bfseries Loading\-Started\-Event}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener_a4c9c34b133ff3f0d49a4c3872f0feada}{started\-Loading\-Ontology} (Loading\-Started\-Event event)
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener_a33f8549b82d165f2341ec7399ffd9f5e}{finished\-Loading\-Ontology} (Loading\-Finished\-Event event)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 14-\/\-Apr-\/2008\par
+\par
+ 
+
+Receives notification of ontology loading starting and finishing from a manager. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener_a33f8549b82d165f2341ec7399ffd9f5e}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Ontology\-Loader\-Listener@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Ontology\-Loader\-Listener}!finished\-Loading\-Ontology@{finished\-Loading\-Ontology}}
+\index{finished\-Loading\-Ontology@{finished\-Loading\-Ontology}!org::semanticweb::owlapi::model::OWLOntologyLoaderListener@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Ontology\-Loader\-Listener}}
+\subsubsection[{finished\-Loading\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Ontology\-Loader\-Listener.\-finished\-Loading\-Ontology (
+\begin{DoxyParamCaption}
+\item[{Loading\-Finished\-Event}]{event}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener_a33f8549b82d165f2341ec7399ffd9f5e}
+Called when the process of loading an ontology has finished. This method will be called regardless of whether the ontology could be loaded or not -\/ it merely indicates that the process of attempting to load an ontology has finished. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The loading finished event that describes the ontology that was loaded. \\
+\hline
+\end{DoxyParams}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener_a4c9c34b133ff3f0d49a4c3872f0feada}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Ontology\-Loader\-Listener@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Ontology\-Loader\-Listener}!started\-Loading\-Ontology@{started\-Loading\-Ontology}}
+\index{started\-Loading\-Ontology@{started\-Loading\-Ontology}!org::semanticweb::owlapi::model::OWLOntologyLoaderListener@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Ontology\-Loader\-Listener}}
+\subsubsection[{started\-Loading\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Ontology\-Loader\-Listener.\-started\-Loading\-Ontology (
+\begin{DoxyParamCaption}
+\item[{Loading\-Started\-Event}]{event}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_listener_a4c9c34b133ff3f0d49a4c3872f0feada}
+Called when the process of attempting to load an ontology starts. 
+\begin{DoxyParams}{Parameters}
+{\em event} & The loading started event that describes the ontologt that is being loaded. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/model/\hyperlink{_o_w_l_ontology_loader_listener_8java}{O\-W\-L\-Ontology\-Loader\-Listener.\-java}\end{DoxyCompactItemize}

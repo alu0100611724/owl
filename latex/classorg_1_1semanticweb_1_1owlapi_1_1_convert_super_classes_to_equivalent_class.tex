@@ -1,0 +1,115 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class}{\section{org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class}\index{org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a0a5192701c91790b77b7f7c6efaef01d}{Convert\-Super\-Classes\-To\-Equivalent\-Class} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_data_factory}{O\-W\-L\-Data\-Factory} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_abstract_composite_ontology_change_aebcfd0601543ebb5f72b1fe53a5352c9}{data\-Factory}, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a38215d387a59bf28b0f25523b094542d}{cls}, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_aac704c5553f9affc3fc3711b59794b0a}{ontologies}, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a2f4bbe3d725d7857c6f52cace2e1ef29}{target\-Ontology})
+\item 
+List$<$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a5260eaab593e9e995a5ab0fe98d87de4}{get\-Changes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a4471032422851aefdd4b08aa458bfa8a}{generate\-Changes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a2f4bbe3d725d7857c6f52cace2e1ef29}{target\-Ontology}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a38215d387a59bf28b0f25523b094542d}{cls}
+\item 
+final Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_aac704c5553f9affc3fc3711b59794b0a}{ontologies}
+\item 
+List$<$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a93ab812fd4585b2d0b0e22a90a59b93d}{changes}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 23-\/\-Jul-\/2007\par
+\par
+ 
+
+This composite change will convert a primitive class to a defined class by replacing subclass axioms where the class in question is on the left hand side of the subclass axiom to an equivalent classes axiom which makes the class equivalent to the intersection of its superclasses. 
+
+More formally, given a class A, a set of ontologies S, and a target target\-Ontology T, for each target\-Ontology O in S, subclass axioms whose L\-H\-S is A will be removed from O. The superclasses from these axioms will be combined into an intersection class which will be made equivalent to A using an equivalent classes axioms E. E will be added to the target target\-Ontology T. 
+
+This composite change supports the pattern of working where a primitive class is converted to a defined class -\/ functionality which is usually found in editors. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a0a5192701c91790b77b7f7c6efaef01d}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!Convert\-Super\-Classes\-To\-Equivalent\-Class@{Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\index{Convert\-Super\-Classes\-To\-Equivalent\-Class@{Convert\-Super\-Classes\-To\-Equivalent\-Class}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{Convert\-Super\-Classes\-To\-Equivalent\-Class}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-Convert\-Super\-Classes\-To\-Equivalent\-Class (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Data\-Factory}}]{data\-Factory, }
+\item[{{\bf O\-W\-L\-Class}}]{cls, }
+\item[{Set$<$ {\bf O\-W\-L\-Ontology} $>$}]{ontologies, }
+\item[{{\bf O\-W\-L\-Ontology}}]{target\-Ontology}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a0a5192701c91790b77b7f7c6efaef01d}
+
+\begin{DoxyParams}{Parameters}
+{\em data\-Factory} & A data factory which can be used to create the appropriate axioms \\
+\hline
+{\em cls} & The class whose superclasses will be converted to an equivalent class. \\
+\hline
+{\em ontologies} & The ontologies which should be examined for subclass axioms. \\
+\hline
+{\em target\-Ontology} & The target\-Ontology which the equivalent classes axiom should be added to \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a4471032422851aefdd4b08aa458bfa8a}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!generate\-Changes@{generate\-Changes}}
+\index{generate\-Changes@{generate\-Changes}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{generate\-Changes}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-generate\-Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a4471032422851aefdd4b08aa458bfa8a}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a5260eaab593e9e995a5ab0fe98d87de4}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!get\-Changes@{get\-Changes}}
+\index{get\-Changes@{get\-Changes}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{get\-Changes}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf O\-W\-L\-Ontology\-Change}$>$ org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-get\-Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a5260eaab593e9e995a5ab0fe98d87de4}
+Gets the changes which compose this composite change. Once this method has been invoked, it will {\itshape always{\itshape  return the same list of changes. \begin{DoxyReturn}{Returns}
+A list of ontology changes. 
+\end{DoxyReturn}
+}}
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1_o_w_l_composite_ontology_change_a047d3f540ac840c0ac0285bc576636d2}{org.\-semanticweb.\-owlapi.\-O\-W\-L\-Composite\-Ontology\-Change}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a93ab812fd4585b2d0b0e22a90a59b93d}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!changes@{changes}}
+\index{changes@{changes}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{changes}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf O\-W\-L\-Ontology\-Change}$>$ org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-changes\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a93ab812fd4585b2d0b0e22a90a59b93d}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a38215d387a59bf28b0f25523b094542d}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!cls@{cls}}
+\index{cls@{cls}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{cls}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Class} org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-cls\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a38215d387a59bf28b0f25523b094542d}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_aac704c5553f9affc3fc3711b59794b0a}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!ontologies@{ontologies}}
+\index{ontologies@{ontologies}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{ontologies}]{\setlength{\rightskip}{0pt plus 5cm}final Set$<${\bf O\-W\-L\-Ontology}$>$ org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-ontologies\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_aac704c5553f9affc3fc3711b59794b0a}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a2f4bbe3d725d7857c6f52cace2e1ef29}{\index{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}!target\-Ontology@{target\-Ontology}}
+\index{target\-Ontology@{target\-Ontology}!org::semanticweb::owlapi::ConvertSuperClassesToEquivalentClass@{org\-::semanticweb\-::owlapi\-::\-Convert\-Super\-Classes\-To\-Equivalent\-Class}}
+\subsubsection[{target\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Ontology} org.\-semanticweb.\-owlapi.\-Convert\-Super\-Classes\-To\-Equivalent\-Class.\-target\-Ontology\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_convert_super_classes_to_equivalent_class_a2f4bbe3d725d7857c6f52cace2e1ef29}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/org/semanticweb/owlapi/\hyperlink{_convert_super_classes_to_equivalent_class_8java}{Convert\-Super\-Classes\-To\-Equivalent\-Class.\-java}\end{DoxyCompactItemize}

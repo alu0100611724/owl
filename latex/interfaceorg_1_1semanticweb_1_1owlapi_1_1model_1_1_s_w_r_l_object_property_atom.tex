@@ -1,0 +1,65 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom}{\section{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Object\-Property\-Atom Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom}\index{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Object\-Property\-Atom@{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Object\-Property\-Atom}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Object\-Property\-Atom\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property_expression}{O\-W\-L\-Object\-Property\-Expression} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom_a87c64f1df5b4d5bb9222da7a7102c867}{get\-Predicate} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom}{S\-W\-R\-L\-Object\-Property\-Atom} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom_a85a31b715615cb5c0cee2231d6aafa7a}{get\-Simplified} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Medical Informatics Group\par
+ Date\-: Jan 15, 2007\par
+\par
+ 
+
+\href{mailto:matthew.horridge@cs.man.ac.uk}{\tt matthew.\-horridge@cs.\-man.\-ac.\-uk}\par
+ www.\-cs.\-man.\-ac.\-uk/$\sim$horridgm\par
+\par
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom_a87c64f1df5b4d5bb9222da7a7102c867}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Object\-Property\-Atom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Object\-Property\-Atom}!get\-Predicate@{get\-Predicate}}
+\index{get\-Predicate@{get\-Predicate}!org::semanticweb::owlapi::model::SWRLObjectPropertyAtom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Object\-Property\-Atom}}
+\subsubsection[{get\-Predicate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Object\-Property\-Expression} org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Object\-Property\-Atom.\-get\-Predicate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom_a87c64f1df5b4d5bb9222da7a7102c867}
+Gets the predicate of this atom \begin{DoxyReturn}{Returns}
+The atom predicate 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_object_property_atom_impl_aa6dda3b1bd17146acf7a9c2ee8f2ec38}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Object\-Property\-Atom\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom_a85a31b715615cb5c0cee2231d6aafa7a}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Object\-Property\-Atom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Object\-Property\-Atom}!get\-Simplified@{get\-Simplified}}
+\index{get\-Simplified@{get\-Simplified}!org::semanticweb::owlapi::model::SWRLObjectPropertyAtom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Object\-Property\-Atom}}
+\subsubsection[{get\-Simplified}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-W\-R\-L\-Object\-Property\-Atom} org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Object\-Property\-Atom.\-get\-Simplified (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_object_property_atom_a85a31b715615cb5c0cee2231d6aafa7a}
+Gets a simplified form of this atom. This basically creates and returns a new atom where the predicate is not an inverse object property. If the atom is of the form P(x, y) then P(x, y) is returned. If the atom is of the form inverse\-Of(\-P)(x, y) then P(y, x) is returned. \begin{DoxyReturn}{Returns}
+This atom in a simplified form 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_object_property_atom_impl_a103348c008bb932287f54049ba48ce99}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Object\-Property\-Atom\-Impl}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/model/\hyperlink{_s_w_r_l_object_property_atom_8java}{S\-W\-R\-L\-Object\-Property\-Atom.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,496 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 1173.708920
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.426000 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 75 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(org.semanticweb.owlapi.api.test.baseclasses.AbstractAxiomsRoundTrippingTestCase) cw
+(org.semanticweb.owlapi.api.test.baseclasses.AbstractRoundTrippingTestCase) cw
+(org.semanticweb.owlapi.api.test.baseclasses.AbstractOWLAPITestCase) cw
+(org.semanticweb.owlapi.api.test.annotations.AnnotationAssertionWithIRITestCase) cw
+(org.semanticweb.owlapi.api.test.annotations.AnnotationOnAnnotationTestCase) cw
+(org.semanticweb.owlapi.api.test.annotations.OWLAnnotationPropertyDomainTestCase) cw
+(org.semanticweb.owlapi.api.test.annotations.OWLAnnotationPropertyRangeAxiomTestCase) cw
+(org.semanticweb.owlapi.api.test.annotations.OWLSubAnnotationPropertyOfAxiomTestCase) cw
+(org.semanticweb.owlapi.api.test.anonymous.AnonymousIndividualRoundtripTestCase) cw
+(org.semanticweb.owlapi.api.test.anonymous.AnonymousIndividualsTestCase) cw
+(org.semanticweb.owlapi.api.test.anonymous.AnonymousIndividualsTestCase2) cw
+(org.semanticweb.owlapi.api.test.baseclasses.AbstractAnnotatedAxiomRoundTrippingTestCase) cw
+(org.semanticweb.owlapi.api.test.classexpressions.DataMaxQualifiedCardinalityTestCase) cw
+(org.semanticweb.owlapi.api.test.classexpressions.DataMinQualifiedCardinalityTestCase) cw
+(org.semanticweb.owlapi.api.test.classexpressions.DataQualifiedCardinalityTestCase) cw
+(org.semanticweb.owlapi.api.test.classexpressions.DataUnionOfTestCase2) cw
+(org.semanticweb.owlapi.api.test.classexpressions.HasKeyAnnotatedTestCase) cw
+(org.semanticweb.owlapi.api.test.classexpressions.LargeDisjointClassesAxiomTestCase) cw
+(org.semanticweb.owlapi.api.test.classexpressions.ObjectInverseOfTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.DataPropertyDomainTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.DataPropertyRangeTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.DisjointDataPropertiesRoundTrippingTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.DisjointDataPropertiesTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.EquivalentDataPropertiesTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.FunctionalDataPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.NegativeDataPropertyAssertionTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.OWLDataPropertyAssertionTestCase) cw
+(org.semanticweb.owlapi.api.test.dataproperties.SubDataPropertyOfTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.ChainedAnonymousIndividualsTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.ClassAssertionWithAnonymousIndividualTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsAnonymousTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsPairwiseAnonymousTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsPairwiseTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.LargeDifferentIndividualsTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.SameIndividualsAnonymousTestCase) cw
+(org.semanticweb.owlapi.api.test.individuals.SameIndividualsTestCase) cw
+(org.semanticweb.owlapi.api.test.literals.DatatypeDefinitionTestCase) cw
+(org.semanticweb.owlapi.api.test.literals.LiteralTestCase) cw
+(org.semanticweb.owlapi.api.test.literals.StringLiteralWithNewLineTestCase) cw
+(org.semanticweb.owlapi.api.test.literals.StringLiteralWithQuotesTestCase) cw
+(org.semanticweb.owlapi.api.test.literals.TypedLiteralsTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.AsymmetricObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.AsymmetricObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.DisjointObjectPropertiesRoundTrippingTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.DisjointObjectPropertiesTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.EquivalentObjectPropertiesTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.EquivalentObjectPropertiesWithInversesTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.FunctionalObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.FunctionalObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.IrreflexiveObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.IrreflexiveObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.NegativeObjectPropertyAssertionTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyAssertionTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyAssertionWithAnonymousIndividualsTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyChainAnnotatedRoundTrippingTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyDomainInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyDomainTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyRangeInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyRangeTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ReflexiveObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.ReflexiveObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.SubObjectPropertyOfInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.SubObjectPropertyOfTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.SymmetricObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.SymmetricObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.TransitiveObjectPropertyInverseTestCase) cw
+(org.semanticweb.owlapi.api.test.objectproperties.TransitiveObjectPropertyTestCase) cw
+(org.semanticweb.owlapi.api.test.ontology.IRISubstringTestCase) cw
+(org.semanticweb.owlapi.api.test.ontology.SWRLRuleTestCase) cw
+(org.semanticweb.owlapi.api.test.syntax.NoQNameTestCase) cw
+(org.semanticweb.owlapi.api.test.syntax.PercentCharacterInEntityNameTestCase) cw
+(org.semanticweb.owlapi.api.test.syntax.RelativeURITestCase) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (org.semanticweb.owlapi.api.test.baseclasses.AbstractAxiomsRoundTrippingTestCase) 0.000000 72.000000 box
+ (org.semanticweb.owlapi.api.test.baseclasses.AbstractRoundTrippingTestCase) 0.000000 73.000000 box
+ (org.semanticweb.owlapi.api.test.baseclasses.AbstractOWLAPITestCase) 0.000000 74.000000 box
+ (org.semanticweb.owlapi.api.test.annotations.AnnotationAssertionWithIRITestCase) 1.000000 71.000000 box
+ (org.semanticweb.owlapi.api.test.annotations.AnnotationOnAnnotationTestCase) 1.000000 70.000000 box
+ (org.semanticweb.owlapi.api.test.annotations.OWLAnnotationPropertyDomainTestCase) 1.000000 69.000000 box
+ (org.semanticweb.owlapi.api.test.annotations.OWLAnnotationPropertyRangeAxiomTestCase) 1.000000 68.000000 box
+ (org.semanticweb.owlapi.api.test.annotations.OWLSubAnnotationPropertyOfAxiomTestCase) 1.000000 67.000000 box
+ (org.semanticweb.owlapi.api.test.anonymous.AnonymousIndividualRoundtripTestCase) 1.000000 66.000000 box
+ (org.semanticweb.owlapi.api.test.anonymous.AnonymousIndividualsTestCase) 1.000000 65.000000 box
+ (org.semanticweb.owlapi.api.test.anonymous.AnonymousIndividualsTestCase2) 1.000000 64.000000 box
+ (org.semanticweb.owlapi.api.test.baseclasses.AbstractAnnotatedAxiomRoundTrippingTestCase) 1.000000 63.000000 box
+1.000000 63.000000 mark
+ (org.semanticweb.owlapi.api.test.classexpressions.DataMaxQualifiedCardinalityTestCase) 1.000000 62.000000 box
+ (org.semanticweb.owlapi.api.test.classexpressions.DataMinQualifiedCardinalityTestCase) 1.000000 61.000000 box
+ (org.semanticweb.owlapi.api.test.classexpressions.DataQualifiedCardinalityTestCase) 1.000000 60.000000 box
+ (org.semanticweb.owlapi.api.test.classexpressions.DataUnionOfTestCase2) 1.000000 59.000000 box
+ (org.semanticweb.owlapi.api.test.classexpressions.HasKeyAnnotatedTestCase) 1.000000 58.000000 box
+ (org.semanticweb.owlapi.api.test.classexpressions.LargeDisjointClassesAxiomTestCase) 1.000000 57.000000 box
+ (org.semanticweb.owlapi.api.test.classexpressions.ObjectInverseOfTestCase) 1.000000 56.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.DataPropertyDomainTestCase) 1.000000 55.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.DataPropertyRangeTestCase) 1.000000 54.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.DisjointDataPropertiesRoundTrippingTestCase) 1.000000 53.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.DisjointDataPropertiesTestCase) 1.000000 52.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.EquivalentDataPropertiesTestCase) 1.000000 51.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.FunctionalDataPropertyTestCase) 1.000000 50.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.NegativeDataPropertyAssertionTestCase) 1.000000 49.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.OWLDataPropertyAssertionTestCase) 1.000000 48.000000 box
+ (org.semanticweb.owlapi.api.test.dataproperties.SubDataPropertyOfTestCase) 1.000000 47.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.ChainedAnonymousIndividualsTestCase) 1.000000 46.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.ClassAssertionWithAnonymousIndividualTestCase) 1.000000 45.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsAnonymousTestCase) 1.000000 44.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsPairwiseAnonymousTestCase) 1.000000 43.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsPairwiseTestCase) 1.000000 42.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.DifferentIndividualsTestCase) 1.000000 41.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.LargeDifferentIndividualsTestCase) 1.000000 40.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.SameIndividualsAnonymousTestCase) 1.000000 39.000000 box
+ (org.semanticweb.owlapi.api.test.individuals.SameIndividualsTestCase) 1.000000 38.000000 box
+ (org.semanticweb.owlapi.api.test.literals.DatatypeDefinitionTestCase) 1.000000 37.000000 box
+ (org.semanticweb.owlapi.api.test.literals.LiteralTestCase) 1.000000 36.000000 box
+ (org.semanticweb.owlapi.api.test.literals.StringLiteralWithNewLineTestCase) 1.000000 35.000000 box
+ (org.semanticweb.owlapi.api.test.literals.StringLiteralWithQuotesTestCase) 1.000000 34.000000 box
+ (org.semanticweb.owlapi.api.test.literals.TypedLiteralsTestCase) 1.000000 33.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.AsymmetricObjectPropertyInverseTestCase) 1.000000 32.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.AsymmetricObjectPropertyTestCase) 1.000000 31.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.DisjointObjectPropertiesRoundTrippingTestCase) 1.000000 30.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.DisjointObjectPropertiesTestCase) 1.000000 29.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.EquivalentObjectPropertiesTestCase) 1.000000 28.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.EquivalentObjectPropertiesWithInversesTestCase) 1.000000 27.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.FunctionalObjectPropertyInverseTestCase) 1.000000 26.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.FunctionalObjectPropertyTestCase) 1.000000 25.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyInverseTestCase) 1.000000 24.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.InverseFunctionalObjectPropertyTestCase) 1.000000 23.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.IrreflexiveObjectPropertyInverseTestCase) 1.000000 22.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.IrreflexiveObjectPropertyTestCase) 1.000000 21.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.NegativeObjectPropertyAssertionTestCase) 1.000000 20.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyAssertionTestCase) 1.000000 19.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyAssertionWithAnonymousIndividualsTestCase) 1.000000 18.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyChainAnnotatedRoundTrippingTestCase) 1.000000 17.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyDomainInverseTestCase) 1.000000 16.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyDomainTestCase) 1.000000 15.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyRangeInverseTestCase) 1.000000 14.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ObjectPropertyRangeTestCase) 1.000000 13.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ReflexiveObjectPropertyInverseTestCase) 1.000000 12.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.ReflexiveObjectPropertyTestCase) 1.000000 11.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.SubObjectPropertyOfInverseTestCase) 1.000000 10.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.SubObjectPropertyOfTestCase) 1.000000 9.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.SymmetricObjectPropertyInverseTestCase) 1.000000 8.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.SymmetricObjectPropertyTestCase) 1.000000 7.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.TransitiveObjectPropertyInverseTestCase) 1.000000 6.000000 box
+ (org.semanticweb.owlapi.api.test.objectproperties.TransitiveObjectPropertyTestCase) 1.000000 5.000000 box
+ (org.semanticweb.owlapi.api.test.ontology.IRISubstringTestCase) 1.000000 4.000000 box
+ (org.semanticweb.owlapi.api.test.ontology.SWRLRuleTestCase) 1.000000 3.000000 box
+ (org.semanticweb.owlapi.api.test.syntax.NoQNameTestCase) 1.000000 2.000000 box
+ (org.semanticweb.owlapi.api.test.syntax.PercentCharacterInEntityNameTestCase) 1.000000 1.000000 box
+ (org.semanticweb.owlapi.api.test.syntax.RelativeURITestCase) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+0 0.000000 72.000000 out
+solid
+1 0.000000 73.000000 in
+solid
+0 0.000000 73.000000 out
+solid
+1 0.000000 74.000000 in
+solid
+1 0.000000 71.250000 out
+solid
+0 0.000000 71.500000 hedge
+solid
+0 0.000000 70.500000 hedge
+solid
+0 0.000000 69.500000 hedge
+solid
+0 0.000000 68.500000 hedge
+solid
+0 0.000000 67.500000 hedge
+solid
+0 0.000000 66.500000 hedge
+solid
+0 0.000000 65.500000 hedge
+solid
+0 0.000000 64.500000 hedge
+solid
+0 0.000000 63.500000 hedge
+solid
+0 0.000000 62.500000 hedge
+solid
+0 0.000000 61.500000 hedge
+solid
+0 0.000000 60.500000 hedge
+solid
+0 0.000000 59.500000 hedge
+solid
+0 0.000000 58.500000 hedge
+solid
+0 0.000000 57.500000 hedge
+solid
+0 0.000000 56.500000 hedge
+solid
+0 0.000000 55.500000 hedge
+solid
+0 0.000000 54.500000 hedge
+solid
+0 0.000000 53.500000 hedge
+solid
+0 0.000000 52.500000 hedge
+solid
+0 0.000000 51.500000 hedge
+solid
+0 0.000000 50.500000 hedge
+solid
+0 0.000000 49.500000 hedge
+solid
+0 0.000000 48.500000 hedge
+solid
+0 0.000000 47.500000 hedge
+solid
+0 0.000000 46.500000 hedge
+solid
+0 0.000000 45.500000 hedge
+solid
+0 0.000000 44.500000 hedge
+solid
+0 0.000000 43.500000 hedge
+solid
+0 0.000000 42.500000 hedge
+solid
+0 0.000000 41.500000 hedge
+solid
+0 0.000000 40.500000 hedge
+solid
+0 0.000000 39.500000 hedge
+solid
+0 0.000000 38.500000 hedge
+solid
+0 0.000000 37.500000 hedge
+solid
+0 0.000000 36.500000 hedge
+solid
+0 0.000000 35.500000 hedge
+solid
+0 0.000000 34.500000 hedge
+solid
+0 0.000000 33.500000 hedge
+solid
+0 0.000000 32.500000 hedge
+solid
+0 0.000000 31.500000 hedge
+solid
+0 0.000000 30.500000 hedge
+solid
+0 0.000000 29.500000 hedge
+solid
+0 0.000000 28.500000 hedge
+solid
+0 0.000000 27.500000 hedge
+solid
+0 0.000000 26.500000 hedge
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 72.000000 0.500000 vedge

@@ -1,0 +1,67 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom}{\section{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Declaration\-Axiom Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom}\index{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Declaration\-Axiom@{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Declaration\-Axiom}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Declaration\-Axiom\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.966006cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom_a98c0998ab26e4c28eff01973cd61a1f9}{get\-Entity} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom}{O\-W\-L\-Declaration\-Axiom} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom_a81a8037cbf9106b63b6e294649265eb3}{get\-Axiom\-Without\-Annotations} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group Date\-: 24-\/\-Oct-\/2006 
+
+Represents a \href{http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Entity_Declarations_and_Typing}{\tt Declaration} in the O\-W\-L 2 Specification. 
+
+A declaration axiom declares an entity in an ontology. It doesn't affect the logical meaning of the ontology. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom_a81a8037cbf9106b63b6e294649265eb3}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Declaration\-Axiom@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Declaration\-Axiom}!get\-Axiom\-Without\-Annotations@{get\-Axiom\-Without\-Annotations}}
+\index{get\-Axiom\-Without\-Annotations@{get\-Axiom\-Without\-Annotations}!org::semanticweb::owlapi::model::OWLDeclarationAxiom@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Declaration\-Axiom}}
+\subsubsection[{get\-Axiom\-Without\-Annotations}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Declaration\-Axiom} org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Declaration\-Axiom.\-get\-Axiom\-Without\-Annotations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom_a81a8037cbf9106b63b6e294649265eb3}
+Gets an axiom that is structurally equivalent to this axiom without annotations. This essentially returns a version of this axiom stripped of any annotations \begin{DoxyReturn}{Returns}
+The annotationless version of this axiom 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom_a721c7ca0069fe8ff69947b9513498af3}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Axiom}.
+
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_declaration_axiom_impl_abc2731d19250863b843976f2605b8062}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Declaration\-Axiom\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom_a98c0998ab26e4c28eff01973cd61a1f9}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Declaration\-Axiom@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Declaration\-Axiom}!get\-Entity@{get\-Entity}}
+\index{get\-Entity@{get\-Entity}!org::semanticweb::owlapi::model::OWLDeclarationAxiom@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Declaration\-Axiom}}
+\subsubsection[{get\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Entity} org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Declaration\-Axiom.\-get\-Entity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_declaration_axiom_a98c0998ab26e4c28eff01973cd61a1f9}
+Gets the entity that this axiom declares.
+
+\begin{DoxyReturn}{Returns}
+The entity that is declared by this axiom. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_declaration_axiom_impl_a36fc7fd9ec5036f96ca6004c61a39263}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Declaration\-Axiom\-Impl}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/model/\hyperlink{_o_w_l_declaration_axiom_8java}{O\-W\-L\-Declaration\-Axiom.\-java}\end{DoxyCompactItemize}

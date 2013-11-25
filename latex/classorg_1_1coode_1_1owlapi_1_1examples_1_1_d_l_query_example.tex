@@ -1,0 +1,159 @@
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example}{\section{org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example Class Reference}
+\label{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example}\index{org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example@{org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a63543a845ef4dbfc550241ef6a115d8b}{main} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_af5ab0936d8176929e17bf39aadc7944e}{do\-Query\-Loop} (D\-L\-Query\-Printer dl\-Query\-Printer)  throws I\-O\-Exception 
+\item 
+static String \hyperlink{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a183c94ea015c2ad4ad5f7fe31e94aaab}{read\-Input} ()  throws I\-O\-Exception 
+\item 
+static \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a42d7595764bf45d4d044c3d93b0d86aa}{create\-Reasoner} (final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} root\-Ontology)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a382847000e0c561ec11b1958165f5642}{koala}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 13-\/\-May-\/2010 \par
+ An example that shows how to do a Protege like D\-L\-Query. The example contains several helper classes\-:\par
+ D\-L\-Query\-Engine -\/ This takes a string representing a class expression built from the terms in the signature of some ontology. D\-L\-Query\-Printer -\/ This takes a string class expression and prints out the sub/super/equivalent classes and the instances of the specified class expression. D\-L\-Query\-Parser -\/ this parses the specified class expression string 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a42d7595764bf45d4d044c3d93b0d86aa}{\index{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}!create\-Reasoner@{create\-Reasoner}}
+\index{create\-Reasoner@{create\-Reasoner}!org::coode::owlapi::examples::DLQueryExample@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}}
+\subsubsection[{create\-Reasoner}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf O\-W\-L\-Reasoner} org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example.\-create\-Reasoner (
+\begin{DoxyParamCaption}
+\item[{final {\bf O\-W\-L\-Ontology}}]{root\-Ontology}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a42d7595764bf45d4d044c3d93b0d86aa}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_af5ab0936d8176929e17bf39aadc7944e}{\index{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}!do\-Query\-Loop@{do\-Query\-Loop}}
+\index{do\-Query\-Loop@{do\-Query\-Loop}!org::coode::owlapi::examples::DLQueryExample@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}}
+\subsubsection[{do\-Query\-Loop}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example.\-do\-Query\-Loop (
+\begin{DoxyParamCaption}
+\item[{D\-L\-Query\-Printer}]{dl\-Query\-Printer}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_af5ab0936d8176929e17bf39aadc7944e}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a63543a845ef4dbfc550241ef6a115d8b}{\index{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}!main@{main}}
+\index{main@{main}!org::coode::owlapi::examples::DLQueryExample@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example.\-main (
+\begin{DoxyParamCaption}
+\item[{String\mbox{[}$\,$\mbox{]}}]{args}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a63543a845ef4dbfc550241ef6a115d8b}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a183c94ea015c2ad4ad5f7fe31e94aaab}{\index{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}!read\-Input@{read\-Input}}
+\index{read\-Input@{read\-Input}!org::coode::owlapi::examples::DLQueryExample@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}}
+\subsubsection[{read\-Input}]{\setlength{\rightskip}{0pt plus 5cm}static String org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example.\-read\-Input (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a183c94ea015c2ad4ad5f7fe31e94aaab}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a382847000e0c561ec11b1958165f5642}{\index{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}!koala@{koala}}
+\index{koala@{koala}!org::coode::owlapi::examples::DLQueryExample@{org\-::coode\-::owlapi\-::examples\-::\-D\-L\-Query\-Example}}
+\subsubsection[{koala}]{\setlength{\rightskip}{0pt plus 5cm}final String org.\-coode.\-owlapi.\-examples.\-D\-L\-Query\-Example.\-koala\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1examples_1_1_d_l_query_example_a382847000e0c561ec11b1958165f5642}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \textcolor{stringliteral}{"<?xml version=\(\backslash\)"1.0\(\backslash\)"?>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"<rdf:RDF xmlns:rdf=\(\backslash\)"http://www.w3.org/1999/02/22-rdf-syntax-ns#\(\backslash\)" xmlns:rdfs=\(\backslash\)"
+      http://www.w3.org/2000/01/rdf-schema#\(\backslash\)" xmlns:owl=\(\backslash\)"http://www.w3.org/2002/07/owl#\(\backslash\)" xmlns=\(\backslash\)"
+      http://protege.stanford.edu/plugins/owl/owl-library/koala.owl#\(\backslash\)" xml:base=\(\backslash\)"
+      http://protege.stanford.edu/plugins/owl/owl-library/koala.owl\(\backslash\)">\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Ontology rdf:about=\(\backslash\)"\(\backslash\)"/>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Female\(\backslash\)"
+      ><owl:equivalentClass><owl:Restriction><owl:onProperty><owl:FunctionalProperty rdf:about=\(\backslash\)"#hasGender\(\backslash\)"/></owl:onProperty><owl:hasValue><Gender rdf:ID=\(\backslash\)"female\(\backslash\)"
+      /></owl:hasValue></owl:Restriction></owl:equivalentClass></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Marsupials\(\backslash\)"><owl:disjointWith><owl:Class rdf:about=\(\backslash\)"#Person\(\backslash\)"
+      /></owl:disjointWith><rdfs:subClassOf><owl:Class rdf:about=\(\backslash\)"#Animal\(\backslash\)"/></rdfs:subClassOf></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Student\(\backslash\)"><owl:equivalentClass><owl:Class><owl:intersectionOf
+       rdf:parseType=\(\backslash\)"Collection\(\backslash\)"><owl:Class rdf:about=\(\backslash\)"#Person\(\backslash\)"
+      /><owl:Restriction><owl:onProperty><owl:FunctionalProperty rdf:about=\(\backslash\)"#isHardWorking\(\backslash\)"/></owl:onProperty><owl:hasValue rdf:datatype=\(\backslash\)"
+      http://www.w3.org/2001/XMLSchema#boolean\(\backslash\)">true</owl:hasValue></owl:Restriction><owl:Restriction><owl:someValuesFrom><owl:Class
+       rdf:about=\(\backslash\)"#University\(\backslash\)"/></owl:someValuesFrom><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasHabitat\(\backslash\)"
+      /></owl:onProperty></owl:Restriction></owl:intersectionOf></owl:Class></owl:equivalentClass></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"KoalaWithPhD\(\backslash\)"
+      ><owl:versionInfo>1.2</owl:versionInfo><owl:equivalentClass><owl:Class><owl:intersectionOf rdf:parseType=\(\backslash\)"Collection\(\backslash\)"><owl:Restriction><owl:hasValue><Degree
+       rdf:ID=\(\backslash\)"PhD\(\backslash\)"/></owl:hasValue><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasDegree\(\backslash\)"
+      /></owl:onProperty></owl:Restriction><owl:Class rdf:about=\(\backslash\)"#Koala\(\backslash\)"
+      /></owl:intersectionOf></owl:Class></owl:equivalentClass></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"University\(\backslash\)"><rdfs:subClassOf><owl:Class rdf:ID=\(\backslash\)"Habitat\(\backslash\)"
+      /></rdfs:subClassOf></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Koala\(\backslash\)"><rdfs:subClassOf><owl:Restriction><owl:hasValue rdf:datatype=
+      \(\backslash\)"http://www.w3.org/2001/XMLSchema#boolean\(\backslash\)">false</owl:hasValue><owl:onProperty><owl:FunctionalProperty
+       rdf:about=\(\backslash\)"#isHardWorking\(\backslash\)"
+      /></owl:onProperty></owl:Restriction></rdfs:subClassOf><rdfs:subClassOf><owl:Restriction><owl:someValuesFrom><owl:Class rdf:about=\(\backslash\)"#DryEucalyptForest\(\backslash\)"
+      /></owl:someValuesFrom><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasHabitat\(\backslash\)"
+      /></owl:onProperty></owl:Restriction></rdfs:subClassOf><rdfs:subClassOf rdf:resource=\(\backslash\)"#Marsupials\(\backslash\)"/></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Animal\(\backslash\)"
+      ><rdfs:seeAlso>Male</rdfs:seeAlso><rdfs:subClassOf><owl:Restriction><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasHabitat\(\backslash\)"/></owl:onProperty><owl:minCardinality
+       rdf:datatype=\(\backslash\)"http://www.w3.org/2001/XMLSchema#int\(\backslash\)"
+      >1</owl:minCardinality></owl:Restriction></rdfs:subClassOf><rdfs:subClassOf><owl:Restriction><owl:cardinality rdf:datatype=\(\backslash\)"http://www.w3.org/2001/XMLSchema#int\(\backslash\)"
+      >1</owl:cardinality><owl:onProperty><owl:FunctionalProperty rdf:about=\(\backslash\)"#hasGender\(\backslash\)"
+      /></owl:onProperty></owl:Restriction></rdfs:subClassOf><owl:versionInfo>1.1</owl:versionInfo></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Forest\(\backslash\)"><rdfs:subClassOf rdf:resource=\(\backslash\)"#Habitat\(\backslash\)"/></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Rainforest\(\backslash\)"><rdfs:subClassOf rdf:resource=\(\backslash\)"#Forest\(\backslash\)"/></owl:Class>\(\backslash\)n
+      "}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"GraduateStudent\(\backslash\)"
+      ><rdfs:subClassOf><owl:Restriction><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasDegree\(\backslash\)"/></owl:onProperty><owl:someValuesFrom><owl:Class><owl:oneOf
+       rdf:parseType=\(\backslash\)"Collection\(\backslash\)"><Degree rdf:ID=\(\backslash\)"BA\(\backslash\)"/><Degree rdf:ID=\(\backslash\)"BS\(\backslash\)"
+      /></owl:oneOf></owl:Class></owl:someValuesFrom></owl:Restriction></rdfs:subClassOf><rdfs:subClassOf rdf:resource=\(\backslash\)"#Student\(\backslash\)"/></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Parent\(\backslash\)"><owl:equivalentClass><owl:Class><owl:intersectionOf
+       rdf:parseType=\(\backslash\)"Collection\(\backslash\)"><owl:Class rdf:about=\(\backslash\)"#Animal\(\backslash\)"/><owl:Restriction><owl:onProperty><owl:ObjectProperty
+       rdf:about=\(\backslash\)"#hasChildren\(\backslash\)"/></owl:onProperty><owl:minCardinality rdf:datatype=\(\backslash\)"
+      http://www.w3.org/2001/XMLSchema#int\(\backslash\)"
+      >1</owl:minCardinality></owl:Restriction></owl:intersectionOf></owl:Class></owl:equivalentClass><rdfs:subClassOf rdf:resource=\(\backslash\)"#Animal\(\backslash\)"/></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"DryEucalyptForest\(\backslash\)"><rdfs:subClassOf rdf:resource=\(\backslash\)"#Forest\(\backslash\)"
+      /></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Quokka\(\backslash\)"><rdfs:subClassOf><owl:Restriction><owl:hasValue rdf:datatype=
+      \(\backslash\)"http://www.w3.org/2001/XMLSchema#boolean\(\backslash\)">true</owl:hasValue><owl:onProperty><owl:FunctionalProperty
+       rdf:about=\(\backslash\)"#isHardWorking\(\backslash\)"/></owl:onProperty></owl:Restriction></rdfs:subClassOf><rdfs:subClassOf
+       rdf:resource=\(\backslash\)"#Marsupials\(\backslash\)"/></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"TasmanianDevil\(\backslash\)"><rdfs:subClassOf rdf:resource=\(\backslash\)"#Marsupials\(\backslash\)"
+      /></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"MaleStudentWith3Daughters\(\backslash\)"
+      ><owl:equivalentClass><owl:Class><owl:intersectionOf rdf:parseType=\(\backslash\)"Collection\(\backslash\)"><owl:Class rdf:about=\(\backslash\)"#Student\(\backslash\)"
+      /><owl:Restriction><owl:onProperty><owl:FunctionalProperty rdf:about=\(\backslash\)"#hasGender\(\backslash\)"/></owl:onProperty><owl:hasValue><Gender rdf:ID=\(\backslash\)"male\(\backslash\)"
+      /></owl:hasValue></owl:Restriction><owl:Restriction><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasChildren
+      \(\backslash\)"/></owl:onProperty><owl:cardinality rdf:datatype=\(\backslash\)"http://www.w3.org/2001/XMLSchema#int\(\backslash\)"
+      >3</owl:cardinality></owl:Restriction><owl:Restriction><owl:allValuesFrom rdf:resource=\(\backslash\)"#Female\(\backslash\)"
+      /><owl:onProperty><owl:ObjectProperty rdf:about=\(\backslash\)"#hasChildren\(\backslash\)"
+      /></owl:onProperty></owl:Restriction></owl:intersectionOf></owl:Class></owl:equivalentClass></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Degree\(\backslash\)"/>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Male\(\backslash\)"><owl:equivalentClass><owl:Restriction><owl:hasValue
+       rdf:resource=\(\backslash\)"#male\(\backslash\)"/><owl:onProperty><owl:FunctionalProperty rdf:about=\(\backslash\)"#hasGender\(\backslash\)"
+      /></owl:onProperty></owl:Restriction></owl:equivalentClass></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Gender\(\backslash\)"/>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:Class rdf:ID=\(\backslash\)"Person\(\backslash\)"><rdfs:subClassOf rdf:resource=\(\backslash\)"#Animal\(\backslash\)"/><owl:disjointWith
+       rdf:resource=\(\backslash\)"#Marsupials\(\backslash\)"/></owl:Class>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:ObjectProperty rdf:ID=\(\backslash\)"hasHabitat\(\backslash\)"><rdfs:range rdf:resource=\(\backslash\)"#Habitat\(\backslash\)"
+      /><rdfs:domain rdf:resource=\(\backslash\)"#Animal\(\backslash\)"/></owl:ObjectProperty>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:ObjectProperty rdf:ID=\(\backslash\)"hasDegree\(\backslash\)"><rdfs:domain rdf:resource=\(\backslash\)"#Person\(\backslash\)"
+      /><rdfs:range rdf:resource=\(\backslash\)"#Degree\(\backslash\)"/></owl:ObjectProperty>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:ObjectProperty rdf:ID=\(\backslash\)"hasChildren\(\backslash\)"><rdfs:range rdf:resource=\(\backslash\)"#Animal\(\backslash\)"
+      /><rdfs:domain rdf:resource=\(\backslash\)"#Animal\(\backslash\)"/></owl:ObjectProperty>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:FunctionalProperty rdf:ID=\(\backslash\)"hasGender\(\backslash\)"><rdfs:range rdf:resource=\(\backslash\)"#Gender\(\backslash\)"
+      /><rdf:type rdf:resource=\(\backslash\)"http://www.w3.org/2002/07/owl#ObjectProperty\(\backslash\)"/><rdfs:domain rdf:resource=\(\backslash\)"#Animal\(\backslash\)"
+      /></owl:FunctionalProperty>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <owl:FunctionalProperty rdf:ID=\(\backslash\)"isHardWorking\(\backslash\)"><rdfs:range rdf:resource=\(\backslash\)"
+      http://www.w3.org/2001/XMLSchema#boolean\(\backslash\)"/><rdfs:domain rdf:resource=\(\backslash\)"#Person\(\backslash\)"/><rdf:type rdf:resource=\(\backslash\)"
+      http://www.w3.org/2002/07/owl#DatatypeProperty\(\backslash\)"/></owl:FunctionalProperty>\(\backslash\)n"}
+            + \textcolor{stringliteral}{"  <Degree rdf:ID=\(\backslash\)"MA\(\backslash\)"/>\(\backslash\)n"} + \textcolor{stringliteral}{"</rdf:RDF>"}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+contract/src/test/java/org/coode/owlapi/examples/\hyperlink{_d_l_query_example_8java}{D\-L\-Query\-Example.\-java}\end{DoxyCompactItemize}

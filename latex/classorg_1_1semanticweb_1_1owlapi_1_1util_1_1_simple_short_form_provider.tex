@@ -1,0 +1,83 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider}{\section{org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider}\index{org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider@{org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.728395cm]{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_afc084cd50a0fc51f3069bee78f5e10ef}{get\-Short\-Form} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} entity)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_a1afc299679f7a005fe8498514a791c38}{dispose} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_i_r_i_short_form_provider}{Simple\-I\-R\-I\-Short\-Form\-Provider} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_a54ac06dd611546fb5a53d6bab07267bd}{uri\-Short\-Form\-Provider} = new \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_i_r_i_short_form_provider}{Simple\-I\-R\-I\-Short\-Form\-Provider}()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_afdc67449aa074db9df977fd0c2941ef5}{serial\-Version\-U\-I\-D} = 30406\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 18-\/\-Apr-\/2007\par
+\par
+ 
+
+A very simple short form provider which is intended to provide human readable display names for entities. The following strategy is used\-: 1) If the entity U\-R\-I has a fragment then that fragment is returned e.\-g. \href{http://an.other.com#A}{\tt http\-://an.\-other.\-com\#\-A} would have a short form of \char`\"{}\-A\char`\"{}. 2) If the entity U\-R\-I does not have a fragment then the last segment of the U\-R\-I path is used e.\-g. \href{http://an.other.com/A/B}{\tt http\-://an.\-other.\-com/\-A/\-B} would have a short form of \char`\"{}\-B\char`\"{}. 3) If the entity U\-R\-I does not have a path then the full U\-R\-I is returned as a string. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_a1afc299679f7a005fe8498514a791c38}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}!dispose@{dispose}}
+\index{dispose@{dispose}!org::semanticweb::owlapi::util::SimpleShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}}
+\subsubsection[{dispose}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider.\-dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_a1afc299679f7a005fe8498514a791c38}
+Disposes of the short form proivider. This frees any resources and clears any caches. 
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_short_form_provider_ad6c6020e37b03e441f686826c5cf3d11}{org.\-semanticweb.\-owlapi.\-util.\-Short\-Form\-Provider}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_afc084cd50a0fc51f3069bee78f5e10ef}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}!get\-Short\-Form@{get\-Short\-Form}}
+\index{get\-Short\-Form@{get\-Short\-Form}!org::semanticweb::owlapi::util::SimpleShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}}
+\subsubsection[{get\-Short\-Form}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider.\-get\-Short\-Form (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Entity}}]{entity}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_afc084cd50a0fc51f3069bee78f5e10ef}
+Gets the short form for the specified entity. 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string which represents a short rendering of the speicified entity. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_short_form_provider_aca40ef0eda3bf146115c473088cc305d}{org.\-semanticweb.\-owlapi.\-util.\-Short\-Form\-Provider}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_afdc67449aa074db9df977fd0c2941ef5}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!org::semanticweb::owlapi::util::SimpleShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider.\-serial\-Version\-U\-I\-D = 30406\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_afdc67449aa074db9df977fd0c2941ef5}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_a54ac06dd611546fb5a53d6bab07267bd}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}!uri\-Short\-Form\-Provider@{uri\-Short\-Form\-Provider}}
+\index{uri\-Short\-Form\-Provider@{uri\-Short\-Form\-Provider}!org::semanticweb::owlapi::util::SimpleShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Simple\-Short\-Form\-Provider}}
+\subsubsection[{uri\-Short\-Form\-Provider}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Simple\-I\-R\-I\-Short\-Form\-Provider} org.\-semanticweb.\-owlapi.\-util.\-Simple\-Short\-Form\-Provider.\-uri\-Short\-Form\-Provider = new {\bf Simple\-I\-R\-I\-Short\-Form\-Provider}()\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_short_form_provider_a54ac06dd611546fb5a53d6bab07267bd}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_simple_short_form_provider_8java}{Simple\-Short\-Form\-Provider.\-java}\end{DoxyCompactItemize}

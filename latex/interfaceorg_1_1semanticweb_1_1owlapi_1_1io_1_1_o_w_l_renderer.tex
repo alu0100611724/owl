@@ -1,0 +1,79 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer}{\section{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Renderer Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer}\index{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Renderer@{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Renderer}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Renderer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=6.679921cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer_ab5374ee2c05ca35bbe5bba335fd5912f}{set\-O\-W\-L\-Ontology\-Manager} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} owl\-Ontology\-Manager)  throws O\-W\-L\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer_ae997693c289e5bbe08605c48946bc012}{render} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology, Output\-Stream os)  throws O\-W\-L\-Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 14-\/\-Nov-\/2006\par
+\par
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer_ae997693c289e5bbe08605c48946bc012}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Renderer@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Renderer}!render@{render}}
+\index{render@{render}!org::semanticweb::owlapi::io::OWLRenderer@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Renderer}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Renderer.\-render (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology, }
+\item[{Output\-Stream}]{os}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Exception}}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer_ae997693c289e5bbe08605c48946bc012}
+Renders the specified ontology to a concrete representation which should be written to the specified output stream 
+\begin{DoxyParams}{Parameters}
+{\em ontology} & The ontology \\
+\hline
+{\em os} & The Output\-Stream \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_abstract_o_w_l_renderer_afeaffb8f00c323cb2feb74a494781327}{org.\-semanticweb.\-owlapi.\-io.\-Abstract\-O\-W\-L\-Renderer}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer_ab5374ee2c05ca35bbe5bba335fd5912f}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Renderer@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Renderer}!set\-O\-W\-L\-Ontology\-Manager@{set\-O\-W\-L\-Ontology\-Manager}}
+\index{set\-O\-W\-L\-Ontology\-Manager@{set\-O\-W\-L\-Ontology\-Manager}!org::semanticweb::owlapi::io::OWLRenderer@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Renderer}}
+\subsubsection[{set\-O\-W\-L\-Ontology\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Renderer.\-set\-O\-W\-L\-Ontology\-Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology\-Manager}}]{owl\-Ontology\-Manager}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Exception}}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_renderer_ab5374ee2c05ca35bbe5bba335fd5912f}
+
+\begin{DoxyParams}{Parameters}
+{\em owl\-Ontology\-Manager} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Exception} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]the manager should not be set but accessed through the ontology passed to render \end{DoxyRefDesc}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_abstract_o_w_l_renderer_a749ccc31294dc65d0b29088f0d69107a}{org.\-semanticweb.\-owlapi.\-io.\-Abstract\-O\-W\-L\-Renderer}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/io/\hyperlink{_o_w_l_renderer_8java}{O\-W\-L\-Renderer.\-java}\end{DoxyCompactItemize}

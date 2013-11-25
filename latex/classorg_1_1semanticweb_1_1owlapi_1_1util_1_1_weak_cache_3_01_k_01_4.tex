@@ -1,0 +1,105 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4}{\section{org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$ Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4}\index{org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$@{org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+K \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_aab931e1bacfd9354b3c576fe6ab3241f}{cache} (K s)
+\item 
+boolean \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a96f5da26c8af6da76cec92b3ed652b2e}{contains} (K k)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a73b526632dea1fe28e1b32e92ed00927}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a9787302913f17cc6eadd2c41010377df}{read\-Object} (Object\-Input\-Stream in)  throws I\-O\-Exception,     Class\-Not\-Found\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+transient Map$<$ K, \\*
+Weak\-Reference$<$ K $>$ $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a33b2fe08150a6ce9f022637022771c9c}{prefix\-Cache} = \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a6b6bc74489ee6873dd8f9db32f6d7a20}{Collection\-Factory.\-create\-Sync\-Weak\-Map}()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a3aff9d75883dcdad6470743f2cb02aa0}{serial\-Version\-U\-I\-D} = 30406\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A weakly linked cache -\/ elements in the cache can be garbage collected
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\-K$>$} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_aab931e1bacfd9354b3c576fe6ab3241f}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}!cache@{cache}}
+\index{cache@{cache}!org::semanticweb::owlapi::util::WeakCache< K >@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}}
+\subsubsection[{cache}]{\setlength{\rightskip}{0pt plus 5cm}K org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$.cache (
+\begin{DoxyParamCaption}
+\item[{K}]{s}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_aab931e1bacfd9354b3c576fe6ab3241f}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the value to cache \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the cached value 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a73b526632dea1fe28e1b32e92ed00927}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}!clear@{clear}}
+\index{clear@{clear}!org::semanticweb::owlapi::util::WeakCache< K >@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$.clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a73b526632dea1fe28e1b32e92ed00927}
+empty the cache \hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a96f5da26c8af6da76cec92b3ed652b2e}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}!contains@{contains}}
+\index{contains@{contains}!org::semanticweb::owlapi::util::WeakCache< K >@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$.contains (
+\begin{DoxyParamCaption}
+\item[{K}]{k}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a96f5da26c8af6da76cec92b3ed652b2e}
+
+\begin{DoxyParams}{Parameters}
+{\em k} & the key to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the cache contains k as a key; note that, due to the nature of this cache, by the time the method returns the key may no longer be in the map. 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a9787302913f17cc6eadd2c41010377df}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}!read\-Object@{read\-Object}}
+\index{read\-Object@{read\-Object}!org::semanticweb::owlapi::util::WeakCache< K >@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}}
+\subsubsection[{read\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$.read\-Object (
+\begin{DoxyParamCaption}
+\item[{Object\-Input\-Stream}]{in}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception,     Class\-Not\-Found\-Exception\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a9787302913f17cc6eadd2c41010377df}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a33b2fe08150a6ce9f022637022771c9c}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}!prefix\-Cache@{prefix\-Cache}}
+\index{prefix\-Cache@{prefix\-Cache}!org::semanticweb::owlapi::util::WeakCache< K >@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}}
+\subsubsection[{prefix\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}transient Map$<$K, Weak\-Reference$<$K$>$ $>$ org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$.prefix\-Cache = {\bf Collection\-Factory.\-create\-Sync\-Weak\-Map}()\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a33b2fe08150a6ce9f022637022771c9c}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a3aff9d75883dcdad6470743f2cb02aa0}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!org::semanticweb::owlapi::util::WeakCache< K >@{org\-::semanticweb\-::owlapi\-::util\-::\-Weak\-Cache$<$ K $>$}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long org.\-semanticweb.\-owlapi.\-util.\-Weak\-Cache$<$ K $>$.serial\-Version\-U\-I\-D = 30406\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_weak_cache_3_01_k_01_4_a3aff9d75883dcdad6470743f2cb02aa0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_weak_cache_8java}{Weak\-Cache.\-java}\end{DoxyCompactItemize}

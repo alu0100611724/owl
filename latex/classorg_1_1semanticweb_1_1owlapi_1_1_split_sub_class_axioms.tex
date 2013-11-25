@@ -1,0 +1,83 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms}{\section{org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms}\index{org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms@{org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Conjunct\-Splitter}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_a1763a88c4952e8b197b753186f5c6376}{Split\-Sub\-Class\-Axioms} (Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} $>$ ontologies, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_data_factory}{O\-W\-L\-Data\-Factory} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_abstract_composite_ontology_change_aebcfd0601543ebb5f72b1fe53a5352c9}{data\-Factory})
+\item 
+List$<$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_a879dbd2b8f3dd35dff635097abb051ae}{get\-Changes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final List$<$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_accc3ff191590efd507e75d5d90e85486}{changes}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 15-\/\-Aug-\/2007\par
+\par
+ 
+
+Given a set of ontologies, this composite change will replace all subclass axioms in each ontology, whose super class is an object intersection (conjuction) with multiple subclass axioms -\/ one for each conjunct. For example, A sub\-Class\-Of (B and C), would be replaced with two subclass axioms, A sub\-Class\-Of B, and A sub\-Class\-Of C. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_a1763a88c4952e8b197b753186f5c6376}{\index{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms@{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms}!Split\-Sub\-Class\-Axioms@{Split\-Sub\-Class\-Axioms}}
+\index{Split\-Sub\-Class\-Axioms@{Split\-Sub\-Class\-Axioms}!org::semanticweb::owlapi::SplitSubClassAxioms@{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms}}
+\subsubsection[{Split\-Sub\-Class\-Axioms}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms.\-Split\-Sub\-Class\-Axioms (
+\begin{DoxyParamCaption}
+\item[{Set$<$ {\bf O\-W\-L\-Ontology} $>$}]{ontologies, }
+\item[{{\bf O\-W\-L\-Data\-Factory}}]{data\-Factory}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_a1763a88c4952e8b197b753186f5c6376}
+Creates a composite change to split subclass axioms into multiple more fine grained subclass axioms. 
+\begin{DoxyParams}{Parameters}
+{\em ontologies} & The ontologies whose subclass axioms should be processed. \\
+\hline
+{\em data\-Factory} & The data factory which should be used to create new axioms. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_a879dbd2b8f3dd35dff635097abb051ae}{\index{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms@{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms}!get\-Changes@{get\-Changes}}
+\index{get\-Changes@{get\-Changes}!org::semanticweb::owlapi::SplitSubClassAxioms@{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms}}
+\subsubsection[{get\-Changes}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf O\-W\-L\-Ontology\-Change}$>$ org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms.\-get\-Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_a879dbd2b8f3dd35dff635097abb051ae}
+Gets the changes which compose this composite change. Once this method has been invoked, it will {\itshape always{\itshape  return the same list of changes. \begin{DoxyReturn}{Returns}
+A list of ontology changes. 
+\end{DoxyReturn}
+}}
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1_o_w_l_composite_ontology_change_a047d3f540ac840c0ac0285bc576636d2}{org.\-semanticweb.\-owlapi.\-O\-W\-L\-Composite\-Ontology\-Change}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_accc3ff191590efd507e75d5d90e85486}{\index{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms@{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms}!changes@{changes}}
+\index{changes@{changes}!org::semanticweb::owlapi::SplitSubClassAxioms@{org\-::semanticweb\-::owlapi\-::\-Split\-Sub\-Class\-Axioms}}
+\subsubsection[{changes}]{\setlength{\rightskip}{0pt plus 5cm}final List$<${\bf O\-W\-L\-Ontology\-Change}$>$ org.\-semanticweb.\-owlapi.\-Split\-Sub\-Class\-Axioms.\-changes\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_split_sub_class_axioms_accc3ff191590efd507e75d5d90e85486}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/org/semanticweb/owlapi/\hyperlink{_split_sub_class_axioms_8java}{Split\-Sub\-Class\-Axioms.\-java}\end{DoxyCompactItemize}

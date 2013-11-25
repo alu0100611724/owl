@@ -1,0 +1,32 @@
+\hypertarget{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy Enum Reference}
+\label{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy@{org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy}}
+}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_af84f77cd66fa440ee5a8597326b098e3}{B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S}
+\item 
+\hyperlink{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_a1fbf26b542eea4dd37010729986bce6c}{B\-Y\-\_\-\-N\-A\-M\-E}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Information Management Group\par
+ Date\-: 09-\/\-Dec-\/2009 
+
+The policy of how a reasoner will return {\ttfamily Node\-Set}s of individuals for queries that return node sets of named individuals such as \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_a0967a7207dc4d927e4542110381d94c4}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\#get\-Types(org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Named\-Individual, boolean)} or \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner_a8bbe84b91ee32baa0ad239d8eae8841e}{org.\-semanticweb.\-owlapi.\-reasoner.\-O\-W\-L\-Reasoner\#get\-Instances(org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Class\-Expression, boolean)}. 
+
+\subsection{Member Data Documentation}
+\hypertarget{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_a1fbf26b542eea4dd37010729986bce6c}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Individual\-Node\-Set\-Policy@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Individual\-Node\-Set\-Policy}!B\-Y\-\_\-\-N\-A\-M\-E@{B\-Y\-\_\-\-N\-A\-M\-E}}
+\index{B\-Y\-\_\-\-N\-A\-M\-E@{B\-Y\-\_\-\-N\-A\-M\-E}!org::semanticweb::owlapi::reasoner::IndividualNodeSetPolicy@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Individual\-Node\-Set\-Policy}}
+\subsubsection[{B\-Y\-\_\-\-N\-A\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy.\-B\-Y\-\_\-\-N\-A\-M\-E}}\label{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_a1fbf26b542eea4dd37010729986bce6c}
+Indicates that {\ttfamily Node\-Set}s of named individuals will always contain singleton {\ttfamily Node}s and individuals that are the same as each other will not be grouped together in one {\ttfamily Node} within the {\ttfamily Node\-Set}.For example, if {\ttfamily i}, {\ttfamily j} and {\ttfamily k} are individuals, and they are instances of {\ttfamily C}, and {\ttfamily i} is entailed to be the same as {\ttfamily j} then asking for the instances of {\ttfamily A} will return a {\ttfamily Node\-Set} containing {\itshape three} {\ttfamily Node}s, one containing {\ttfamily i}, one containing {\ttfamily j} and the third containing {\ttfamily k}. \hypertarget{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_af84f77cd66fa440ee5a8597326b098e3}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Individual\-Node\-Set\-Policy@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Individual\-Node\-Set\-Policy}!B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S@{B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S}}
+\index{B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S@{B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S}!org::semanticweb::owlapi::reasoner::IndividualNodeSetPolicy@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Individual\-Node\-Set\-Policy}}
+\subsubsection[{B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-reasoner.\-Individual\-Node\-Set\-Policy.\-B\-Y\-\_\-\-S\-A\-M\-E\-\_\-\-A\-S}}\label{enumorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_individual_node_set_policy_af84f77cd66fa440ee5a8597326b098e3}
+Indicates that {\ttfamily Node\-Set}s of named individuals returned by the reasoner will contain {\ttfamily Node}s that group individuals which are entailed to be the same as each other. For example, if {\ttfamily i}, {\ttfamily j} and {\ttfamily k} are individuals, and they are instances of {\ttfamily C}, and {\ttfamily i} is entailed to be the same as {\ttfamily j} then asking for the instances of {\ttfamily A} will return a {\ttfamily Node\-Set} containing two {\ttfamily Node}s, one containing {\ttfamily i} and {\ttfamily j} and the other containing {\ttfamily k}. 
+
+The documentation for this enum was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/reasoner/\hyperlink{_individual_node_set_policy_8java}{Individual\-Node\-Set\-Policy.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,305 @@
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4}{\section{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$ Interface Reference}
+\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4}\index{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$@{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$}}
+}
+Inheritance diagram for uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+N \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a52f038f829efa0d87f22baab3be1d17d}{get\-User\-Object} ()
+\item 
+Tree$<$ N $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a27542c2dbe559b47928c8708e35660cd}{get\-Parent} ()
+\item 
+List$<$ Tree$<$ N $>$ $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a48ed9eeedd9b96a050910919fe952178}{get\-Children} ()
+\item 
+Object \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad226272158f768b520714f2218635d56}{get\-Edge} (Tree$<$ N $>$ child)
+\item 
+void \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ab8fc39848ee3fcfaf07c86ee1712164a}{sort\-Children} (Comparator$<$ Tree$<$ N $>$$>$ comparator)
+\item 
+int \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a532b7efecad9774eef1e58f7f82a058a}{get\-Child\-Count} ()
+\item 
+boolean \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_afd39891bbdc58526ebadcd44ac9b5419}{is\-Root} ()
+\item 
+boolean \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a009cef3986a8a9657b4e976c46f02890}{is\-Leaf} ()
+\item 
+Tree$<$ N $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a52bdb883883b40ed4ef0530147d407b6}{get\-Root} ()
+\item 
+List$<$ Tree$<$ N $>$ $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a9118d05614f6855eb42a3c0466bc4b9e}{get\-Path\-To\-Root} ()
+\item 
+List$<$ N $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a649410090cc50412e7b4cdde0d6dff67}{get\-User\-Object\-Path\-To\-Root} ()
+\item 
+void \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad9a0175b650d7df95d0d69e72f528608}{dump} (Print\-Writer writer)
+\item 
+void \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ab95c42220fe00bb196ef5d04dcaa12b7}{dump} (Print\-Writer writer, int indent)
+\item 
+void \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a91227d0e2b5078f8eb0fbf2d69aa6d1a}{set\-Node\-Renderer} (Node\-Renderer$<$ N $>$ renderer)
+\item 
+Set$<$ N $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad1b980ca1f2a356702a313668eb7147f}{get\-User\-Object\-Closure} ()
+\item 
+List$<$ N $>$ \hyperlink{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad55968a050dd73f6c82ecaef6df8cad1}{fill\-Depth\-First} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 22-\/\-Jan-\/2008\par
+\par
+ 
+\begin{DoxyParams}{Parameters}
+{\em $<$\-N$>$} & the kind of elements in the tree \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad9a0175b650d7df95d0d69e72f528608}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!dump@{dump}}
+\index{dump@{dump}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.dump (
+\begin{DoxyParamCaption}
+\item[{Print\-Writer}]{writer}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad9a0175b650d7df95d0d69e72f528608}
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & the writer to print to \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a0ca2ba18a5926b17269cf14b93dec02b}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ab95c42220fe00bb196ef5d04dcaa12b7}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!dump@{dump}}
+\index{dump@{dump}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{dump}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.dump (
+\begin{DoxyParamCaption}
+\item[{Print\-Writer}]{writer, }
+\item[{int}]{indent}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ab95c42220fe00bb196ef5d04dcaa12b7}
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & the writer to print to \\
+\hline
+{\em indent} & how much to indent \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_ad9a3bbd77f4e7723f76543a6b45d27be}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad55968a050dd73f6c82ecaef6df8cad1}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!fill\-Depth\-First@{fill\-Depth\-First}}
+\index{fill\-Depth\-First@{fill\-Depth\-First}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{fill\-Depth\-First}]{\setlength{\rightskip}{0pt plus 5cm}List$<$N$>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.fill\-Depth\-First (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad55968a050dd73f6c82ecaef6df8cad1}
+\begin{DoxyReturn}{Returns}
+the list of elements 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a94bbc860e6204ec39c6b6180530d75d4}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a532b7efecad9774eef1e58f7f82a058a}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-Child\-Count@{get\-Child\-Count}}
+\index{get\-Child\-Count@{get\-Child\-Count}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-Child\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-Child\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a532b7efecad9774eef1e58f7f82a058a}
+A convenience method that gets the number of child nodes that this node has. \begin{DoxyReturn}{Returns}
+The count of the number of children of this node. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a42db1cf86ddecf1c30e72f13850a52a7}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a48ed9eeedd9b96a050910919fe952178}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-Children@{get\-Children}}
+\index{get\-Children@{get\-Children}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-Children}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Tree$<$N$>$ $>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-Children (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a48ed9eeedd9b96a050910919fe952178}
+Gets the children of this tree node. \begin{DoxyReturn}{Returns}
+A list of children. If this tree node doesn't have any children then the list will be empty. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_adf8b9df21b7f59b66a492c650e1448ce}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad226272158f768b520714f2218635d56}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-Edge@{get\-Edge}}
+\index{get\-Edge@{get\-Edge}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}Object uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-Edge (
+\begin{DoxyParamCaption}
+\item[{Tree$<$ N $>$}]{child}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad226272158f768b520714f2218635d56}
+
+\begin{DoxyParams}{Parameters}
+{\em child} & the child to use \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the object stored as edge 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_abeccd2798524d875c42c468ecf80bf4b}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a27542c2dbe559b47928c8708e35660cd}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-Parent@{get\-Parent}}
+\index{get\-Parent@{get\-Parent}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-Parent}]{\setlength{\rightskip}{0pt plus 5cm}Tree$<$N$>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a27542c2dbe559b47928c8708e35660cd}
+Gets the parent of this tree node. \begin{DoxyReturn}{Returns}
+The parent tree node, or {\ttfamily null} if this node doesn't have a parent. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_ad1d05c3e60b202c3d0f9156da712b01c}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a9118d05614f6855eb42a3c0466bc4b9e}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-Path\-To\-Root@{get\-Path\-To\-Root}}
+\index{get\-Path\-To\-Root@{get\-Path\-To\-Root}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-Path\-To\-Root}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Tree$<$N$>$ $>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-Path\-To\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a9118d05614f6855eb42a3c0466bc4b9e}
+\begin{DoxyReturn}{Returns}
+the path to the root 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a44453499d68f9f61356fed03d4766d0f}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a52bdb883883b40ed4ef0530147d407b6}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-Root@{get\-Root}}
+\index{get\-Root@{get\-Root}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-Root}]{\setlength{\rightskip}{0pt plus 5cm}Tree$<$N$>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a52bdb883883b40ed4ef0530147d407b6}
+A convenience method that gets the root of this tree. \begin{DoxyReturn}{Returns}
+The root node, which could be this node. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a77b5631f3f1f401dc2d2bf4552bf5522}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a52f038f829efa0d87f22baab3be1d17d}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-User\-Object@{get\-User\-Object}}
+\index{get\-User\-Object@{get\-User\-Object}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-User\-Object}]{\setlength{\rightskip}{0pt plus 5cm}N uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-User\-Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a52f038f829efa0d87f22baab3be1d17d}
+Gets the \char`\"{}content\char`\"{} of this tree node. \begin{DoxyReturn}{Returns}
+The user content of this node. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a4d77d162dda0f1d5e315e4414e8bd4ea}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad1b980ca1f2a356702a313668eb7147f}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-User\-Object\-Closure@{get\-User\-Object\-Closure}}
+\index{get\-User\-Object\-Closure@{get\-User\-Object\-Closure}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-User\-Object\-Closure}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$N$>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-User\-Object\-Closure (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ad1b980ca1f2a356702a313668eb7147f}
+\begin{DoxyReturn}{Returns}
+the set of user objects 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a13a22d648cf1fde7b58ded2b27f23b23}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a649410090cc50412e7b4cdde0d6dff67}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!get\-User\-Object\-Path\-To\-Root@{get\-User\-Object\-Path\-To\-Root}}
+\index{get\-User\-Object\-Path\-To\-Root@{get\-User\-Object\-Path\-To\-Root}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{get\-User\-Object\-Path\-To\-Root}]{\setlength{\rightskip}{0pt plus 5cm}List$<$N$>$ uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.get\-User\-Object\-Path\-To\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a649410090cc50412e7b4cdde0d6dff67}
+\begin{DoxyReturn}{Returns}
+the elements in the path to root 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_acf02485451e6873cf4646a73d199ebf7}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a009cef3986a8a9657b4e976c46f02890}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!is\-Leaf@{is\-Leaf}}
+\index{is\-Leaf@{is\-Leaf}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{is\-Leaf}]{\setlength{\rightskip}{0pt plus 5cm}boolean uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.is\-Leaf (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a009cef3986a8a9657b4e976c46f02890}
+A convenience method that determines if this node is a leaf node (because it has no children). \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this node is a leaf node otherwise {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_adb625df0539d1dee4f7ec0a692e595ef}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_afd39891bbdc58526ebadcd44ac9b5419}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!is\-Root@{is\-Root}}
+\index{is\-Root@{is\-Root}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{is\-Root}]{\setlength{\rightskip}{0pt plus 5cm}boolean uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.is\-Root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_afd39891bbdc58526ebadcd44ac9b5419}
+A convenience method that determines if this is a root node (because it has no parent node) \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this is a root node, otherwise {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a829e84fda361ad777546b4cdabb57eff}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a91227d0e2b5078f8eb0fbf2d69aa6d1a}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!set\-Node\-Renderer@{set\-Node\-Renderer}}
+\index{set\-Node\-Renderer@{set\-Node\-Renderer}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{set\-Node\-Renderer}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.set\-Node\-Renderer (
+\begin{DoxyParamCaption}
+\item[{Node\-Renderer$<$ N $>$}]{renderer}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_a91227d0e2b5078f8eb0fbf2d69aa6d1a}
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & the renderer to use \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a1c790f73c0ea4214748b4b166fe3dd2c}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+\hypertarget{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ab8fc39848ee3fcfaf07c86ee1712164a}{\index{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}!sort\-Children@{sort\-Children}}
+\index{sort\-Children@{sort\-Children}!uk::ac::manchester::cs::bhig::util::Tree< N >@{uk\-::ac\-::manchester\-::cs\-::bhig\-::util\-::\-Tree$<$ N $>$}}
+\subsubsection[{sort\-Children}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Tree$<$ N $>$.sort\-Children (
+\begin{DoxyParamCaption}
+\item[{Comparator$<$ Tree$<$ N $>$$>$}]{comparator}
+\end{DoxyParamCaption}
+)}}\label{interfaceuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_tree_3_01_n_01_4_ab8fc39848ee3fcfaf07c86ee1712164a}
+Sorts the children using the specified comparator 
+\begin{DoxyParams}{Parameters}
+{\em comparator} & The comparator to be used for the sorting. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1bhig_1_1util_1_1_mutable_tree_3_01_n_01_4_a5919d9c72ea1a604d8e3099a712fdd48}{uk.\-ac.\-manchester.\-cs.\-bhig.\-util.\-Mutable\-Tree$<$ N $>$}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/uk/ac/manchester/cs/bhig/util/\hyperlink{_tree_8java}{Tree.\-java}\end{DoxyCompactItemize}

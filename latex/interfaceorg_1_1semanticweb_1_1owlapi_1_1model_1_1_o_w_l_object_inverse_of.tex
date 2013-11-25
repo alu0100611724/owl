@@ -1,0 +1,45 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_inverse_of}{\section{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Object\-Inverse\-Of Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_inverse_of}\index{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Object\-Inverse\-Of@{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Object\-Inverse\-Of}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Object\-Inverse\-Of\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.664190cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_inverse_of}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property_expression}{O\-W\-L\-Object\-Property\-Expression} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_inverse_of_a1e20063cf7e809f80cf57ca0439726a3}{get\-Inverse} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group Date\-: 24-\/\-Oct-\/2006 
+
+Represents a \href{http://www.w3.org/TR/2009/REC-owl2-syntax-20091027/#Inverse_Object_Properties}{\tt Object\-Inverse\-Of} property expression in the O\-W\-L 2 Specification. 
+
+Represents the inverse of a property expression. This can be used to refer to the inverse of a property, without actually naming the property. For example, consider the property has\-Part, the inverse property of has\-Part (is\-Part\-Of) can be referred to using this interface inverse\-Of(has\-Part), which can be used in restrictions e.\-g. inverse\-Of(has\-Part) some Car refers to the set of things that are part of at least one car. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_inverse_of_a1e20063cf7e809f80cf57ca0439726a3}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Object\-Inverse\-Of@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Object\-Inverse\-Of}!get\-Inverse@{get\-Inverse}}
+\index{get\-Inverse@{get\-Inverse}!org::semanticweb::owlapi::model::OWLObjectInverseOf@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Object\-Inverse\-Of}}
+\subsubsection[{get\-Inverse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Object\-Property\-Expression} org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Object\-Inverse\-Of.\-get\-Inverse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_inverse_of_a1e20063cf7e809f80cf57ca0439726a3}
+Gets the property expression that this is the inverse of. \begin{DoxyReturn}{Returns}
+The object property expression such that this object property expression is an inverse of it. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_object_inverse_of_impl_aead0e0fe96ba89881ea25eef6a97133e}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Object\-Inverse\-Of\-Impl}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/model/\hyperlink{_o_w_l_object_inverse_of_8java}{O\-W\-L\-Object\-Inverse\-Of.\-java}\end{DoxyCompactItemize}

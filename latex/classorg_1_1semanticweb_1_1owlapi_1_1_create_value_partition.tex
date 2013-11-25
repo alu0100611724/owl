@@ -1,0 +1,123 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition}{\section{org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition}\index{org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition@{org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad2d4f92469ea1c479f2b6a0cf4e9e36a}{Create\-Value\-Partition} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_data_factory}{O\-W\-L\-Data\-Factory} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_abstract_composite_ontology_change_aebcfd0601543ebb5f72b1fe53a5352c9}{data\-Factory}, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad0545108ace014a623992232fafee5b7}{value\-Partition\-Class}, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad93b5480402729ec84a6a4cc96bd3792}{value\-Partion\-Classes}, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property}{O\-W\-L\-Object\-Property} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ac88312b96c91192a43e20b2b78df3860}{value\-Partition\-Property}, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a51fe93de1be6192dd7a7efcb409a8d8c}{target\-Ontology})
+\item 
+List$<$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a24ca66232bcb652688f8e438e74718f2}{get\-Changes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad5802bcb1bad2a9edf26082a271c7698}{generate\-Changes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_change}{O\-W\-L\-Ontology\-Change} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a3253f2fc9c5a1b4f7eefb965428f382b}{changes}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a51fe93de1be6192dd7a7efcb409a8d8c}{target\-Ontology}
+\item 
+final Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad93b5480402729ec84a6a4cc96bd3792}{value\-Partion\-Classes}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad0545108ace014a623992232fafee5b7}{value\-Partition\-Class}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property}{O\-W\-L\-Object\-Property} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ac88312b96c91192a43e20b2b78df3860}{value\-Partition\-Property}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 23-\/\-Jul-\/2007\par
+\par
+ 
+
+This composite change will create a value partion -\/ see \char`\"{}pattern 2\char`\"{} in \char`\"{}\-Representing Specified Values in O\-W\-L\-: \char`\"{}value partitions\char`\"{} and \char`\"{}value sets\char`\"{}\char`\"{} (\href{http://www.w3.org/TR/swbp-specified-values}{\tt http\-://www.\-w3.\-org/\-T\-R/swbp-\/specified-\/values}.) 
+
+A value partition is an ontology design pattern which is used to represent a set of closed values for a particular property. For example the property has\-Size might only take values from Small\-Size, Medium\-Size and Large\-Size. In this case, the value partition is Size, and has the values Small\-Size, Medium\-Size and Large\-Size. This composite change will set has\-Size to be functional and its range as Size. Size will be covered by Small\-Size, Medium\-Size and Large\-Size and these classes which represent the values will be made disjoint with eachother. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad2d4f92469ea1c479f2b6a0cf4e9e36a}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!Create\-Value\-Partition@{Create\-Value\-Partition}}
+\index{Create\-Value\-Partition@{Create\-Value\-Partition}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{Create\-Value\-Partition}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-Create\-Value\-Partition (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Data\-Factory}}]{data\-Factory, }
+\item[{{\bf O\-W\-L\-Class}}]{value\-Partition\-Class, }
+\item[{Set$<$ {\bf O\-W\-L\-Class} $>$}]{value\-Partion\-Classes, }
+\item[{{\bf O\-W\-L\-Object\-Property}}]{value\-Partition\-Property, }
+\item[{{\bf O\-W\-L\-Ontology}}]{target\-Ontology}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad2d4f92469ea1c479f2b6a0cf4e9e36a}
+Creates a composite change that will create a value partition.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data\-Factory} & A data factory which can be used to create the necessary axioms \\
+\hline
+{\em value\-Partition\-Class} & The class which represents the value partition. \\
+\hline
+{\em value\-Partion\-Classes} & The classes that represent the various values of the value partition. \\
+\hline
+{\em value\-Partition\-Property} & the property which should be used in conjunction with the value partition. \\
+\hline
+{\em target\-Ontology} & The target ontology which the axioms that are necessary to create the value partition will be added to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad5802bcb1bad2a9edf26082a271c7698}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!generate\-Changes@{generate\-Changes}}
+\index{generate\-Changes@{generate\-Changes}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{generate\-Changes}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-generate\-Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad5802bcb1bad2a9edf26082a271c7698}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a24ca66232bcb652688f8e438e74718f2}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!get\-Changes@{get\-Changes}}
+\index{get\-Changes@{get\-Changes}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{get\-Changes}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf O\-W\-L\-Ontology\-Change}$>$ org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-get\-Changes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a24ca66232bcb652688f8e438e74718f2}
+Gets the changes which compose this composite change. Once this method has been invoked, it will {\itshape always{\itshape  return the same list of changes. \begin{DoxyReturn}{Returns}
+A list of ontology changes. 
+\end{DoxyReturn}
+}}
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1_o_w_l_composite_ontology_change_a047d3f540ac840c0ac0285bc576636d2}{org.\-semanticweb.\-owlapi.\-O\-W\-L\-Composite\-Ontology\-Change}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a3253f2fc9c5a1b4f7eefb965428f382b}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!changes@{changes}}
+\index{changes@{changes}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{changes}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf O\-W\-L\-Ontology\-Change}$>$ org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-changes\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a3253f2fc9c5a1b4f7eefb965428f382b}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a51fe93de1be6192dd7a7efcb409a8d8c}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!target\-Ontology@{target\-Ontology}}
+\index{target\-Ontology@{target\-Ontology}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{target\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Ontology} org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-target\-Ontology\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_a51fe93de1be6192dd7a7efcb409a8d8c}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad93b5480402729ec84a6a4cc96bd3792}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!value\-Partion\-Classes@{value\-Partion\-Classes}}
+\index{value\-Partion\-Classes@{value\-Partion\-Classes}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{value\-Partion\-Classes}]{\setlength{\rightskip}{0pt plus 5cm}final Set$<${\bf O\-W\-L\-Class}$>$ org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-value\-Partion\-Classes\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad93b5480402729ec84a6a4cc96bd3792}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad0545108ace014a623992232fafee5b7}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!value\-Partition\-Class@{value\-Partition\-Class}}
+\index{value\-Partition\-Class@{value\-Partition\-Class}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{value\-Partition\-Class}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Class} org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-value\-Partition\-Class\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ad0545108ace014a623992232fafee5b7}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ac88312b96c91192a43e20b2b78df3860}{\index{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}!value\-Partition\-Property@{value\-Partition\-Property}}
+\index{value\-Partition\-Property@{value\-Partition\-Property}!org::semanticweb::owlapi::CreateValuePartition@{org\-::semanticweb\-::owlapi\-::\-Create\-Value\-Partition}}
+\subsubsection[{value\-Partition\-Property}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Object\-Property} org.\-semanticweb.\-owlapi.\-Create\-Value\-Partition.\-value\-Partition\-Property\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1_create_value_partition_ac88312b96c91192a43e20b2b78df3860}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/org/semanticweb/owlapi/\hyperlink{_create_value_partition_8java}{Create\-Value\-Partition.\-java}\end{DoxyCompactItemize}

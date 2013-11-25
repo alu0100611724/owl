@@ -1,0 +1,88 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider}{\section{org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider}\index{org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider@{org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_ad7b7752a15f563a27e33246617947a0f}{get\-Entities} (String short\-Form)
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_a98406a302d6aed658022aca7a87cc7ab}{get\-Entity} (String short\-Form)
+\item 
+Set$<$ String $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_a8acf939772f74b320eff8c2b07a7294d}{get\-Short\-Forms} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 18-\/\-Apr-\/2007\par
+\par
+
+
+A short form provider which is capable of translating back and forth between entities and their short forms. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_ad7b7752a15f563a27e33246617947a0f}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider}!get\-Entities@{get\-Entities}}
+\index{get\-Entities@{get\-Entities}!org::semanticweb::owlapi::util::BidirectionalShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider}}
+\subsubsection[{get\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Entity}$>$ org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider.\-get\-Entities (
+\begin{DoxyParamCaption}
+\item[{String}]{short\-Form}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_ad7b7752a15f563a27e33246617947a0f}
+For a given short form this method obtains the entities which have this short form. 
+\begin{DoxyParams}{Parameters}
+{\em short\-Form} & The short form of the entities that will be retrieved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The set of entities that have the specified short form. If there are no entities which have the specified short form then an empty set will be returned. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_caching_bidirectional_short_form_provider_a52d60cb706e3e38c74591bbedc5e3e21}{org.\-semanticweb.\-owlapi.\-util.\-Caching\-Bidirectional\-Short\-Form\-Provider}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_a98406a302d6aed658022aca7a87cc7ab}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider}!get\-Entity@{get\-Entity}}
+\index{get\-Entity@{get\-Entity}!org::semanticweb::owlapi::util::BidirectionalShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider}}
+\subsubsection[{get\-Entity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Entity} org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider.\-get\-Entity (
+\begin{DoxyParamCaption}
+\item[{String}]{short\-Form}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_a98406a302d6aed658022aca7a87cc7ab}
+A convenience method which gets an entity from its short form. 
+\begin{DoxyParams}{Parameters}
+{\em short\-Form} & The short form of the entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The actual entity or {\ttfamily null} if there is no entity which has the specified short form. If the specified short form corresponds to more than one entity then an entity will be chosen by the implementation of the short form provider. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_caching_bidirectional_short_form_provider_a823ade303b20a739ce3df4bf3226d7b0}{org.\-semanticweb.\-owlapi.\-util.\-Caching\-Bidirectional\-Short\-Form\-Provider}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_a8acf939772f74b320eff8c2b07a7294d}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider@{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider}!get\-Short\-Forms@{get\-Short\-Forms}}
+\index{get\-Short\-Forms@{get\-Short\-Forms}!org::semanticweb::owlapi::util::BidirectionalShortFormProvider@{org\-::semanticweb\-::owlapi\-::util\-::\-Bidirectional\-Short\-Form\-Provider}}
+\subsubsection[{get\-Short\-Forms}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$String$>$ org.\-semanticweb.\-owlapi.\-util.\-Bidirectional\-Short\-Form\-Provider.\-get\-Short\-Forms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1util_1_1_bidirectional_short_form_provider_a8acf939772f74b320eff8c2b07a7294d}
+Gets all of the short forms that are mapped to entities. \begin{DoxyReturn}{Returns}
+A set, which contains the strings representing the short forms of entities for which there is a mapping. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_caching_bidirectional_short_form_provider_aa97d678721a067c0eb194bb824cc4ea3}{org.\-semanticweb.\-owlapi.\-util.\-Caching\-Bidirectional\-Short\-Form\-Provider}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_bidirectional_short_form_provider_8java}{Bidirectional\-Short\-Form\-Provider.\-java}\end{DoxyCompactItemize}

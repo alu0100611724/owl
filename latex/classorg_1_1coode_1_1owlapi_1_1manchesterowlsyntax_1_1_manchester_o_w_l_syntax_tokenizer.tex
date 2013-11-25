@@ -1,0 +1,183 @@
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer}{\section{org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer Class Reference}
+\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer}\index{org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Token}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae49dc1aa63532369e1eec8d5e45e6c83}{Manchester\-O\-W\-L\-Syntax\-Tokenizer} (String \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab7d953c443c5bb870ffd378bb37fb230}{buffer})
+\item 
+List$<$ Token $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a86000b35ac769c1ee44f65d9802469f7}{tokenize} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static boolean \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae8ecb7a74eafa83fa7ee01b868c9ba05}{E\-O\-F} (String s)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a3148fdc445335cfd4b3dcb98ffd0f26e}{E\-O\-F} = \char`\"{}$|$E\-O\-F$|$\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Set$<$ Character $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_aff48f95c9802938b89e1ee204f6749bb}{skip} = new Hash\-Set$<$Character$>$()
+\item 
+Set$<$ Character $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ad10c765e426a9ff4b0e528839436b376}{comment\-Delimiters} = new Hash\-Set$<$Character$>$()
+\item 
+Set$<$ Character $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a333411ab1441d3039a2559bfe09e4fa2}{delims} = new Hash\-Set$<$Character$>$()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a7e7f1d11f0dabd7b3f44e6447bfdb5a2}{reset} ()
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ad0cbd0a9ab8e5a23b3b772583b9df7d5}{consume\-Token} ()
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a91b0813030f26e7d9949ff13e1e3abca}{read\-Comment} ()
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a99c7e904fec32943a415d9313161bc61}{read\-String} (char terminator, boolean append\-Terminator)
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae2e2e4a742100250d2fcb93c3f5dbdd0}{read\-I\-R\-I} ()
+\item 
+char \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_af7dd703cb12e3550354192745a4b49c6}{read\-Char} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab7d953c443c5bb870ffd378bb37fb230}{buffer}
+\item 
+int \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ac5897a7d0c8d377780dc214e3ba4cfa6}{pos}
+\item 
+int \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a30a7cd2d693d53373f91f5aacab7e176}{col}
+\item 
+int \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab04e063b75cba2217791b30e1b6a4226}{row}
+\item 
+String\-Builder \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a158215089bcc0dc4f05ff959993f0852}{sb}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final char \hyperlink{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a3471def2dcfb2dcffe163eb6c06edc39}{E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R} = '\textbackslash{}\textbackslash{}'
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 19-\/\-May-\/2008\par
+ \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae49dc1aa63532369e1eec8d5e45e6c83}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!Manchester\-O\-W\-L\-Syntax\-Tokenizer@{Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\index{Manchester\-O\-W\-L\-Syntax\-Tokenizer@{Manchester\-O\-W\-L\-Syntax\-Tokenizer}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{Manchester\-O\-W\-L\-Syntax\-Tokenizer}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer (
+\begin{DoxyParamCaption}
+\item[{String}]{buffer}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae49dc1aa63532369e1eec8d5e45e6c83}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ad0cbd0a9ab8e5a23b3b772583b9df7d5}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!consume\-Token@{consume\-Token}}
+\index{consume\-Token@{consume\-Token}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{consume\-Token}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-consume\-Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ad0cbd0a9ab8e5a23b3b772583b9df7d5}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae8ecb7a74eafa83fa7ee01b868c9ba05}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!E\-O\-F@{E\-O\-F}}
+\index{E\-O\-F@{E\-O\-F}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}static boolean org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-E\-O\-F (
+\begin{DoxyParamCaption}
+\item[{String}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae8ecb7a74eafa83fa7ee01b868c9ba05}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_af7dd703cb12e3550354192745a4b49c6}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!read\-Char@{read\-Char}}
+\index{read\-Char@{read\-Char}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{read\-Char}]{\setlength{\rightskip}{0pt plus 5cm}char org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-read\-Char (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_af7dd703cb12e3550354192745a4b49c6}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a91b0813030f26e7d9949ff13e1e3abca}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!read\-Comment@{read\-Comment}}
+\index{read\-Comment@{read\-Comment}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{read\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-read\-Comment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a91b0813030f26e7d9949ff13e1e3abca}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae2e2e4a742100250d2fcb93c3f5dbdd0}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!read\-I\-R\-I@{read\-I\-R\-I}}
+\index{read\-I\-R\-I@{read\-I\-R\-I}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{read\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-read\-I\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ae2e2e4a742100250d2fcb93c3f5dbdd0}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a99c7e904fec32943a415d9313161bc61}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!read\-String@{read\-String}}
+\index{read\-String@{read\-String}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{read\-String}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-read\-String (
+\begin{DoxyParamCaption}
+\item[{char}]{terminator, }
+\item[{boolean}]{append\-Terminator}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a99c7e904fec32943a415d9313161bc61}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a7e7f1d11f0dabd7b3f44e6447bfdb5a2}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!reset@{reset}}
+\index{reset@{reset}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a7e7f1d11f0dabd7b3f44e6447bfdb5a2}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a86000b35ac769c1ee44f65d9802469f7}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{tokenize}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Token$>$ org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-tokenize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a86000b35ac769c1ee44f65d9802469f7}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab7d953c443c5bb870ffd378bb37fb230}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!buffer@{buffer}}
+\index{buffer@{buffer}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{buffer}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-buffer\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab7d953c443c5bb870ffd378bb37fb230}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a30a7cd2d693d53373f91f5aacab7e176}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!col@{col}}
+\index{col@{col}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{col}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-col\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a30a7cd2d693d53373f91f5aacab7e176}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ad10c765e426a9ff4b0e528839436b376}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!comment\-Delimiters@{comment\-Delimiters}}
+\index{comment\-Delimiters@{comment\-Delimiters}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{comment\-Delimiters}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Character$>$ org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-comment\-Delimiters = new Hash\-Set$<$Character$>$()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ad10c765e426a9ff4b0e528839436b376}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a333411ab1441d3039a2559bfe09e4fa2}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!delims@{delims}}
+\index{delims@{delims}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{delims}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Character$>$ org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-delims = new Hash\-Set$<$Character$>$()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a333411ab1441d3039a2559bfe09e4fa2}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a3148fdc445335cfd4b3dcb98ffd0f26e}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!E\-O\-F@{E\-O\-F}}
+\index{E\-O\-F@{E\-O\-F}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{E\-O\-F}]{\setlength{\rightskip}{0pt plus 5cm}final String org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-E\-O\-F = \char`\"{}$|$E\-O\-F$|$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a3148fdc445335cfd4b3dcb98ffd0f26e}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a3471def2dcfb2dcffe163eb6c06edc39}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R@{E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R}}
+\index{E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R@{E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}final char org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-E\-S\-C\-A\-P\-E\-\_\-\-C\-H\-A\-R = '\textbackslash{}\textbackslash{}'\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a3471def2dcfb2dcffe163eb6c06edc39}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ac5897a7d0c8d377780dc214e3ba4cfa6}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!pos@{pos}}
+\index{pos@{pos}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{pos}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-pos\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ac5897a7d0c8d377780dc214e3ba4cfa6}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab04e063b75cba2217791b30e1b6a4226}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!row@{row}}
+\index{row@{row}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{row}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-row\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_ab04e063b75cba2217791b30e1b6a4226}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a158215089bcc0dc4f05ff959993f0852}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!sb@{sb}}
+\index{sb@{sb}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{sb}]{\setlength{\rightskip}{0pt plus 5cm}String\-Builder org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-sb\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_a158215089bcc0dc4f05ff959993f0852}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_aff48f95c9802938b89e1ee204f6749bb}{\index{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}!skip@{skip}}
+\index{skip@{skip}!org::coode::owlapi::manchesterowlsyntax::ManchesterOWLSyntaxTokenizer@{org\-::coode\-::owlapi\-::manchesterowlsyntax\-::\-Manchester\-O\-W\-L\-Syntax\-Tokenizer}}
+\subsubsection[{skip}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$Character$>$ org.\-coode.\-owlapi.\-manchesterowlsyntax.\-Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-skip = new Hash\-Set$<$Character$>$()\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1coode_1_1owlapi_1_1manchesterowlsyntax_1_1_manchester_o_w_l_syntax_tokenizer_aff48f95c9802938b89e1ee204f6749bb}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/owlapi/manchesterowlsyntax/\hyperlink{_manchester_o_w_l_syntax_tokenizer_8java}{Manchester\-O\-W\-L\-Syntax\-Tokenizer.\-java}\end{DoxyCompactItemize}

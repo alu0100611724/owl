@@ -1,0 +1,261 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory}{\section{org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory}\index{org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory@{org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Conditional\-Copy\-Set$<$ T $>$}
+\item 
+class {\bfseries Sync\-Set$<$ T $>$}
+\item 
+class {\bfseries Thread\-Safe\-Conditional\-Copy\-Set$<$ T $>$}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a36ea8177a70e44f8ad4963f1b9e5923c}{set\-Expected\-Threads} (int value)
+\item 
+static int \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_adb2db56fc69a81c0c7251173469fb96f}{get\-Expected\-Threads} ()
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a70c50a51ac48365f1d66a43cd7006738}{create\-Set} ()
+\item 
+static$<$ T $>$ List$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a001ca5edb1b405e71254a66d25890636}{create\-List} ()
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ab545b7d14e7704a928854252f0e91da0}{create\-Set} (Collection$<$ T $>$ c)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a13bc8d48a7cd9e8aaa77b91d795b464c}{create\-Set} (int initial\-Capacity)
+\item 
+static$<$ K, V $>$ Map$<$ K, V $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a96d5c9c5b22327a472e1876bc69220e8}{create\-Map} ()
+\item 
+static$<$ K, V $>$ Map$<$ K, \\*
+Weak\-Reference$<$ V $>$ $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a6b6bc74489ee6873dd8f9db32f6d7a20}{create\-Sync\-Weak\-Map} ()
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a48a4d1a7a115b446a63bd9af0e5cfe0d}{create\-Set} (T...\-elements)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_aadfa83df38d7340a233a9e6cd6172211}{create\-Sync\-Set} ()
+\item 
+static$<$ K, V $>$\\*
+ Concurrent\-Hash\-Map$<$ K, V $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ab60fbcc2a1ae25a8b62573dcec49cc10}{create\-Sync\-Map} ()
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a0e595699beb90abc066458d92cf2497f}{get\-Copy\-On\-Request\-Set} (Collection$<$ T $>$ source)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ac55d705380ba53720429668722bf91d1}{get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection} (Collection$<$ T $>$ source)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a0527b3848425d1fdc2b1dff368d02271}{get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection} (Collection$<$ T $>$ source)
+\item 
+static$<$ T $>$ Set$<$ T $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a97abde2e1533f7248d054ae6fb4cbdb6}{get\-Thread\-Safe\-Copy\-On\-Request\-Set} (Set$<$ T $>$ source)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final Atomic\-Integer \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ade50ba4ac53f344db4906671a2a5ec0c}{expected\-Threads} = new Atomic\-Integer(8)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 10-\/\-Jan-\/2007\par
+ \par
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a001ca5edb1b405e71254a66d25890636}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-List@{create\-List}}
+\index{create\-List@{create\-List}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-List}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ List$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a001ca5edb1b405e71254a66d25890636}
+\begin{DoxyReturn}{Returns}
+fresh non threadsafe list 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a96d5c9c5b22327a472e1876bc69220e8}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Map@{create\-Map}}
+\index{create\-Map@{create\-Map}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Map}]{\setlength{\rightskip}{0pt plus 5cm}static $<$K,V$>$ Map$<$K, V$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a96d5c9c5b22327a472e1876bc69220e8}
+\begin{DoxyReturn}{Returns}
+fresh map 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a70c50a51ac48365f1d66a43cd7006738}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Set@{create\-Set}}
+\index{create\-Set@{create\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a70c50a51ac48365f1d66a43cd7006738}
+\begin{DoxyReturn}{Returns}
+fresh non threadsafe set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ab545b7d14e7704a928854252f0e91da0}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Set@{create\-Set}}
+\index{create\-Set@{create\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Set (
+\begin{DoxyParamCaption}
+\item[{Collection$<$ T $>$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ab545b7d14e7704a928854252f0e91da0}
+
+\begin{DoxyParams}{Parameters}
+{\em c} & values to add to the set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fresh non threadsafe set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a13bc8d48a7cd9e8aaa77b91d795b464c}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Set@{create\-Set}}
+\index{create\-Set@{create\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Set (
+\begin{DoxyParamCaption}
+\item[{int}]{initial\-Capacity}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a13bc8d48a7cd9e8aaa77b91d795b464c}
+
+\begin{DoxyParams}{Parameters}
+{\em initial\-Capacity} & initial capacity for the new set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fresh non threadsafe set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a48a4d1a7a115b446a63bd9af0e5cfe0d}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Set@{create\-Set}}
+\index{create\-Set@{create\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Set (
+\begin{DoxyParamCaption}
+\item[{T...}]{elements}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a48a4d1a7a115b446a63bd9af0e5cfe0d}
+
+\begin{DoxyParams}{Parameters}
+{\em elements} & values to add to the set \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+fresh non threadsafe set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ab60fbcc2a1ae25a8b62573dcec49cc10}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Sync\-Map@{create\-Sync\-Map}}
+\index{create\-Sync\-Map@{create\-Sync\-Map}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Sync\-Map}]{\setlength{\rightskip}{0pt plus 5cm}static $<$K,V$>$ Concurrent\-Hash\-Map$<$K, V$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Sync\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ab60fbcc2a1ae25a8b62573dcec49cc10}
+\begin{DoxyReturn}{Returns}
+fresh threadsafe hashmap 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_aadfa83df38d7340a233a9e6cd6172211}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Sync\-Set@{create\-Sync\-Set}}
+\index{create\-Sync\-Set@{create\-Sync\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Sync\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Sync\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_aadfa83df38d7340a233a9e6cd6172211}
+\begin{DoxyReturn}{Returns}
+fresh threadsafe set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a6b6bc74489ee6873dd8f9db32f6d7a20}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!create\-Sync\-Weak\-Map@{create\-Sync\-Weak\-Map}}
+\index{create\-Sync\-Weak\-Map@{create\-Sync\-Weak\-Map}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{create\-Sync\-Weak\-Map}]{\setlength{\rightskip}{0pt plus 5cm}static $<$K,V$>$ Map$<$K, Weak\-Reference$<$V$>$ $>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-create\-Sync\-Weak\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a6b6bc74489ee6873dd8f9db32f6d7a20}
+\begin{DoxyReturn}{Returns}
+a new weak hashmap wrapped as a synchronized map 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a0e595699beb90abc066458d92cf2497f}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!get\-Copy\-On\-Request\-Set@{get\-Copy\-On\-Request\-Set}}
+\index{get\-Copy\-On\-Request\-Set@{get\-Copy\-On\-Request\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{get\-Copy\-On\-Request\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-get\-Copy\-On\-Request\-Set (
+\begin{DoxyParamCaption}
+\item[{Collection$<$ T $>$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a0e595699beb90abc066458d92cf2497f}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & the collection to lazily copy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a lazy defensive copy for source; the source collection will not be copied until a method that modifies the collection gets called, e.\-g., add(), add\-All() 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a0527b3848425d1fdc2b1dff368d02271}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection@{get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection}}
+\index{get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection@{get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-get\-Copy\-On\-Request\-Set\-From\-Immutable\-Collection (
+\begin{DoxyParamCaption}
+\item[{Collection$<$ T $>$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a0527b3848425d1fdc2b1dff368d02271}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+copy on request that does not build a list immediately 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ac55d705380ba53720429668722bf91d1}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection@{get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection}}
+\index{get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection@{get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-get\-Copy\-On\-Request\-Set\-From\-Mutable\-Collection (
+\begin{DoxyParamCaption}
+\item[{Collection$<$ T $>$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ac55d705380ba53720429668722bf91d1}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+copy on request that builds a list from the input set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_adb2db56fc69a81c0c7251173469fb96f}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!get\-Expected\-Threads@{get\-Expected\-Threads}}
+\index{get\-Expected\-Threads@{get\-Expected\-Threads}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{get\-Expected\-Threads}]{\setlength{\rightskip}{0pt plus 5cm}static int org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-get\-Expected\-Threads (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_adb2db56fc69a81c0c7251173469fb96f}
+\begin{DoxyReturn}{Returns}
+The current number of expected threads. 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a97abde2e1533f7248d054ae6fb4cbdb6}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!get\-Thread\-Safe\-Copy\-On\-Request\-Set@{get\-Thread\-Safe\-Copy\-On\-Request\-Set}}
+\index{get\-Thread\-Safe\-Copy\-On\-Request\-Set@{get\-Thread\-Safe\-Copy\-On\-Request\-Set}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{get\-Thread\-Safe\-Copy\-On\-Request\-Set}]{\setlength{\rightskip}{0pt plus 5cm}static $<$T$>$ Set$<$T$>$ org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-get\-Thread\-Safe\-Copy\-On\-Request\-Set (
+\begin{DoxyParamCaption}
+\item[{Set$<$ T $>$}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a97abde2e1533f7248d054ae6fb4cbdb6}
+
+\begin{DoxyParams}{Parameters}
+{\em source} & initial values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a threadsafe copy on request set 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a36ea8177a70e44f8ad4963f1b9e5923c}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!set\-Expected\-Threads@{set\-Expected\-Threads}}
+\index{set\-Expected\-Threads@{set\-Expected\-Threads}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{set\-Expected\-Threads}]{\setlength{\rightskip}{0pt plus 5cm}static void org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-set\-Expected\-Threads (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_a36ea8177a70e44f8ad4963f1b9e5923c}
+
+\begin{DoxyParams}{Parameters}
+{\em value} & the number of expected threads that will access threadsafe collections; useful for increasing the concurrency in Concurrent\-Hash\-Maps \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ade50ba4ac53f344db4906671a2a5ec0c}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}!expected\-Threads@{expected\-Threads}}
+\index{expected\-Threads@{expected\-Threads}!org::semanticweb::owlapi::util::CollectionFactory@{org\-::semanticweb\-::owlapi\-::util\-::\-Collection\-Factory}}
+\subsubsection[{expected\-Threads}]{\setlength{\rightskip}{0pt plus 5cm}final Atomic\-Integer org.\-semanticweb.\-owlapi.\-util.\-Collection\-Factory.\-expected\-Threads = new Atomic\-Integer(8)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_collection_factory_ade50ba4ac53f344db4906671a2a5ec0c}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_collection_factory_8java}{Collection\-Factory.\-java}\end{DoxyCompactItemize}

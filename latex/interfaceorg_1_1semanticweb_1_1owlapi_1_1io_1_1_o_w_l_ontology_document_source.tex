@@ -1,0 +1,115 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source}{\section{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source}\index{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source@{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.641834cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_afde55562eda873b241b32ef90f2b66c6}{is\-Reader\-Available} ()
+\item 
+Reader \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a00627f57775a820a8f8fdfd6b7e75c68}{get\-Reader} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a4dbf1b82137983881468ec59f85d88d6}{is\-Input\-Stream\-Available} ()
+\item 
+Input\-Stream \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a5a72e8c492895465295bf5c3609c97ac}{get\-Input\-Stream} ()
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_ad7904700cf9be0b4b52dd37e4c55c856}{get\-Document\-I\-R\-I} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 24-\/\-Apr-\/2007\par
+\par
+ A document source provides a point for loading an ontology. A document source may provide three ways of obtaining an ontology document\-: 
+\begin{DoxyEnumerate}
+\item From a \hyperlink{}{java.\-io.\-Reader} 
+\item From an \hyperlink{}{java.\-io.\-Input\-Stream} 
+\item From an ontology document \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{org.\-semanticweb.\-owlapi.\-model.\-I\-R\-I} 
+\end{DoxyEnumerate}Consumers that use a document source will attempt to obtain a concrete representation of an ontology in the above order. 
+
+Note that while an ontology document source may appear similar to a S\-A\-X input source, an important difference is that the get\-Reader and get\-Input\-Stream methods return new instances each time the method is called. This allows multiple attempts at loading an ontology. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_ad7904700cf9be0b4b52dd37e4c55c856}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}!get\-Document\-I\-R\-I@{get\-Document\-I\-R\-I}}
+\index{get\-Document\-I\-R\-I@{get\-Document\-I\-R\-I}!org::semanticweb::owlapi::io::OWLOntologyDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}}
+\subsubsection[{get\-Document\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-R\-I} org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source.\-get\-Document\-I\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_ad7904700cf9be0b4b52dd37e4c55c856}
+Gets the I\-R\-I of the ontology document. \begin{DoxyReturn}{Returns}
+An I\-R\-I which represents the ontology document I\-R\-I -\/ this will never be {\ttfamily null}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_stream_document_source_a78a9bdffeb1e067250008bf88c2200a0}{org.\-semanticweb.\-owlapi.\-io.\-Stream\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_string_document_source_a8c15704aaf3aa4f332e5a9c4129924b2}{org.\-semanticweb.\-owlapi.\-io.\-String\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_reader_document_source_a33a92ce9df110954bb7594c3fef40bee}{org.\-semanticweb.\-owlapi.\-io.\-Reader\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a2d0fb3aa014212c488920cc566d3253f}{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source}, and \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_i_r_i_document_source_a4813dbfb2d5038475eb5c165a02ace1e}{org.\-semanticweb.\-owlapi.\-io.\-I\-R\-I\-Document\-Source}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a5a72e8c492895465295bf5c3609c97ac}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}!get\-Input\-Stream@{get\-Input\-Stream}}
+\index{get\-Input\-Stream@{get\-Input\-Stream}!org::semanticweb::owlapi::io::OWLOntologyDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}}
+\subsubsection[{get\-Input\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}Input\-Stream org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source.\-get\-Input\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a5a72e8c492895465295bf5c3609c97ac}
+If an input stream can be obtained from this document source then this method creates it. This method may be called multiple times. Each invocation will return a new input stream. This method should not be called if the {\ttfamily is\-Input\-Stream\-Available} method returns {\ttfamily false}. \begin{DoxyReturn}{Returns}
+A new input stream which the ontology can be read from. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_stream_document_source_a27d4c73a6473c7553386bb526861cc2d}{org.\-semanticweb.\-owlapi.\-io.\-Stream\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_reader_document_source_a55429dd5f0aa07bfa820be09720a4386}{org.\-semanticweb.\-owlapi.\-io.\-Reader\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_string_document_source_abe45464b1c4ed58c531dc6a8d89be56d}{org.\-semanticweb.\-owlapi.\-io.\-String\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a1c37053cb6c2d5b84cd3edc012b8b6d4}{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source}, and \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_i_r_i_document_source_a1ffc6e478c0fa8a28804ff74b01cd235}{org.\-semanticweb.\-owlapi.\-io.\-I\-R\-I\-Document\-Source}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a00627f57775a820a8f8fdfd6b7e75c68}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}!get\-Reader@{get\-Reader}}
+\index{get\-Reader@{get\-Reader}!org::semanticweb::owlapi::io::OWLOntologyDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}}
+\subsubsection[{get\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}Reader org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source.\-get\-Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a00627f57775a820a8f8fdfd6b7e75c68}
+Gets a reader which an ontology document can be read from. This method may be called multiple times. Each invocation will return a new {\ttfamily Reader}. This method should not be called if the {\ttfamily is\-Reader\-Available} method returns false. A {\ttfamily Runtime} execption will be thrown if this happens. \begin{DoxyReturn}{Returns}
+A new {\ttfamily Reader} which the ontology can be read from. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_stream_document_source_a69bf4f757d5e8c9ee3f86cd20932ae1b}{org.\-semanticweb.\-owlapi.\-io.\-Stream\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_reader_document_source_a2a80126be7470ff1ba03d99b67ee1752}{org.\-semanticweb.\-owlapi.\-io.\-Reader\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a5c3ba3d12aec65c2cab64a2a156ed7cd}{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_string_document_source_a403325bbf333f1c0eaa410770dbc23bc}{org.\-semanticweb.\-owlapi.\-io.\-String\-Document\-Source}, and \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_i_r_i_document_source_ad0d8c9384f6432424597659f279e0214}{org.\-semanticweb.\-owlapi.\-io.\-I\-R\-I\-Document\-Source}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a4dbf1b82137983881468ec59f85d88d6}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}!is\-Input\-Stream\-Available@{is\-Input\-Stream\-Available}}
+\index{is\-Input\-Stream\-Available@{is\-Input\-Stream\-Available}!org::semanticweb::owlapi::io::OWLOntologyDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}}
+\subsubsection[{is\-Input\-Stream\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source.\-is\-Input\-Stream\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a4dbf1b82137983881468ec59f85d88d6}
+Determines if an input stream is available which an ontology document can be parsed from. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if an input stream can be obtained, {\ttfamily false} if an input stream cannot be obtained from this document source. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_stream_document_source_af03dc7d4584788effe17afaa56d21e1a}{org.\-semanticweb.\-owlapi.\-io.\-Stream\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_reader_document_source_aaed6176262e6c2a779f9c97d08fb8b60}{org.\-semanticweb.\-owlapi.\-io.\-Reader\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_string_document_source_add18f18793a524683a54bdf180a58271}{org.\-semanticweb.\-owlapi.\-io.\-String\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17ebd98d0ea9f7a4c887aecaace7b9ec}{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source}, and \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_i_r_i_document_source_af6bb70aa808a7fec7187cd8bdcd57302}{org.\-semanticweb.\-owlapi.\-io.\-I\-R\-I\-Document\-Source}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_afde55562eda873b241b32ef90f2b66c6}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}!is\-Reader\-Available@{is\-Reader\-Available}}
+\index{is\-Reader\-Available@{is\-Reader\-Available}!org::semanticweb::owlapi::io::OWLOntologyDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-O\-W\-L\-Ontology\-Document\-Source}}
+\subsubsection[{is\-Reader\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source.\-is\-Reader\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_afde55562eda873b241b32ef90f2b66c6}
+Determines if a reader is available which an ontology document can be parsed from. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if a reader can be obtained from this document source, or {\ttfamily false} if a reader cannot be obtained from this document source. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_stream_document_source_ad40633b7f3a6809c8f83ee7bed79d772}{org.\-semanticweb.\-owlapi.\-io.\-Stream\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_reader_document_source_a8a55659069af4ef053ff3c3e972b11ab}{org.\-semanticweb.\-owlapi.\-io.\-Reader\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_aa0f297473b883051f7cac68d2778b668}{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source}, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_string_document_source_af7a782861458a3ff0e7f458af1d49877}{org.\-semanticweb.\-owlapi.\-io.\-String\-Document\-Source}, and \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_i_r_i_document_source_abf31b14fd21994edf018099ee971575e}{org.\-semanticweb.\-owlapi.\-io.\-I\-R\-I\-Document\-Source}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/io/\hyperlink{_o_w_l_ontology_document_source_8java}{O\-W\-L\-Ontology\-Document\-Source.\-java}\end{DoxyCompactItemize}

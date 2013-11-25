@@ -1,0 +1,140 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source}{\section{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source}\index{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source@{org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a978899c3e88cf9c7ec5fe51bda194c15}{File\-Document\-Source} (File \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17df38947bfac25526f71a6f3a6b43a6}{file})
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a2d0fb3aa014212c488920cc566d3253f}{get\-Document\-I\-R\-I} ()
+\item 
+boolean \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17ebd98d0ea9f7a4c887aecaace7b9ec}{is\-Input\-Stream\-Available} ()
+\item 
+Input\-Stream \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a1c37053cb6c2d5b84cd3edc012b8b6d4}{get\-Input\-Stream} ()
+\item 
+boolean \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_aa0f297473b883051f7cac68d2778b668}{is\-Reader\-Available} ()
+\item 
+Reader \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a5c3ba3d12aec65c2cab64a2a156ed7cd}{get\-Reader} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final File \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17df38947bfac25526f71a6f3a6b43a6}{file}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 17-\/\-Nov-\/2007\par
+ \par
+
+
+A convenience class which will prepare an input source from a file. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a978899c3e88cf9c7ec5fe51bda194c15}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!File\-Document\-Source@{File\-Document\-Source}}
+\index{File\-Document\-Source@{File\-Document\-Source}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{File\-Document\-Source}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-File\-Document\-Source (
+\begin{DoxyParamCaption}
+\item[{File}]{file}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a978899c3e88cf9c7ec5fe51bda194c15}
+Constructs an ontology input source using the specified file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file from which a concrete representation of an ontology will be obtained. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a2d0fb3aa014212c488920cc566d3253f}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!get\-Document\-I\-R\-I@{get\-Document\-I\-R\-I}}
+\index{get\-Document\-I\-R\-I@{get\-Document\-I\-R\-I}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{get\-Document\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-R\-I} org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-get\-Document\-I\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a2d0fb3aa014212c488920cc566d3253f}
+Gets the I\-R\-I of the ontology document. \begin{DoxyReturn}{Returns}
+An I\-R\-I which represents the ontology document I\-R\-I -\/ this will never be {\ttfamily null}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_ad7904700cf9be0b4b52dd37e4c55c856}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a1c37053cb6c2d5b84cd3edc012b8b6d4}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!get\-Input\-Stream@{get\-Input\-Stream}}
+\index{get\-Input\-Stream@{get\-Input\-Stream}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{get\-Input\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}Input\-Stream org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-get\-Input\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a1c37053cb6c2d5b84cd3edc012b8b6d4}
+If an input stream can be obtained from this document source then this method creates it. This method may be called multiple times. Each invocation will return a new input stream. This method should not be called if the {\ttfamily is\-Input\-Stream\-Available} method returns {\ttfamily false}. \begin{DoxyReturn}{Returns}
+A new input stream which the ontology can be read from. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a5a72e8c492895465295bf5c3609c97ac}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a5c3ba3d12aec65c2cab64a2a156ed7cd}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!get\-Reader@{get\-Reader}}
+\index{get\-Reader@{get\-Reader}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{get\-Reader}]{\setlength{\rightskip}{0pt plus 5cm}Reader org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-get\-Reader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a5c3ba3d12aec65c2cab64a2a156ed7cd}
+Gets a reader which an ontology document can be read from. This method may be called multiple times. Each invocation will return a new {\ttfamily Reader}. This method should not be called if the {\ttfamily is\-Reader\-Available} method returns false. A {\ttfamily Runtime} execption will be thrown if this happens. \begin{DoxyReturn}{Returns}
+A new {\ttfamily Reader} which the ontology can be read from. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a00627f57775a820a8f8fdfd6b7e75c68}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17ebd98d0ea9f7a4c887aecaace7b9ec}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!is\-Input\-Stream\-Available@{is\-Input\-Stream\-Available}}
+\index{is\-Input\-Stream\-Available@{is\-Input\-Stream\-Available}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{is\-Input\-Stream\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-is\-Input\-Stream\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17ebd98d0ea9f7a4c887aecaace7b9ec}
+Determines if an input stream is available which an ontology document can be parsed from. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if an input stream can be obtained, {\ttfamily false} if an input stream cannot be obtained from this document source. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_a4dbf1b82137983881468ec59f85d88d6}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_aa0f297473b883051f7cac68d2778b668}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!is\-Reader\-Available@{is\-Reader\-Available}}
+\index{is\-Reader\-Available@{is\-Reader\-Available}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{is\-Reader\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-is\-Reader\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_aa0f297473b883051f7cac68d2778b668}
+Determines if a reader is available which an ontology document can be parsed from. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if a reader can be obtained from this document source, or {\ttfamily false} if a reader cannot be obtained from this document source. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source_afde55562eda873b241b32ef90f2b66c6}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Source}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17df38947bfac25526f71a6f3a6b43a6}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}!file@{file}}
+\index{file@{file}!org::semanticweb::owlapi::io::FileDocumentSource@{org\-::semanticweb\-::owlapi\-::io\-::\-File\-Document\-Source}}
+\subsubsection[{file}]{\setlength{\rightskip}{0pt plus 5cm}final File org.\-semanticweb.\-owlapi.\-io.\-File\-Document\-Source.\-file\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_file_document_source_a17df38947bfac25526f71a6f3a6b43a6}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/io/\hyperlink{_file_document_source_8java}{File\-Document\-Source.\-java}\end{DoxyCompactItemize}

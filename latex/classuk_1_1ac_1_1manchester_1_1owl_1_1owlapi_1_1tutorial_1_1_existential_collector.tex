@@ -1,0 +1,83 @@
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector}{\section{uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector Class Reference}
+\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector}\index{uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector@{uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector}}
+}
+Inheritance diagram for uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a266634e89dea74b411994b3525dd578e}{Existential\-Collector} (Map$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property_expression}{O\-W\-L\-Object\-Property\-Expression}, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class_expression}{O\-W\-L\-Class\-Expression} $>$$>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a6cc3fe150efb92cb20431d1279e8f3a3}{restrictions})
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a0eec1fb25bbdc8aa3794f6fbb07a91a8}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_intersection_of}{O\-W\-L\-Object\-Intersection\-Of} expression)
+\item 
+void \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_aaf707c3983cf3d533ae6babdb2c77685}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_some_values_from}{O\-W\-L\-Object\-Some\-Values\-From} class\-Expression)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final Map\\*
+$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property_expression}{O\-W\-L\-Object\-Property\-Expression}, \\*
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class_expression}{O\-W\-L\-Class\-Expression} $>$ $>$ \hyperlink{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a6cc3fe150efb92cb20431d1279e8f3a3}{restrictions}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A visitor that collects existential restrictions. If the given expression is an intersection, then the visitor will recurse and visit the operands. Otherwise, if it's an existential restriction, the visitor will add the restriction to the collection. 
+
+The visitor returns a map of properties to collections of fillers using that property. 
+
+Author\-: Sean Bechhofer\par
+ The University Of Manchester\par
+ Information Management Group\par
+ Date\-: 24-\/\-April-\/2007\par
+ \par
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a266634e89dea74b411994b3525dd578e}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}!Existential\-Collector@{Existential\-Collector}}
+\index{Existential\-Collector@{Existential\-Collector}!uk::ac::manchester::owl::owlapi::tutorial::ExistentialCollector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}}
+\subsubsection[{Existential\-Collector}]{\setlength{\rightskip}{0pt plus 5cm}uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector.\-Existential\-Collector (
+\begin{DoxyParamCaption}
+\item[{Map$<$ {\bf O\-W\-L\-Object\-Property\-Expression}, Set$<$ {\bf O\-W\-L\-Class\-Expression} $>$$>$}]{restrictions}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a266634e89dea74b411994b3525dd578e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a0eec1fb25bbdc8aa3794f6fbb07a91a8}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}!visit@{visit}}
+\index{visit@{visit}!uk::ac::manchester::owl::owlapi::tutorial::ExistentialCollector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector.\-visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Object\-Intersection\-Of}}]{expression}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a0eec1fb25bbdc8aa3794f6fbb07a91a8}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class_expression_visitor_aba77dce3bf6dacea2ccc8056c5d87777}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Class\-Expression\-Visitor}.
+
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_aaf707c3983cf3d533ae6babdb2c77685}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}!visit@{visit}}
+\index{visit@{visit}!uk::ac::manchester::owl::owlapi::tutorial::ExistentialCollector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}void uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector.\-visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Object\-Some\-Values\-From}}]{class\-Expression}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_aaf707c3983cf3d533ae6babdb2c77685}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class_expression_visitor_a676b8a6d1189c1abe5cee5b61bbc9509}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Class\-Expression\-Visitor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a6cc3fe150efb92cb20431d1279e8f3a3}{\index{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}!restrictions@{restrictions}}
+\index{restrictions@{restrictions}!uk::ac::manchester::owl::owlapi::tutorial::ExistentialCollector@{uk\-::ac\-::manchester\-::owl\-::owlapi\-::tutorial\-::\-Existential\-Collector}}
+\subsubsection[{restrictions}]{\setlength{\rightskip}{0pt plus 5cm}final Map$<${\bf O\-W\-L\-Object\-Property\-Expression}, Set$<${\bf O\-W\-L\-Class\-Expression}$>$ $>$ uk.\-ac.\-manchester.\-owl.\-owlapi.\-tutorial.\-Existential\-Collector.\-restrictions\hspace{0.3cm}{\ttfamily [private]}}}\label{classuk_1_1ac_1_1manchester_1_1owl_1_1owlapi_1_1tutorial_1_1_existential_collector_a6cc3fe150efb92cb20431d1279e8f3a3}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+contract/src/test/java/uk/ac/manchester/owl/owlapi/tutorial/\hyperlink{_existential_collector_8java}{Existential\-Collector.\-java}\end{DoxyCompactItemize}

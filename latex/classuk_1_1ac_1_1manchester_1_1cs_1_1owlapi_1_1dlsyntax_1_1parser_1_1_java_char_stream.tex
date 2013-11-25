@@ -1,0 +1,47 @@
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream}{\section{uk.\-ac.\-manchester.\-cs.\-owlapi.\-dlsyntax.\-parser.\-Java\-Char\-Stream Class Reference}
+\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream}\index{uk.\-ac.\-manchester.\-cs.\-owlapi.\-dlsyntax.\-parser.\-Java\-Char\-Stream@{uk.\-ac.\-manchester.\-cs.\-owlapi.\-dlsyntax.\-parser.\-Java\-Char\-Stream}}
+}
+Inheritance diagram for uk.\-ac.\-manchester.\-cs.\-owlapi.\-dlsyntax.\-parser.\-Java\-Char\-Stream\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream_ad5e1377b0bd9d5f9dfd183aa258fcc75}{Java\-Char\-Stream} (java.\-io.\-Reader dstream, int startline, int startcolumn)
+\item 
+\hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream_a4a0b60040e82a0e582d6e44837547250}{Java\-Char\-Stream} (java.\-io.\-Input\-Stream dstream, String encoding, int startline, int startcolumn)  throws java.\-io.\-Unsupported\-Encoding\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Wrapper for the common \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream}{Java\-Char\-Stream} for all parsers. This is needed because we have a request to support U\-T\-F-\/8 files that have an initial B\-O\-M. U\-T\-F-\/8 does not need B\-O\-Ms but some tools insist adding them. Java on the other hand won't support it, and Java\-C\-C does not have an override for this. The result is that the support must be added by hand, and it's easier to have it in one place. This stops Java\-C\-C from rebuilding the wrong files and minimizes duplicated code. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream_ad5e1377b0bd9d5f9dfd183aa258fcc75}{\index{uk\-::ac\-::manchester\-::cs\-::owlapi\-::dlsyntax\-::parser\-::\-Java\-Char\-Stream@{uk\-::ac\-::manchester\-::cs\-::owlapi\-::dlsyntax\-::parser\-::\-Java\-Char\-Stream}!Java\-Char\-Stream@{Java\-Char\-Stream}}
+\index{Java\-Char\-Stream@{Java\-Char\-Stream}!uk::ac::manchester::cs::owlapi::dlsyntax::parser::JavaCharStream@{uk\-::ac\-::manchester\-::cs\-::owlapi\-::dlsyntax\-::parser\-::\-Java\-Char\-Stream}}
+\subsubsection[{Java\-Char\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}uk.\-ac.\-manchester.\-cs.\-owlapi.\-dlsyntax.\-parser.\-Java\-Char\-Stream.\-Java\-Char\-Stream (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Reader}]{dstream, }
+\item[{int}]{startline, }
+\item[{int}]{startcolumn}
+\end{DoxyParamCaption}
+)}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream_ad5e1377b0bd9d5f9dfd183aa258fcc75}
+Constructor. \hypertarget{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream_a4a0b60040e82a0e582d6e44837547250}{\index{uk\-::ac\-::manchester\-::cs\-::owlapi\-::dlsyntax\-::parser\-::\-Java\-Char\-Stream@{uk\-::ac\-::manchester\-::cs\-::owlapi\-::dlsyntax\-::parser\-::\-Java\-Char\-Stream}!Java\-Char\-Stream@{Java\-Char\-Stream}}
+\index{Java\-Char\-Stream@{Java\-Char\-Stream}!uk::ac::manchester::cs::owlapi::dlsyntax::parser::JavaCharStream@{uk\-::ac\-::manchester\-::cs\-::owlapi\-::dlsyntax\-::parser\-::\-Java\-Char\-Stream}}
+\subsubsection[{Java\-Char\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}uk.\-ac.\-manchester.\-cs.\-owlapi.\-dlsyntax.\-parser.\-Java\-Char\-Stream.\-Java\-Char\-Stream (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Input\-Stream}]{dstream, }
+\item[{String}]{encoding, }
+\item[{int}]{startline, }
+\item[{int}]{startcolumn}
+\end{DoxyParamCaption}
+) throws java.\-io.\-Unsupported\-Encoding\-Exception}}\label{classuk_1_1ac_1_1manchester_1_1cs_1_1owlapi_1_1dlsyntax_1_1parser_1_1_java_char_stream_a4a0b60040e82a0e582d6e44837547250}
+Constructor. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/uk/ac/manchester/cs/owlapi/dlsyntax/parser/\hyperlink{uk_2ac_2manchester_2cs_2owlapi_2dlsyntax_2parser_2_java_char_stream_8java}{Java\-Char\-Stream.\-java}\end{DoxyCompactItemize}

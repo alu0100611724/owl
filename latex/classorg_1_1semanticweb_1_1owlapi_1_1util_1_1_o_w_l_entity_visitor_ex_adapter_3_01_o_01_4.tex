@@ -1,0 +1,138 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4}{\section{org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$ Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4}\index{org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_abe0f4c96f887eb353166a7c9996391e1}{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter} ()
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a7ace0fa986163f359e445f523e8c2cc4}{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter} (O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ab6f951a9b5122724746424fe40365584}{default\-Return\-Value})
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a3ff906b70c3362c69a877d84b7ff5d35}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_class}{O\-W\-L\-Class} desc)
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a2765f426bdeff96536cff63e855ae887}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_datatype}{O\-W\-L\-Datatype} node)
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a1f58586b07750b75a85fbf61aa3575a5}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_data_property}{O\-W\-L\-Data\-Property} property)
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a0768d11002881f17d97006d8bbc5d1b8}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_object_property}{O\-W\-L\-Object\-Property} property)
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ae44eb96d2917407576ee09d9cbb49a94}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_named_individual}{O\-W\-L\-Named\-Individual} individual)
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a5ab94be050bca0d3af38526ae2067aa9}{visit} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_property}{O\-W\-L\-Annotation\-Property} property)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a96429793ba14d6b87e5373d8d47c485a}{get\-Default\-Return\-Value} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_entity}{O\-W\-L\-Entity} object)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+O \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ab6f951a9b5122724746424fe40365584}{default\-Return\-Value} = null
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Information Management Group\par
+ Date\-: 29-\/\-Jul-\/2008\par
+\par
+
+
+Provides a default implementation of {\ttfamily O\-W\-L\-Object\-Visitor\-Ex}. Only the methods that need specific client implementation need be overridden. The adapter can be set up to return a default value. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_abe0f4c96f887eb353166a7c9996391e1}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!O\-W\-L\-Entity\-Visitor\-Ex\-Adapter@{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter}}
+\index{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter@{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.O\-W\-L\-Entity\-Visitor\-Ex\-Adapter (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_abe0f4c96f887eb353166a7c9996391e1}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a7ace0fa986163f359e445f523e8c2cc4}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!O\-W\-L\-Entity\-Visitor\-Ex\-Adapter@{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter}}
+\index{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter@{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.O\-W\-L\-Entity\-Visitor\-Ex\-Adapter (
+\begin{DoxyParamCaption}
+\item[{O}]{default\-Return\-Value}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a7ace0fa986163f359e445f523e8c2cc4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a96429793ba14d6b87e5373d8d47c485a}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!get\-Default\-Return\-Value@{get\-Default\-Return\-Value}}
+\index{get\-Default\-Return\-Value@{get\-Default\-Return\-Value}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{get\-Default\-Return\-Value}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.get\-Default\-Return\-Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Entity}}]{object}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a96429793ba14d6b87e5373d8d47c485a}
+Gets the default return value for this visitor. By default, the default is {\ttfamily null}, but a fixed value (independent of the specified {\ttfamily O\-W\-L\-Object} {\ttfamily object}) can be specified in the constructor \hyperlink{}{org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Object\-Visitor\-Ex\-Adapter\#\-O\-W\-L\-Object\-Visitor\-Ex\-Adapter(\-Object)}
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object that was visited. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The default return value 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a3ff906b70c3362c69a877d84b7ff5d35}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!visit@{visit}}
+\index{visit@{visit}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Class}}]{desc}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a3ff906b70c3362c69a877d84b7ff5d35}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a2765f426bdeff96536cff63e855ae887}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!visit@{visit}}
+\index{visit@{visit}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Datatype}}]{node}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a2765f426bdeff96536cff63e855ae887}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a1f58586b07750b75a85fbf61aa3575a5}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!visit@{visit}}
+\index{visit@{visit}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Data\-Property}}]{property}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a1f58586b07750b75a85fbf61aa3575a5}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a0768d11002881f17d97006d8bbc5d1b8}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!visit@{visit}}
+\index{visit@{visit}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Object\-Property}}]{property}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a0768d11002881f17d97006d8bbc5d1b8}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ae44eb96d2917407576ee09d9cbb49a94}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!visit@{visit}}
+\index{visit@{visit}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Named\-Individual}}]{individual}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ae44eb96d2917407576ee09d9cbb49a94}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a5ab94be050bca0d3af38526ae2067aa9}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!visit@{visit}}
+\index{visit@{visit}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{visit}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.visit (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Annotation\-Property}}]{property}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_a5ab94be050bca0d3af38526ae2067aa9}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ab6f951a9b5122724746424fe40365584}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}!default\-Return\-Value@{default\-Return\-Value}}
+\index{default\-Return\-Value@{default\-Return\-Value}!org::semanticweb::owlapi::util::OWLEntityVisitorExAdapter< O >@{org\-::semanticweb\-::owlapi\-::util\-::\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$}}
+\subsubsection[{default\-Return\-Value}]{\setlength{\rightskip}{0pt plus 5cm}O org.\-semanticweb.\-owlapi.\-util.\-O\-W\-L\-Entity\-Visitor\-Ex\-Adapter$<$ O $>$.default\-Return\-Value = null\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_o_w_l_entity_visitor_ex_adapter_3_01_o_01_4_ab6f951a9b5122724746424fe40365584}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_o_w_l_entity_visitor_ex_adapter_8java}{O\-W\-L\-Entity\-Visitor\-Ex\-Adapter.\-java}\end{DoxyCompactItemize}

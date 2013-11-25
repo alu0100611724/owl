@@ -1,0 +1,143 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target}{\section{org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target}\index{org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target@{org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a8e04f3e3536f1897eb94610773ad2280}{get\-Document\-I\-R\-I} ()
+\item 
+boolean \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a03e64028ad78eee52342fb8d5eea8202}{is\-Document\-I\-R\-I\-Available} ()
+\item 
+Output\-Stream \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_aae90a7e6fce12a23678e97175d289938}{get\-Output\-Stream} ()  throws I\-O\-Exception 
+\item 
+boolean \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a85f9cb73b57ab58733f59aad1e750bc0}{is\-Output\-Stream\-Available} ()
+\item 
+Writer \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_adb7b8340b05974c04a602069a1816363}{get\-Writer} ()  throws I\-O\-Exception 
+\item 
+boolean \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a3f647fe0aa4ea9dbfe1e748e7994dbf6}{is\-Writer\-Available} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Information Management Group\par
+ Date\-: 18-\/\-Dec-\/2009 
+
+An output target that will output an ontology to {\ttfamily System.\-out} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a8e04f3e3536f1897eb94610773ad2280}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}!get\-Document\-I\-R\-I@{get\-Document\-I\-R\-I}}
+\index{get\-Document\-I\-R\-I@{get\-Document\-I\-R\-I}!org::semanticweb::owlapi::io::SystemOutDocumentTarget@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}}
+\subsubsection[{get\-Document\-I\-R\-I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-R\-I} org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target.\-get\-Document\-I\-R\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a8e04f3e3536f1897eb94610773ad2280}
+Gets an I\-R\-I that points to an ontology document. \begin{DoxyReturn}{Returns}
+The I\-R\-I 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_runtime_exception}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Runtime\-Exception}} & if an I\-R\-I is not available (\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a03e64028ad78eee52342fb8d5eea8202}{is\-Document\-I\-R\-I\-Available()} returns {\ttfamily false}) and this method is called. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_target_a42cfde0ea98e44e93f7c052a020c1665}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Target}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_aae90a7e6fce12a23678e97175d289938}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}!get\-Output\-Stream@{get\-Output\-Stream}}
+\index{get\-Output\-Stream@{get\-Output\-Stream}!org::semanticweb::owlapi::io::SystemOutDocumentTarget@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}}
+\subsubsection[{get\-Output\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}Output\-Stream org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target.\-get\-Output\-Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_aae90a7e6fce12a23678e97175d289938}
+Gets an \hyperlink{}{java.\-io.\-Output\-Stream} that can be used to write an ontology to an ontology document. \begin{DoxyReturn}{Returns}
+The output stream 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was a problem obtaining the output stream \\
+\hline
+{\em \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_runtime_exception}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Runtime\-Exception}} & if an output stream is not available (\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a85f9cb73b57ab58733f59aad1e750bc0}{is\-Output\-Stream\-Available()} returns {\ttfamily false}) and this method is called. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_target_a3c793c1d620111a9f934e59f0133bc98}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Target}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_adb7b8340b05974c04a602069a1816363}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}!get\-Writer@{get\-Writer}}
+\index{get\-Writer@{get\-Writer}!org::semanticweb::owlapi::io::SystemOutDocumentTarget@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}}
+\subsubsection[{get\-Writer}]{\setlength{\rightskip}{0pt plus 5cm}Writer org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target.\-get\-Writer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_adb7b8340b05974c04a602069a1816363}
+Gets a \hyperlink{}{java.\-io.\-Writer} that can be used to write an ontology to an ontology document. \begin{DoxyReturn}{Returns}
+The writer 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was a problem obtaining the writer \\
+\hline
+{\em \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_runtime_exception}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Runtime\-Exception}} & if a writer is not available (\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a3f647fe0aa4ea9dbfe1e748e7994dbf6}{is\-Writer\-Available()} returns {\ttfamily false}) and this method is called. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_target_a716924cb8a2bd0c6d7f6f8b50e46f316}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Target}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a03e64028ad78eee52342fb8d5eea8202}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}!is\-Document\-I\-R\-I\-Available@{is\-Document\-I\-R\-I\-Available}}
+\index{is\-Document\-I\-R\-I\-Available@{is\-Document\-I\-R\-I\-Available}!org::semanticweb::owlapi::io::SystemOutDocumentTarget@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}}
+\subsubsection[{is\-Document\-I\-R\-I\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target.\-is\-Document\-I\-R\-I\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a03e64028ad78eee52342fb8d5eea8202}
+Determines if an I\-R\-I that points to an ontology document is available. The I\-R\-I encodes the exact details of how an ontology should be saved to a document. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if an I\-R\-I is available, otherwise {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_target_a9f7d6cc0b39983ed45e4a3466acb7bf7}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Target}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a85f9cb73b57ab58733f59aad1e750bc0}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}!is\-Output\-Stream\-Available@{is\-Output\-Stream\-Available}}
+\index{is\-Output\-Stream\-Available@{is\-Output\-Stream\-Available}!org::semanticweb::owlapi::io::SystemOutDocumentTarget@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}}
+\subsubsection[{is\-Output\-Stream\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target.\-is\-Output\-Stream\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a85f9cb73b57ab58733f59aad1e750bc0}
+Determines if this document target can be pointed to by an \hyperlink{}{java.\-io.\-Output\-Stream}. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if an \hyperlink{}{java.\-io.\-Output\-Stream} can be obtained from this document target. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_target_a6d7b34b8a3bce5eb8eff8ab9151e811f}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Target}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a3f647fe0aa4ea9dbfe1e748e7994dbf6}{\index{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}!is\-Writer\-Available@{is\-Writer\-Available}}
+\index{is\-Writer\-Available@{is\-Writer\-Available}!org::semanticweb::owlapi::io::SystemOutDocumentTarget@{org\-::semanticweb\-::owlapi\-::io\-::\-System\-Out\-Document\-Target}}
+\subsubsection[{is\-Writer\-Available}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-io.\-System\-Out\-Document\-Target.\-is\-Writer\-Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1io_1_1_system_out_document_target_a3f647fe0aa4ea9dbfe1e748e7994dbf6}
+Determines if this document target can be pointed to by a \hyperlink{}{java.\-io.\-Writer}. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if a \hyperlink{}{java.\-io.\-Writer} can be obtained from this document target. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_target_a8a756838f860363829bd24a351f78aaf}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Ontology\-Document\-Target}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/io/\hyperlink{_system_out_document_target_8java}{System\-Out\-Document\-Target.\-java}\end{DoxyCompactItemize}

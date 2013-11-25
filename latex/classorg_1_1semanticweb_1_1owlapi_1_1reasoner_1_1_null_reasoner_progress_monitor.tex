@@ -1,0 +1,111 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor@{org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.458333cm]{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_abcb784327823e469d8f84d5e36aaf472}{reasoner\-Task\-Started} (String task\-Name)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}{reasoner\-Task\-Stopped} ()
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a5361069a101a3d4a8900e0ceb79135c3}{reasoner\-Task\-Progress\-Changed} (int value, int max)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a92975947bf3f24d42046248fd8fc7d9a}{reasoner\-Task\-Busy} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a882c6b028798523189dd787426522685}{serial\-Version\-U\-I\-D} = 30406\-L
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Information Management Group\par
+ Date\-: 29-\/\-Nov-\/2009 An implementation of a progress monitor that does nothing when it receives notification of progress events. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a92975947bf3f24d42046248fd8fc7d9a}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}!reasoner\-Task\-Busy@{reasoner\-Task\-Busy}}
+\index{reasoner\-Task\-Busy@{reasoner\-Task\-Busy}!org::semanticweb::owlapi::reasoner::NullReasonerProgressMonitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}}
+\subsubsection[{reasoner\-Task\-Busy}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor.\-reasoner\-Task\-Busy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a92975947bf3f24d42046248fd8fc7d9a}
+Indicates that the reasoner is busy performing a task whose size cannot be determined. This method will only be called after the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_abcb784327823e469d8f84d5e36aaf472}{reasoner\-Task\-Started(\-String)} method has been called. It will not be called after the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}{reasoner\-Task\-Stopped()} method has been called. 
+
+Note that this method may be called from a thread that is not the event dispatch thread. 
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_reasoner_progress_monitor_af6f37458664f7f2ca3df097a42f6eb23}{org.\-semanticweb.\-owlapi.\-reasoner.\-Reasoner\-Progress\-Monitor}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a5361069a101a3d4a8900e0ceb79135c3}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}!reasoner\-Task\-Progress\-Changed@{reasoner\-Task\-Progress\-Changed}}
+\index{reasoner\-Task\-Progress\-Changed@{reasoner\-Task\-Progress\-Changed}!org::semanticweb::owlapi::reasoner::NullReasonerProgressMonitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}}
+\subsubsection[{reasoner\-Task\-Progress\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor.\-reasoner\-Task\-Progress\-Changed (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a5361069a101a3d4a8900e0ceb79135c3}
+Indicates that the reasoner is part way through a particular task, for example consistency checking, classification or reaslisation. This method will only be called after the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_abcb784327823e469d8f84d5e36aaf472}{reasoner\-Task\-Started(\-String)} method has been called. It will not be called after the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}{reasoner\-Task\-Stopped()} method has been called. 
+
+Note that this method may be called from a thread that is not the event dispatch thread. 
+\begin{DoxyParams}{Parameters}
+{\em value} & The value or portion of the task completed \\
+\hline
+{\em max} & The total size of the task \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_reasoner_progress_monitor_a042cacc59288fcb307507f127d84bcba}{org.\-semanticweb.\-owlapi.\-reasoner.\-Reasoner\-Progress\-Monitor}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_abcb784327823e469d8f84d5e36aaf472}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}!reasoner\-Task\-Started@{reasoner\-Task\-Started}}
+\index{reasoner\-Task\-Started@{reasoner\-Task\-Started}!org::semanticweb::owlapi::reasoner::NullReasonerProgressMonitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}}
+\subsubsection[{reasoner\-Task\-Started}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor.\-reasoner\-Task\-Started (
+\begin{DoxyParamCaption}
+\item[{String}]{task\-Name}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_abcb784327823e469d8f84d5e36aaf472}
+Indicates that some reasoner task, for example, loading, consistency checking, classification, realisation etc. has started. When the task has finished the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}{reasoner\-Task\-Stopped()} method will be called. Once this method has been called it will not be called again unless the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}{reasoner\-Task\-Stopped()} method has been called. The notion of subtasks is not supported. 
+
+Note that this method may be called from a thread that is not the event dispatch thread. 
+\begin{DoxyParams}{Parameters}
+{\em task\-Name} & The name of the task \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_reasoner_progress_monitor_a2153ef0672a0a5ab739b4b06cb8fb951}{org.\-semanticweb.\-owlapi.\-reasoner.\-Reasoner\-Progress\-Monitor}.
+
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}!reasoner\-Task\-Stopped@{reasoner\-Task\-Stopped}}
+\index{reasoner\-Task\-Stopped@{reasoner\-Task\-Stopped}!org::semanticweb::owlapi::reasoner::NullReasonerProgressMonitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}}
+\subsubsection[{reasoner\-Task\-Stopped}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor.\-reasoner\-Task\-Stopped (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a9cbad0f093328cf7ab2d64e9b96d555f}
+Indicates that a previosly started task has now stopped. This method will only be called after the \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_abcb784327823e469d8f84d5e36aaf472}{reasoner\-Task\-Started(\-String)} method has been called. The notion of subtasks is not supported. 
+
+Note that this method may be called from a thread that is not the event dispatch thread. 
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_reasoner_progress_monitor_a6a346505e16c27c18be7bab7a57bc6c0}{org.\-semanticweb.\-owlapi.\-reasoner.\-Reasoner\-Progress\-Monitor}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a882c6b028798523189dd787426522685}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!org::semanticweb::owlapi::reasoner::NullReasonerProgressMonitor@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Null\-Reasoner\-Progress\-Monitor}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long org.\-semanticweb.\-owlapi.\-reasoner.\-Null\-Reasoner\-Progress\-Monitor.\-serial\-Version\-U\-I\-D = 30406\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_null_reasoner_progress_monitor_a882c6b028798523189dd787426522685}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/reasoner/\hyperlink{_null_reasoner_progress_monitor_8java}{Null\-Reasoner\-Progress\-Monitor.\-java}\end{DoxyCompactItemize}

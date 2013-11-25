@@ -1,0 +1,259 @@
+\hypertarget{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser}{\section{de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-K\-R\-S\-S2\-O\-W\-L\-Parser Class Reference}
+\label{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser}\index{de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-K\-R\-S\-S2\-O\-W\-L\-Parser@{de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-K\-R\-S\-S2\-O\-W\-L\-Parser}}
+}
+Inheritance diagram for de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-K\-R\-S\-S2\-O\-W\-L\-Parser\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_format}{O\-W\-L\-Ontology\-Format} \hyperlink{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser_afd2431fc79f0a84255f0e6da71e5c0df}{parse} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source}{O\-W\-L\-Ontology\-Document\-Source} document\-Source, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology)  throws O\-W\-L\-Parser\-Exception, I\-O\-Exception,             Unloadable\-Import\-Exception 
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_format}{O\-W\-L\-Ontology\-Format} \hyperlink{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser_a7b040e07a34e8fa3dc9bd3b8a9d3b152}{parse} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_ontology_document_source}{O\-W\-L\-Ontology\-Document\-Source} document\-Source, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology, \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_loader_configuration}{O\-W\-L\-Ontology\-Loader\-Configuration} configuration)  throws O\-W\-L\-Parser\-Exception, I\-O\-Exception, O\-W\-L\-Ontology\-Change\-Exception,             Unloadable\-Import\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser}{K\-R\-S\-S2\-O\-W\-L\-Parser} differs from the \hyperlink{classorg_1_1coode_1_1owl_1_1krssparser_1_1_k_r_s_s_o_w_l_parser}{K\-R\-S\-S\-O\-W\-L\-Parser} that it supports an extended K\-R\-S\-S vocabulary available in many reasoning systems. For instance, C\-G\-Is can be added with help of (implies subclass superclass), range, domain, inverse, functinal attribute can be provided for roles. Note that Datatype\-Properties are not supported within K\-R\-S\-S2. 
+
+{\bfseries Abbreviations} \begin{TabularC}{2}
+\hline
+C\-N &concept name  \\\cline{1-2}
+C,D,E &concept expression  \\\cline{1-2}
+R\-N &role name  \\\cline{1-2}
+R, R1, R2,... &role expressions, i.\-e. role name or inverse role  \\\cline{1-2}
+\end{TabularC}
+
+
+{\bfseries K\-R\-S\-S concept language} \begin{TabularC}{2}
+\hline
+K\-R\-S\-S &O\-W\-L\-Description  
+
+\\\cline{1-2}
+(at-\/least n R C) &(O\-W\-L\-Object\-Min\-Cardinality\-Restriction R n C)  
+
+\\\cline{1-2}
+(at-\/most n R C) &(O\-W\-L\-Object\-Max\-Cardinality\-Restriction R n C)  
+
+\\\cline{1-2}
+(exactly n R C) &(O\-W\-L\-Object\-Exact\-Cardinality\-Restriction R n C)  
+
+\\\cline{1-2}
+(some R C) &(O\-W\-L\-Object\-Some\-Restriction R C)  
+
+\\\cline{1-2}
+(all R C) &(O\-W\-L\-Object\-All\-Restriction R C)  
+
+\\\cline{1-2}
+(not C) &(O\-W\-L\-Object\-Complement\-Of C)  
+
+\\\cline{1-2}
+(and C D E) &(O\-W\-L\-Object\-Intersection\-Of C D E)  
+
+\\\cline{1-2}
+(or C D E) &(O\-W\-L\-Object\-Union\-Of C D E)  
+
+
+
+\\\cline{1-2}
+\end{TabularC}
+
+
+{\bfseries K\-R\-S\-S role language} \begin{TabularC}{2}
+\hline
+K\-R\-S\-S &O\-W\-L\-Object\-Property\-Expression  
+
+\\\cline{1-2}
+(inv R) &(O\-W\-L\-Inverse\-Object\-Properties\-Axiom R)  
+
+\\\cline{1-2}
+\end{TabularC}
+
+
+\begin{TabularC}{0}
+\hline
+\end{TabularC}
+K\-R\-S\-S2 
+
+O\-W\-L\-Axiom 
+
+Remarks 
+
+(define-\/primitive-\/concept C\-N C) 
+
+(O\-W\-L\-Sub\-Class\-Of\-Axiom C\-N C) 
+
+If C is not given owl\-:Thing will be used instead.  
+
+(define-\/concept C\-N C) 
+
+(O\-W\-L\-Equivalent\-Classes\-Axiom C\-N C) 
+
+(disjoint C D) 
+
+(O\-W\-L\-Disjoint\-Classes\-Axiom C D) 
+
+(equivalent C D) 
+
+(O\-W\-L\-Equivalent\-Classes\-Axion C D) 
+
+(implies C D) 
+
+(O\-W\-L\-Subclass\-Of C D) 
+
+(define-\/role R\-N R\-N2) 
+
+(O\-W\-L\-Equivalent\-Object\-Properties\-Axiom R\-N R\-N2) 
+
+(define-\/primitive-\/role R\-N \-:right-\/identity R\-N1) 
+
+(O\-W\-L\-Object\-Property\-Chain\-Sub\-Property\-Axiom (R\-N R\-N1) R\-N) 
+
+(define-\/primitive-\/role R\-N \-:left-\/identity R\-N1) 
+
+(O\-W\-L\-Object\-Property\-Chain\-Sub\-Property\-Axiom (R\-N1 R\-N) R\-N) 
+
+(define-\/primitive-\/role R\-N R\-N1) 
+
+(O\-W\-L\-Sub\-Object\-Property\-Axiom R\-N R\-N1) 
+
+(define-\/primitive-\/role R\-N \-:parents (R\-N1 R\-N2 ...R\-Nn)) 
+
+(O\-W\-L\-Sub\-Object\-Property\-Axiom R\-N R\-N1)\par
+ (O\-W\-L\-Sub\-Object\-Property\-Axiom R\-N R\-N2)\par
+ (O\-W\-L\-Sub\-Object\-Property\-Axiom R\-N R\-Nn) 
+
+(define-\/primitive-\/role R\-N \-:domain (C D ...E) \-:range (C D ...E) \-:transitive t \-:symmetric t \-:reflexive t \-:inverse R\-N1) 
+
+Corresponding axioms for domain and range as well as transitive, symmetric, reflexive and inverse will be added.  
+
+(disjoint-\/roles R R1) 
+
+(O\-W\-L\-Disjoint\-Object\-Properties\-Axiom R R1) 
+
+(implies-\/role R R) 
+
+(O\-W\-L\-Sub\-Object\-Property\-Axiom R R1) 
+
+(O\-W\-L\-Inverse\-Object\-Properties\-Axiom R R1)  
+
+(inverse R\-N R\-N1) 
+
+(roles-\/equivalent R R1) 
+
+(O\-W\-L\-Equivalent\-Object\-Properties\-Axiom R R1) 
+
+(role-\/inclusion (compose R\-N R\-N1) R\-N2 
+
+(O\-W\-L\-Object\-Property\-Chain\-Sub\-Property\-Axiom (R\-N R\-N1) R\-N2) 
+
+R\-N1 can also be (compose R\-N3 ...).  
+
+(transitive R\-N) 
+
+(O\-W\-L\-Transitive\-Object\-Property\-Axiom R\-N) 
+
+(range R\-N C) 
+
+(O\-W\-L\-Object\-Property\-Range\-Axiom R\-N C) 
+
+(instance i C) 
+
+(O\-W\-L\-Class\-Assertion\-Axiom i C) 
+
+(related i R i2) 
+
+(O\-W\-L\-Object\-Property\-Assertion\-Axiom i R i2) 
+
+(equal i1 i2) 
+
+(O\-W\-L\-Same\-Individuals\-Axiom i1 i2) 
+
+(distinct i1 i2) 
+
+(O\-W\-L\-Different\-Individuals\-Axiom i1 i2) 
+
+Author\-: Olaf Noppens\par
+ Ulm University\par
+ Institute of Artificial Intelligence\par
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser_afd2431fc79f0a84255f0e6da71e5c0df}{\index{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-K\-R\-S\-S2\-O\-W\-L\-Parser@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-K\-R\-S\-S2\-O\-W\-L\-Parser}!parse@{parse}}
+\index{parse@{parse}!de::uulm::ecs::ai::owlapi::krssparser::KRSS2OWLParser@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-K\-R\-S\-S2\-O\-W\-L\-Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology\-Format} de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-K\-R\-S\-S2\-O\-W\-L\-Parser.\-parse (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology\-Document\-Source}}]{document\-Source, }
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Parser\-Exception}, I\-O\-Exception,             {\bf Unloadable\-Import\-Exception}}}\label{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser_afd2431fc79f0a84255f0e6da71e5c0df}
+Parses the ontology that has a concrete representation which is pointed to by the specified input source. Implementors of this method should load any imported ontologies with the make\-Imports\-Load\-Request method on O\-W\-L\-Ontology\-Manager. 
+\begin{DoxyParams}{Parameters}
+{\em document\-Source} & The input source which points the concrete representation. If the input source can provide a {\ttfamily Reader} then the ontology is parsed from the {\ttfamily Reader}. If the input source cannot provide a reader then it is parsed from the {\ttfamily Input\-Stream}. If the input source cannot provide an {\ttfamily Input\-Stream} then it is parsed from the ontology document I\-R\-I. \\
+\hline
+{\em ontology} & The ontology which the representation will be parsed into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An {\ttfamily O\-W\-L\-Ontology\-Format} which describes the concrete representation format which was parsed to obtain the ontology. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Parser\-Exception} & if there was a problem parsing the ontology. This indicates an error in the syntax with this ontology document that the parser reads. \\
+\hline
+{\em I\-O\-Exception} & if there was an I\-O\-Exception during parsing \\
+\hline
+{\em O\-W\-L\-Ontology\-Change\-Exception} & if there was a problem updating the specified ontology from information that was parsed. \\
+\hline
+{\em Unloadable\-Import\-Exception} & if loading this ontology prompted the loading of an import and the import could not be loaded. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_parser_a2d4a9b4fc9206b0661fbd2c8ee0e1f3b}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Parser}.
+
+\hypertarget{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser_a7b040e07a34e8fa3dc9bd3b8a9d3b152}{\index{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-K\-R\-S\-S2\-O\-W\-L\-Parser@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-K\-R\-S\-S2\-O\-W\-L\-Parser}!parse@{parse}}
+\index{parse@{parse}!de::uulm::ecs::ai::owlapi::krssparser::KRSS2OWLParser@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-K\-R\-S\-S2\-O\-W\-L\-Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Ontology\-Format} de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-K\-R\-S\-S2\-O\-W\-L\-Parser.\-parse (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology\-Document\-Source}}]{document\-Source, }
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology, }
+\item[{{\bf O\-W\-L\-Ontology\-Loader\-Configuration}}]{configuration}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Parser\-Exception}, I\-O\-Exception, {\bf O\-W\-L\-Ontology\-Change\-Exception},             {\bf Unloadable\-Import\-Exception}}}\label{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_k_r_s_s2_o_w_l_parser_a7b040e07a34e8fa3dc9bd3b8a9d3b152}
+Parses the ontology that has a concrete representation which is pointed to by the specified input source. Implementors of this method should load any imported ontologies with the make\-Imports\-Load\-Request method on O\-W\-L\-Ontology\-Manager. 
+\begin{DoxyParams}{Parameters}
+{\em document\-Source} & The input source which points the concrete representation. If the input source can provider a {\ttfamily Reader} then the ontology is parsed from the {\ttfamily Reader}. If the input source cannot provide a reader then it is parsed from the {\ttfamily Input\-Stream}. If the input source cannot provide an {\ttfamily Input\-Stream} then it is parsed from the ontology document I\-R\-I. \\
+\hline
+{\em ontology} & The ontology which the representation will be parsed into \\
+\hline
+{\em configuration} & A configuration object that provides various generic options to the parser. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An {\ttfamily O\-W\-L\-Ontology\-Format} which describes the concrete representation format which was parsed to obtain the ontology. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Parser\-Exception} & if there was a problem parsing the ontology. This indicates an error in the syntax with this ontology document that the parser reads. \\
+\hline
+{\em I\-O\-Exception} & if there was an I\-O\-Exception during parsing \\
+\hline
+{\em O\-W\-L\-Ontology\-Change\-Exception} & if there was a problem updating the specified ontology from information that was parsed. \\
+\hline
+{\em Unloadable\-Import\-Exception} & if loading this ontology prompted the loading of an import and the import could not be loaded. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1io_1_1_o_w_l_parser_a259739c6baf94f4e5a2dad5d0400f07a}{org.\-semanticweb.\-owlapi.\-io.\-O\-W\-L\-Parser}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/de/uulm/ecs/ai/owlapi/krssparser/\hyperlink{_k_r_s_s2_o_w_l_parser_8java}{K\-R\-S\-S2\-O\-W\-L\-Parser.\-java}\end{DoxyCompactItemize}

@@ -1,0 +1,56 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Raw\-Hierarchy\-Provider$<$ T $>$ Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Raw\-Hierarchy\-Provider$<$ T $>$@{org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Raw\-Hierarchy\-Provider$<$ T $>$}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Collection$<$ T $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4_adbc3711e0fcbce536dda6d186aa7e042}{get\-Parents} (T child)
+\item 
+Collection$<$ T $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4_a48fa00f58f87108fe700f26c391e89ab}{get\-Children} (T parent)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+An interface for objects who can provide the parents and children of some object. 
+\begin{DoxyParams}{Parameters}
+{\em $<$\-T$>$} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4_a48fa00f58f87108fe700f26c391e89ab}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Raw\-Hierarchy\-Provider$<$ T $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Raw\-Hierarchy\-Provider$<$ T $>$}!get\-Children@{get\-Children}}
+\index{get\-Children@{get\-Children}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::RawHierarchyProvider< T >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Raw\-Hierarchy\-Provider$<$ T $>$}}
+\subsubsection[{get\-Children}]{\setlength{\rightskip}{0pt plus 5cm}Collection$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Raw\-Hierarchy\-Provider$<$ T $>$.get\-Children (
+\begin{DoxyParamCaption}
+\item[{T}]{parent}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4_a48fa00f58f87108fe700f26c391e89ab}
+Gets the children as asserted 
+\begin{DoxyParams}{Parameters}
+{\em parent} & The parent whose children are to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The raw asserted children of the speicified parent 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4_adbc3711e0fcbce536dda6d186aa7e042}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Raw\-Hierarchy\-Provider$<$ T $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Raw\-Hierarchy\-Provider$<$ T $>$}!get\-Parents@{get\-Parents}}
+\index{get\-Parents@{get\-Parents}!org::semanticweb::owlapi::reasoner::structural::StructuralReasoner::RawHierarchyProvider< T >@{org\-::semanticweb\-::owlapi\-::reasoner\-::structural\-::\-Structural\-Reasoner\-::\-Raw\-Hierarchy\-Provider$<$ T $>$}}
+\subsubsection[{get\-Parents}]{\setlength{\rightskip}{0pt plus 5cm}Collection$<$T$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-structural.\-Structural\-Reasoner.\-Raw\-Hierarchy\-Provider$<$ T $>$.get\-Parents (
+\begin{DoxyParamCaption}
+\item[{T}]{child}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1structural_1_1_structural_reasoner_1_1_raw_hierarchy_provider_3_01_t_01_4_adbc3711e0fcbce536dda6d186aa7e042}
+Gets the parents as asserted. These parents may also be children (resulting in equivalences). 
+\begin{DoxyParams}{Parameters}
+{\em child} & The child whose parents are to be retrieved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The raw asserted parents of the specified child. If the child does not have any parents then the empty set can be returned. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+impl/src/main/java/org/semanticweb/owlapi/reasoner/structural/\hyperlink{_structural_reasoner_8java}{Structural\-Reasoner.\-java}\end{DoxyCompactItemize}

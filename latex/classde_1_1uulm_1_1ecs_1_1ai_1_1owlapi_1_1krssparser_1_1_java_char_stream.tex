@@ -1,0 +1,47 @@
+\hypertarget{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream}{\section{de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-Java\-Char\-Stream Class Reference}
+\label{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream}\index{de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-Java\-Char\-Stream@{de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-Java\-Char\-Stream}}
+}
+Inheritance diagram for de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-Java\-Char\-Stream\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream_a9397ac1497103afb408afa024e78a68c}{Java\-Char\-Stream} (java.\-io.\-Reader dstream, int startline, int startcolumn)
+\item 
+\hyperlink{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream_aed92f5800462254c10107940958ddb46}{Java\-Char\-Stream} (java.\-io.\-Input\-Stream dstream, String encoding, int startline, int startcolumn)  throws java.\-io.\-Unsupported\-Encoding\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Wrapper for the common \hyperlink{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream}{Java\-Char\-Stream} for all parsers. This is needed because we have a request to support U\-T\-F-\/8 files that have an initial B\-O\-M. U\-T\-F-\/8 does not need B\-O\-Ms but some tools insist adding them. Java on the other hand won't support it, and Java\-C\-C does not have an override for this. The result is that the support must be added by hand, and it's easier to have it in one place. This stops Java\-C\-C from rebuilding the wrong files and minimizes duplicated code. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream_a9397ac1497103afb408afa024e78a68c}{\index{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-Java\-Char\-Stream@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-Java\-Char\-Stream}!Java\-Char\-Stream@{Java\-Char\-Stream}}
+\index{Java\-Char\-Stream@{Java\-Char\-Stream}!de::uulm::ecs::ai::owlapi::krssparser::JavaCharStream@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-Java\-Char\-Stream}}
+\subsubsection[{Java\-Char\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-Java\-Char\-Stream.\-Java\-Char\-Stream (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Reader}]{dstream, }
+\item[{int}]{startline, }
+\item[{int}]{startcolumn}
+\end{DoxyParamCaption}
+)}}\label{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream_a9397ac1497103afb408afa024e78a68c}
+Constructor. \hypertarget{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream_aed92f5800462254c10107940958ddb46}{\index{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-Java\-Char\-Stream@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-Java\-Char\-Stream}!Java\-Char\-Stream@{Java\-Char\-Stream}}
+\index{Java\-Char\-Stream@{Java\-Char\-Stream}!de::uulm::ecs::ai::owlapi::krssparser::JavaCharStream@{de\-::uulm\-::ecs\-::ai\-::owlapi\-::krssparser\-::\-Java\-Char\-Stream}}
+\subsubsection[{Java\-Char\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}de.\-uulm.\-ecs.\-ai.\-owlapi.\-krssparser.\-Java\-Char\-Stream.\-Java\-Char\-Stream (
+\begin{DoxyParamCaption}
+\item[{java.\-io.\-Input\-Stream}]{dstream, }
+\item[{String}]{encoding, }
+\item[{int}]{startline, }
+\item[{int}]{startcolumn}
+\end{DoxyParamCaption}
+) throws java.\-io.\-Unsupported\-Encoding\-Exception}}\label{classde_1_1uulm_1_1ecs_1_1ai_1_1owlapi_1_1krssparser_1_1_java_char_stream_aed92f5800462254c10107940958ddb46}
+Constructor. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/de/uulm/ecs/ai/owlapi/krssparser/\hyperlink{de_2uulm_2ecs_2ai_2owlapi_2krssparser_2_java_char_stream_8java}{Java\-Char\-Stream.\-java}\end{DoxyCompactItemize}

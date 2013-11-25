@@ -1,0 +1,67 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom}{\section{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Atom Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom}\index{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Atom@{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Atom}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Atom\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.022831cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_predicate}{S\-W\-R\-L\-Predicate} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom_a888664ac67b2879605e452860b29edc6}{get\-Predicate} ()
+\item 
+Collection$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_argument}{S\-W\-R\-L\-Argument} $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom_a0afa3bc16be8a914a480c26614d81bdb}{get\-All\-Arguments} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Medical Informatics Group\par
+ Date\-: Jan 15, 2007\par
+\par
+ 
+
+\href{mailto:matthew.horridge@cs.man.ac.uk}{\tt matthew.\-horridge@cs.\-man.\-ac.\-uk}\par
+ www.\-cs.\-man.\-ac.\-uk/$\sim$horridgm\par
+\par
+
+
+Represents an atom in a rule. Atoms can either be in the head (concequent) or body (antecedent) of the rule. Atoms hold objects which are either data objects or individual objects. 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom_a0afa3bc16be8a914a480c26614d81bdb}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Atom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Atom}!get\-All\-Arguments@{get\-All\-Arguments}}
+\index{get\-All\-Arguments@{get\-All\-Arguments}!org::semanticweb::owlapi::model::SWRLAtom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Atom}}
+\subsubsection[{get\-All\-Arguments}]{\setlength{\rightskip}{0pt plus 5cm}Collection$<${\bf S\-W\-R\-L\-Argument}$>$ org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Atom.\-get\-All\-Arguments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom_a0afa3bc16be8a914a480c26614d81bdb}
+Gets all of the arguments in this atom \begin{DoxyReturn}{Returns}
+The collection of arguments in this atom 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_built_in_atom_impl_ad2d8be6e6665617787314fc46d1020ac}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Built\-In\-Atom\-Impl}, \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_binary_atom_impl_3_01_a_01extends733cb0b232fc39d6f31ee5b88a06cbcc_a331741ef4cffaed324b521cbd34e34f8}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Binary\-Atom\-Impl$<$ A extends S\-W\-R\-L\-Argument, B extends S\-W\-R\-L\-Argument $>$}, and \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_unary_atom_impl_3_01_a_01extends_01_s_w_r_l_argument_01_4_ac73665fa9079d65ce58202c57b4007d5}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Unary\-Atom\-Impl$<$ A extends S\-W\-R\-L\-Argument $>$}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom_a888664ac67b2879605e452860b29edc6}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Atom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Atom}!get\-Predicate@{get\-Predicate}}
+\index{get\-Predicate@{get\-Predicate}!org::semanticweb::owlapi::model::SWRLAtom@{org\-::semanticweb\-::owlapi\-::model\-::\-S\-W\-R\-L\-Atom}}
+\subsubsection[{get\-Predicate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-W\-R\-L\-Predicate} org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Atom.\-get\-Predicate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_atom_a888664ac67b2879605e452860b29edc6}
+Gets the predicate of this atom \begin{DoxyReturn}{Returns}
+The atom predicate 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_built_in_atom_impl_ad4d6690682ad9bc4f0a7ac08a851b8db}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Built\-In\-Atom\-Impl}, \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_s_w_r_l_atom_impl_a1345ff711beaa3ffde615d88df007671}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-S\-W\-R\-L\-Atom\-Impl}, and \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_s_w_r_l_built_in_atom_a47ff6890f5203424c6781793a33fbe87}{org.\-semanticweb.\-owlapi.\-model.\-S\-W\-R\-L\-Built\-In\-Atom}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/model/\hyperlink{_s_w_r_l_atom_8java}{S\-W\-R\-L\-Atom.\-java}\end{DoxyCompactItemize}

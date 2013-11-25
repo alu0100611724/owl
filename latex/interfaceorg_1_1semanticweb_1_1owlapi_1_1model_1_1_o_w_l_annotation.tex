@@ -1,0 +1,148 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{\section{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}\index{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation@{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.566879cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_property}{O\-W\-L\-Annotation\-Property} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a38d2bcdefcf387bee8195c5547e37bda}{get\-Property} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_value}{O\-W\-L\-Annotation\-Value} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a150cbe1cc0fddb7b9e749534a9d7dd0d}{get\-Value} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a75a8495197da05e8a2b6c5bc6661aee8}{is\-Deprecated\-I\-R\-I\-Annotation} ()
+\item 
+Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a4a91857dd9268f638c1c664a9e739092}{get\-Annotations} ()
+\item 
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a6d35da93afdcaa79c77d605d6609df2e}{get\-Annotated\-Annotation} (Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} $>$ annotations)
+\item 
+void \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a0f9541dd4ba3faf39b12c1cc1c59f739}{accept} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_object_visitor}{O\-W\-L\-Annotation\-Object\-Visitor} visitor)
+\item 
+$<$ O $>$ O \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_aa03b6ab495b6760ff995eb6bc146a816}{accept} (O\-W\-L\-Annotation\-Object\-Visitor\-Ex$<$ O $>$ visitor)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 18-\/\-Dec-\/2006\par
+\par
+ 
+
+Annotations are used in the various types of annotation axioms, which bind annotations to their subjects (i.\-e. axioms or declarations). 
+
+An annotation is equal to another annotation if both objects have equal annotation U\-R\-Is and have equal annotation values 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a0f9541dd4ba3faf39b12c1cc1c59f739}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!accept@{accept}}
+\index{accept@{accept}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-accept (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Annotation\-Object\-Visitor}}]{visitor}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a0f9541dd4ba3faf39b12c1cc1c59f739}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_annotation_impl_aa67c0e70d31f356e6ccccfe11e3f1f2c}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Annotation\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_aa03b6ab495b6760ff995eb6bc146a816}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!accept@{accept}}
+\index{accept@{accept}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{accept}]{\setlength{\rightskip}{0pt plus 5cm}$<$O$>$ O org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-accept (
+\begin{DoxyParamCaption}
+\item[{O\-W\-L\-Annotation\-Object\-Visitor\-Ex$<$ O $>$}]{visitor}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_aa03b6ab495b6760ff995eb6bc146a816}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a6d35da93afdcaa79c77d605d6609df2e}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!get\-Annotated\-Annotation@{get\-Annotated\-Annotation}}
+\index{get\-Annotated\-Annotation@{get\-Annotated\-Annotation}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{get\-Annotated\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Annotation} org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-get\-Annotated\-Annotation (
+\begin{DoxyParamCaption}
+\item[{Set$<$ {\bf O\-W\-L\-Annotation} $>$}]{annotations}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a6d35da93afdcaa79c77d605d6609df2e}
+Gets an \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation}{O\-W\-L\-Annotation} which is a copy of this annotation but which has the specified annotations. 
+\begin{DoxyParams}{Parameters}
+{\em annotations} & The annotations \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A copy of this annotation with the specified annotations annotating it 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_annotation_impl_ab7bee9c8119c9aae0bab8e32b17c6463}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Annotation\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a4a91857dd9268f638c1c664a9e739092}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!get\-Annotations@{get\-Annotations}}
+\index{get\-Annotations@{get\-Annotations}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{get\-Annotations}]{\setlength{\rightskip}{0pt plus 5cm}Set$<${\bf O\-W\-L\-Annotation}$>$ org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-get\-Annotations (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a4a91857dd9268f638c1c664a9e739092}
+Gets the annotations on this annotation
+
+\begin{DoxyReturn}{Returns}
+A (possibly empty) set of annotations that annotate this annotation 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_annotation_impl_a2ca41e57e2ecc57d4b1e281ce578daaf}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Annotation\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a38d2bcdefcf387bee8195c5547e37bda}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!get\-Property@{get\-Property}}
+\index{get\-Property@{get\-Property}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{get\-Property}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Annotation\-Property} org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-get\-Property (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a38d2bcdefcf387bee8195c5547e37bda}
+Gets the property that this annotation acts along
+
+\begin{DoxyReturn}{Returns}
+The annotation property 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_annotation_impl_aa4e5f03757bde05a18732b30889a43e6}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Annotation\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a150cbe1cc0fddb7b9e749534a9d7dd0d}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!get\-Value@{get\-Value}}
+\index{get\-Value@{get\-Value}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-W\-L\-Annotation\-Value} org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-get\-Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a150cbe1cc0fddb7b9e749534a9d7dd0d}
+Gets the annotation value. The type of value will depend upon the type of the annotation e.\-g. whether the annotation is an \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_literal}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Literal}, an \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{org.\-semanticweb.\-owlapi.\-model.\-I\-R\-I} or an \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_anonymous_individual}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Anonymous\-Individual}. \begin{DoxySeeAlso}{See Also}
+\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_value_visitor}{org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation\-Value\-Visitor} 
+
+org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation\-Value\-Visitor\-Ex 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+The annotation value. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_annotation_impl_a4be80ba05e4db0bf70b0cb2123093093}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Annotation\-Impl}.
+
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a75a8495197da05e8a2b6c5bc6661aee8}{\index{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}!is\-Deprecated\-I\-R\-I\-Annotation@{is\-Deprecated\-I\-R\-I\-Annotation}}
+\index{is\-Deprecated\-I\-R\-I\-Annotation@{is\-Deprecated\-I\-R\-I\-Annotation}!org::semanticweb::owlapi::model::OWLAnnotation@{org\-::semanticweb\-::owlapi\-::model\-::\-O\-W\-L\-Annotation}}
+\subsubsection[{is\-Deprecated\-I\-R\-I\-Annotation}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-model.\-O\-W\-L\-Annotation.\-is\-Deprecated\-I\-R\-I\-Annotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_annotation_a75a8495197da05e8a2b6c5bc6661aee8}
+Determines if this annotation is an annotation used to deprecate an \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I}. This is the case if the annotation property has an \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I} of {\ttfamily owl\-:deprecated} and the value of the annotation is {\ttfamily \char`\"{}true\char`\"{}$^\wedge$$^\wedge$xsd\-:boolean} \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this annotation is an annotation that can be used to deprecate an \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1model_1_1_i_r_i}{I\-R\-I}, otherwise {\ttfamily false}. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classuk_1_1ac_1_1manchester_1_1cs_1_1owl_1_1owlapi_1_1_o_w_l_annotation_impl_ac72dc7fe87110f8016b88a88f6e1d3ea}{uk.\-ac.\-manchester.\-cs.\-owl.\-owlapi.\-O\-W\-L\-Annotation\-Impl}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/model/\hyperlink{_o_w_l_annotation_8java}{O\-W\-L\-Annotation.\-java}\end{DoxyCompactItemize}

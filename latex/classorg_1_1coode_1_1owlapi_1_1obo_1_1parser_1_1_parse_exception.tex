@@ -1,0 +1,126 @@
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception}{\section{org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception Class Reference}
+\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception}\index{org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception@{org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception}}
+}
+Inheritance diagram for org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ab3859165687f07cbfbc16cae07a1e063}{Parse\-Exception} (\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_token}{Token} current\-Token\-Val, int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} expected\-Token\-Sequences\-Val, String\mbox{[}$\,$\mbox{]} token\-Image\-Val)
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a471d3af147e7af3edeebc5da72621af0}{Parse\-Exception} ()
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a2133d95c60d767c6ce4168866cb11b0b}{Parse\-Exception} (String message)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_token}{Token} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_add3559d1841b498d3221cb05da884ca1}{current\-Token}
+\item 
+int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae38b20926a6bf23a1f699a71a405b290}{expected\-Token\-Sequences}
+\item 
+String\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a5225490b27f6841ebc077a8a08712304}{token\-Image}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae7be4170044ff0f5a235ff7794fcadfd}{eol} = System.\-get\-Property(\char`\"{}line.\-separator\char`\"{}, \char`\"{}\textbackslash{}n\char`\"{})
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static String \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a7a9988a9b618697530916fae2d43b9b0}{initialise} (\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_token}{Token} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_add3559d1841b498d3221cb05da884ca1}{current\-Token}, int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae38b20926a6bf23a1f699a71a405b290}{expected\-Token\-Sequences}, String\mbox{[}$\,$\mbox{]} \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a5225490b27f6841ebc077a8a08712304}{token\-Image})
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_aa6e30bd11d64c9a5627ebe4d0a633f98}{serial\-Version\-U\-I\-D} = 30406\-L
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This exception is thrown when parse errors are encountered. You can explicitly create objects of this exception type by calling the method generate\-Parse\-Exception in the generated parser.
+
+You can modify this class to customize your error reporting mechanisms so long as you retain the public fields. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ab3859165687f07cbfbc16cae07a1e063}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!Parse\-Exception@{Parse\-Exception}}
+\index{Parse\-Exception@{Parse\-Exception}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{Parse\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-Parse\-Exception (
+\begin{DoxyParamCaption}
+\item[{{\bf Token}}]{current\-Token\-Val, }
+\item[{int}]{expected\-Token\-Sequences\-Val\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{token\-Image\-Val}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ab3859165687f07cbfbc16cae07a1e063}
+This constructor is used by the method \char`\"{}generate\-Parse\-Exception\char`\"{} in the generated parser. Calling this constructor generates a new object of this type with the fields \char`\"{}current\-Token\char`\"{}, \char`\"{}expected\-Token\-Sequences\char`\"{}, and \char`\"{}token\-Image\char`\"{} set.
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\-Token\-Val} & \\
+\hline
+{\em expected\-Token\-Sequences\-Val} & \\
+\hline
+{\em token\-Image\-Val} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a471d3af147e7af3edeebc5da72621af0}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!Parse\-Exception@{Parse\-Exception}}
+\index{Parse\-Exception@{Parse\-Exception}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{Parse\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-Parse\-Exception (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a471d3af147e7af3edeebc5da72621af0}
+The following constructors are for use by you for whatever purpose you can think of. Constructing the exception in this manner makes the exception behave in the normal way -\/ i.\-e., as documented in the class \char`\"{}\-Throwable\char`\"{}. The fields \char`\"{}error\-Token\char`\"{}, \char`\"{}expected\-Token\-Sequences\char`\"{}, and \char`\"{}token\-Image\char`\"{} do not contain relevant information. The Java\-C\-C generated code does not use these constructors. \hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a2133d95c60d767c6ce4168866cb11b0b}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!Parse\-Exception@{Parse\-Exception}}
+\index{Parse\-Exception@{Parse\-Exception}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{Parse\-Exception}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-Parse\-Exception (
+\begin{DoxyParamCaption}
+\item[{String}]{message}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a2133d95c60d767c6ce4168866cb11b0b}
+Constructor with message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a7a9988a9b618697530916fae2d43b9b0}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!initialise@{initialise}}
+\index{initialise@{initialise}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{initialise}]{\setlength{\rightskip}{0pt plus 5cm}static String org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-initialise (
+\begin{DoxyParamCaption}
+\item[{{\bf Token}}]{current\-Token, }
+\item[{int}]{expected\-Token\-Sequences\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}, }
+\item[{String\mbox{[}$\,$\mbox{]}}]{token\-Image}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a7a9988a9b618697530916fae2d43b9b0}
+It uses \char`\"{}current\-Token\char`\"{} and \char`\"{}expected\-Token\-Sequences\char`\"{} to generate a parse error message and returns it. If this object has been created due to a parse error, and you do not catch it (it gets thrown from the parser) the correct error message gets displayed. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_add3559d1841b498d3221cb05da884ca1}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!current\-Token@{current\-Token}}
+\index{current\-Token@{current\-Token}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{current\-Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Token} org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-current\-Token}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_add3559d1841b498d3221cb05da884ca1}
+This is the last token that has been consumed successfully. If this object has been created due to a parse error, the token followng this token will (therefore) be the first error token. \hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae7be4170044ff0f5a235ff7794fcadfd}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!eol@{eol}}
+\index{eol@{eol}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{eol}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-eol = System.\-get\-Property(\char`\"{}line.\-separator\char`\"{}, \char`\"{}\textbackslash{}n\char`\"{})\hspace{0.3cm}{\ttfamily [protected]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae7be4170044ff0f5a235ff7794fcadfd}
+The end of line string for this machine. \hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae38b20926a6bf23a1f699a71a405b290}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!expected\-Token\-Sequences@{expected\-Token\-Sequences}}
+\index{expected\-Token\-Sequences@{expected\-Token\-Sequences}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{expected\-Token\-Sequences}]{\setlength{\rightskip}{0pt plus 5cm}int \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-expected\-Token\-Sequences}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_ae38b20926a6bf23a1f699a71a405b290}
+Each entry in this array is an array of integers. Each array of integers represents a sequence of tokens (by their ordinal values) that is expected at this point of the parse. \hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_aa6e30bd11d64c9a5627ebe4d0a633f98}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}}
+\index{serial\-Version\-U\-I\-D@{serial\-Version\-U\-I\-D}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{serial\-Version\-U\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}final long org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-serial\-Version\-U\-I\-D = 30406\-L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_aa6e30bd11d64c9a5627ebe4d0a633f98}
+The version identifier for this Serializable class. Increment only if the {\itshape serialized} form of the class changes. \hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a5225490b27f6841ebc077a8a08712304}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}!token\-Image@{token\-Image}}
+\index{token\-Image@{token\-Image}!org::coode::owlapi::obo::parser::ParseException@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-Parse\-Exception}}
+\subsubsection[{token\-Image}]{\setlength{\rightskip}{0pt plus 5cm}String \mbox{[}$\,$\mbox{]} org.\-coode.\-owlapi.\-obo.\-parser.\-Parse\-Exception.\-token\-Image}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_parse_exception_a5225490b27f6841ebc077a8a08712304}
+This is a reference to the \char`\"{}token\-Image\char`\"{} array of the generated parser within which the parse error occurred. This array is defined in the generated ...Constants interface. 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/owlapi/obo/parser/\hyperlink{org_2coode_2owlapi_2obo_2parser_2_parse_exception_8java}{Parse\-Exception.\-java}\end{DoxyCompactItemize}

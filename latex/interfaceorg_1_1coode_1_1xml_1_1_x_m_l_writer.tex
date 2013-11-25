@@ -1,0 +1,246 @@
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer}{\section{org.\-coode.\-xml.\-X\-M\-L\-Writer Interface Reference}
+\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer}\index{org.\-coode.\-xml.\-X\-M\-L\-Writer@{org.\-coode.\-xml.\-X\-M\-L\-Writer}}
+}
+Inheritance diagram for org.\-coode.\-xml.\-X\-M\-L\-Writer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a786b1ff3681daadeb283b7e7ddc5bad9}{set\-Encoding} (String encoding)
+\item 
+\hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_namespace_manager}{X\-M\-L\-Writer\-Namespace\-Manager} \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a4e08147a76afae4ce434117dcc27b4a0}{get\-Namespace\-Prefixes} ()
+\item 
+String \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_afadb2dde862798ebdabc931db3e34873}{get\-X\-M\-L\-Base} ()
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_afb11f0c1399782ce6dbf29002c482c00}{set\-Wrap\-Attributes} (boolean b)
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_aae45cf3b1edaac63449df6c59876d759}{start\-Document} (String root\-Element\-Name)  throws I\-O\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a6104616d16b949f7ac4efff4d4a9cc50}{end\-Document} ()  throws I\-O\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_ab4a575b480d0198349ea64a91e5b3fd5}{write\-Start\-Element} (String name)  throws I\-O\-Exception, Illegal\-Element\-Name\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a07d53f42ed4c3ccb05f4278b1c53e58e}{write\-End\-Element} ()  throws I\-O\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a10ad97f4ef0fa12476e83fd70efe6599}{write\-Attribute} (String attr, String val)  throws I\-O\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a8968d9bf21b4ce904c9efd2c47b23556}{write\-Text\-Content} (String text)  throws I\-O\-Exception
+\item 
+void \hyperlink{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a4fee31cbdaae15daf63c1712b9d3412f}{write\-Comment} (String comment\-Text)  throws I\-O\-Exception
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+User\-: matthewhorridge\par
+ The Univeristy Of Manchester\par
+ Medical Informatics Group\par
+ Date\-: May 30, 2006\par
+\par
+ 
+
+\href{mailto:matthew.horridge@cs.man.ac.uk}{\tt matthew.\-horridge@cs.\-man.\-ac.\-uk}\par
+ www.\-cs.\-man.\-ac.\-uk/$\sim$horridgm\par
+\par
+ 
+
+Developed as part of the C\-O-\/\-O\-D\-E project \href{http://www.co-ode.org}{\tt http\-://www.\-co-\/ode.\-org} 
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a6104616d16b949f7ac4efff4d4a9cc50}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!end\-Document@{end\-Document}}
+\index{end\-Document@{end\-Document}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{end\-Document}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-end\-Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a6104616d16b949f7ac4efff4d4a9cc50}
+Causes all open elements, including the document root element, to be closed. 
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was an I\-O problem \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_aa88bebcc43e55f44d509dc7c038204c2}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a4e08147a76afae4ce434117dcc27b4a0}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!get\-Namespace\-Prefixes@{get\-Namespace\-Prefixes}}
+\index{get\-Namespace\-Prefixes@{get\-Namespace\-Prefixes}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{get\-Namespace\-Prefixes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf X\-M\-L\-Writer\-Namespace\-Manager} org.\-coode.\-xml.\-X\-M\-L\-Writer.\-get\-Namespace\-Prefixes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a4e08147a76afae4ce434117dcc27b4a0}
+Gets the Writer's namespace manager. \begin{DoxyReturn}{Returns}
+The namespace manager. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a0b2c2435a5b4c28d03f5bb80b4c707c1}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_afadb2dde862798ebdabc931db3e34873}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!get\-X\-M\-L\-Base@{get\-X\-M\-L\-Base}}
+\index{get\-X\-M\-L\-Base@{get\-X\-M\-L\-Base}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{get\-X\-M\-L\-Base}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-xml.\-X\-M\-L\-Writer.\-get\-X\-M\-L\-Base (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_afadb2dde862798ebdabc931db3e34873}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_ae6e29f45e08f8398c46411fc0c3836a7}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a786b1ff3681daadeb283b7e7ddc5bad9}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!set\-Encoding@{set\-Encoding}}
+\index{set\-Encoding@{set\-Encoding}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{set\-Encoding}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-set\-Encoding (
+\begin{DoxyParamCaption}
+\item[{String}]{encoding}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a786b1ff3681daadeb283b7e7ddc5bad9}
+Sets the encoding for the document that the rdfwriter produces. The default encoding is \char`\"{}\-U\-T\-F-\/8\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em encoding} & The encoding. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_abfc197871ece3ee9d8708194ea54add5}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_afb11f0c1399782ce6dbf29002c482c00}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!set\-Wrap\-Attributes@{set\-Wrap\-Attributes}}
+\index{set\-Wrap\-Attributes@{set\-Wrap\-Attributes}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{set\-Wrap\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-set\-Wrap\-Attributes (
+\begin{DoxyParamCaption}
+\item[{boolean}]{b}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_afb11f0c1399782ce6dbf29002c482c00}
+Causes the current element's attributes to be wrapped in the output. 
+\begin{DoxyParams}{Parameters}
+{\em b} & If {\ttfamily true} then the attributes will be wrapped if they are long. If {\ttfamily false} then no attribute wrapping will occur. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a714c4e2841e393c02865c572327694d8}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_aae45cf3b1edaac63449df6c59876d759}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!start\-Document@{start\-Document}}
+\index{start\-Document@{start\-Document}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{start\-Document}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-start\-Document (
+\begin{DoxyParamCaption}
+\item[{String}]{root\-Element\-Name}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_aae45cf3b1edaac63449df6c59876d759}
+Starts writing the document. The root element will contain the namespace declarations and xml\-:base attribute. 
+\begin{DoxyParams}{Parameters}
+{\em root\-Element\-Name} & The name of the root element. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was an I\-O problem \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a0524112e03e159de3f8041cec23ed2d0}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a10ad97f4ef0fa12476e83fd70efe6599}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!write\-Attribute@{write\-Attribute}}
+\index{write\-Attribute@{write\-Attribute}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{write\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-write\-Attribute (
+\begin{DoxyParamCaption}
+\item[{String}]{attr, }
+\item[{String}]{val}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a10ad97f4ef0fa12476e83fd70efe6599}
+Writes an attribute of the last element to be started (that has not been closed). 
+\begin{DoxyParams}{Parameters}
+{\em attr} & The name of the attribute \\
+\hline
+{\em val} & The value of the attribute \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was an I\-O problem \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a94624c9778ae996db1541d1f87f740ce}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a4fee31cbdaae15daf63c1712b9d3412f}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!write\-Comment@{write\-Comment}}
+\index{write\-Comment@{write\-Comment}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{write\-Comment}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-write\-Comment (
+\begin{DoxyParamCaption}
+\item[{String}]{comment\-Text}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a4fee31cbdaae15daf63c1712b9d3412f}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a1142fa8707d8ec71ad8361e7d268354f}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a07d53f42ed4c3ccb05f4278b1c53e58e}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!write\-End\-Element@{write\-End\-Element}}
+\index{write\-End\-Element@{write\-End\-Element}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{write\-End\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-write\-End\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a07d53f42ed4c3ccb05f4278b1c53e58e}
+Writes the closing tag of the last element to be started. 
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was an I\-O problem \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a9ff24913bb35e723d5c2a19a9ded27eb}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_ab4a575b480d0198349ea64a91e5b3fd5}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!write\-Start\-Element@{write\-Start\-Element}}
+\index{write\-Start\-Element@{write\-Start\-Element}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{write\-Start\-Element}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-write\-Start\-Element (
+\begin{DoxyParamCaption}
+\item[{String}]{name}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception, {\bf Illegal\-Element\-Name\-Exception}}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_ab4a575b480d0198349ea64a91e5b3fd5}
+Writes the start of an element. 
+\begin{DoxyParams}{Parameters}
+{\em name} & The tag name of the element to be written. This must be a valid Q\-Name. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was an I\-O problem \\
+\hline
+{\em \hyperlink{classorg_1_1coode_1_1xml_1_1_illegal_element_name_exception}{Illegal\-Element\-Name\-Exception}} & if the specified name is not a valid Q\-Name \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a66d246b725aa39a3d446b0df8c2838a8}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+\hypertarget{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a8968d9bf21b4ce904c9efd2c47b23556}{\index{org\-::coode\-::xml\-::\-X\-M\-L\-Writer@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}!write\-Text\-Content@{write\-Text\-Content}}
+\index{write\-Text\-Content@{write\-Text\-Content}!org::coode::xml::XMLWriter@{org\-::coode\-::xml\-::\-X\-M\-L\-Writer}}
+\subsubsection[{write\-Text\-Content}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-xml.\-X\-M\-L\-Writer.\-write\-Text\-Content (
+\begin{DoxyParamCaption}
+\item[{String}]{text}
+\end{DoxyParamCaption}
+) throws I\-O\-Exception}}\label{interfaceorg_1_1coode_1_1xml_1_1_x_m_l_writer_a8968d9bf21b4ce904c9efd2c47b23556}
+Writes a text element 
+\begin{DoxyParams}{Parameters}
+{\em text} & The text to be written \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\-O\-Exception} & if there was an I\-O problem \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{classorg_1_1coode_1_1xml_1_1_x_m_l_writer_impl_a547f47a25865a9f5727030344567b2f5}{org.\-coode.\-xml.\-X\-M\-L\-Writer\-Impl}.
+
+
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/xml/\hyperlink{_x_m_l_writer_8java}{X\-M\-L\-Writer.\-java}\end{DoxyCompactItemize}

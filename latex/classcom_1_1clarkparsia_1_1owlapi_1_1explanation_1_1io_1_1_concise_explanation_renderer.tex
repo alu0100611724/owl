@@ -1,0 +1,142 @@
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer}{\section{com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer Class Reference}
+\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer}\index{com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer@{com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer}}
+}
+Inheritance diagram for com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a174fed6e29c64c7a7505d1443e4e109b}{start\-Rendering} (Writer w)
+\item 
+void \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_af7dcac32e349b404f13647c6c22c663c}{render} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} axiom, Set$<$ Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$$>$ explanations)  throws O\-W\-L\-Exception, I\-O\-Exception 
+\item 
+void \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a961041dcbd6e1dafaf02084a48777373}{end\-Rendering} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a88bdce16aa6f45f037dbeafb5ccbb82b}{render\-Multiple\-Explanations} (Set$<$ Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$$>$ explanations)
+\item 
+void \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_ab5a62d60d6c89014859cb2c19be6a0e9}{render\-Single\-Explanation} (String header, Set$<$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ axioms)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_renderer}{Simple\-Renderer} \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a7ec18dddcd12308ebf4cc9f793661c32}{renderer} = new \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_simple_renderer}{Simple\-Renderer}()
+\item 
+Print\-Writer \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a4b990bdd27662df2c81700e17eb795b4}{writer}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final String \hyperlink{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a2699656c5225782f6c561b5e7f623e74}{I\-N\-D\-E\-N\-T} = \char`\"{} \char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Explanation renderer in concise form 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a961041dcbd6e1dafaf02084a48777373}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!end\-Rendering@{end\-Rendering}}
+\index{end\-Rendering@{end\-Rendering}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{end\-Rendering}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-end\-Rendering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a961041dcbd6e1dafaf02084a48777373}
+end of rendering 
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Exception} & O\-W\-L troubles \\
+\hline
+{\em I\-O\-Exception} & I\-O troubles \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_explanation_renderer_a102885719c3fb3ea77607086aa0e30f5}{com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Explanation\-Renderer}.
+
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_af7dcac32e349b404f13647c6c22c663c}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!render@{render}}
+\index{render@{render}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-render (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Axiom}}]{axiom, }
+\item[{Set$<$ Set$<$ {\bf O\-W\-L\-Axiom} $>$$>$}]{explanations}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Exception}, I\-O\-Exception}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_af7dcac32e349b404f13647c6c22c663c}
+
+\begin{DoxyParams}{Parameters}
+{\em axiom} & the axiom to render \\
+\hline
+{\em explanations} & the explanations to render \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Exception} & O\-W\-L troubles \\
+\hline
+{\em I\-O\-Exception} & I\-O troubles \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_explanation_renderer_aa3ad85b6087301d6ff3f4473bae1afda}{com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Explanation\-Renderer}.
+
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a88bdce16aa6f45f037dbeafb5ccbb82b}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!render\-Multiple\-Explanations@{render\-Multiple\-Explanations}}
+\index{render\-Multiple\-Explanations@{render\-Multiple\-Explanations}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{render\-Multiple\-Explanations}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-render\-Multiple\-Explanations (
+\begin{DoxyParamCaption}
+\item[{Set$<$ Set$<$ {\bf O\-W\-L\-Axiom} $>$$>$}]{explanations}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a88bdce16aa6f45f037dbeafb5ccbb82b}
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_ab5a62d60d6c89014859cb2c19be6a0e9}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!render\-Single\-Explanation@{render\-Single\-Explanation}}
+\index{render\-Single\-Explanation@{render\-Single\-Explanation}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{render\-Single\-Explanation}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-render\-Single\-Explanation (
+\begin{DoxyParamCaption}
+\item[{String}]{header, }
+\item[{Set$<$ {\bf O\-W\-L\-Axiom} $>$}]{axioms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_ab5a62d60d6c89014859cb2c19be6a0e9}
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a174fed6e29c64c7a7505d1443e4e109b}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!start\-Rendering@{start\-Rendering}}
+\index{start\-Rendering@{start\-Rendering}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{start\-Rendering}]{\setlength{\rightskip}{0pt plus 5cm}void com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-start\-Rendering (
+\begin{DoxyParamCaption}
+\item[{Writer}]{writer}
+\end{DoxyParamCaption}
+)}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a174fed6e29c64c7a7505d1443e4e109b}
+
+\begin{DoxyParams}{Parameters}
+{\em writer} & the writer to use \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Exception} & O\-W\-L troubles \\
+\hline
+{\em I\-O\-Exception} & I\-O troubles \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{interfacecom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_explanation_renderer_ac9cc604e6a0e148f2e2ceb305694651a}{com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Explanation\-Renderer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a2699656c5225782f6c561b5e7f623e74}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!I\-N\-D\-E\-N\-T@{I\-N\-D\-E\-N\-T}}
+\index{I\-N\-D\-E\-N\-T@{I\-N\-D\-E\-N\-T}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{I\-N\-D\-E\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}final String com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-I\-N\-D\-E\-N\-T = \char`\"{} \char`\"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a2699656c5225782f6c561b5e7f623e74}
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a7ec18dddcd12308ebf4cc9f793661c32}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!renderer@{renderer}}
+\index{renderer@{renderer}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{renderer}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf Simple\-Renderer} com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-renderer = new {\bf Simple\-Renderer}()\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a7ec18dddcd12308ebf4cc9f793661c32}
+\hypertarget{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a4b990bdd27662df2c81700e17eb795b4}{\index{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}!writer@{writer}}
+\index{writer@{writer}!com::clarkparsia::owlapi::explanation::io::ConciseExplanationRenderer@{com\-::clarkparsia\-::owlapi\-::explanation\-::io\-::\-Concise\-Explanation\-Renderer}}
+\subsubsection[{writer}]{\setlength{\rightskip}{0pt plus 5cm}Print\-Writer com.\-clarkparsia.\-owlapi.\-explanation.\-io.\-Concise\-Explanation\-Renderer.\-writer\hspace{0.3cm}{\ttfamily [private]}}}\label{classcom_1_1clarkparsia_1_1owlapi_1_1explanation_1_1io_1_1_concise_explanation_renderer_a4b990bdd27662df2c81700e17eb795b4}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+tools/src/main/java/com/clarkparsia/owlapi/explanation/io/\hyperlink{_concise_explanation_renderer_8java}{Concise\-Explanation\-Renderer.\-java}\end{DoxyCompactItemize}

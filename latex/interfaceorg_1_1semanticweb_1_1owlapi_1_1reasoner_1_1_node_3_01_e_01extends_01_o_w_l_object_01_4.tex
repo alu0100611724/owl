@@ -1,0 +1,195 @@
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4}{\section{org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends O\-W\-L\-Object $>$ Interface Reference}
+\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4}\index{org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends O\-W\-L\-Object $>$@{org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends O\-W\-L\-Object $>$}}
+}
+Inheritance diagram for org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends O\-W\-L\-Object $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ad5ca51c94b170eceaeaf53ca3339d501}{is\-Top\-Node} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_a8bd280b9f58ea2a4bb677682a69e6d7e}{is\-Bottom\-Node} ()
+\item 
+Set$<$ E $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}{get\-Entities} ()
+\item 
+int \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa9aab031ff6705f2fc83ec631be9cd69}{get\-Size} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_afe6ad3a743a2283339bc6a9fe28b66ab}{contains} (E entity)
+\item 
+Set$<$ E $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_abca8f89676c11e8317b113ddbffcfcd7}{get\-Entities\-Minus} (E e)
+\item 
+Set$<$ E $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ae77b3136c87a996c14652f5bb88e2d75}{get\-Entities\-Minus\-Top} ()
+\item 
+Set$<$ E $>$ \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ad8b1aa8da815f16cdf869b7741cb364d}{get\-Entities\-Minus\-Bottom} ()
+\item 
+boolean \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_a38ddd9706637f785d0ccc7c865f8ee81}{is\-Singleton} ()
+\item 
+E \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_afab442c5ec023d12d1bf8ba50d1fa296}{get\-Representative\-Element} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University of Manchester\par
+ Information Management Group\par
+ Date\-: 03-\/\-Jul-\/2009 
+
+Represents a node (set) of entities. The entities in a node are equivalent to each other. 
+
+\paragraph*{Nodes in hierarchies}
+
+In the O\-W\-L A\-P\-I, a reasoner treats a class hierarchy, an object property hierarchy or a data property hierarchy as a hierarchy (directed acyclic graph -\/ D\-A\-G) of {\ttfamily Nodes}. Each node contains entities that are equivalent to each other. A hierarchy contains a {\itshape top node}, which is the ancestor of all nodes in the hierarchy, and a {\itshape bottom node} which is the descendant of all nodes in the hierarchy. 
+
+In a class hierarchy, the nodes contain {\ttfamily O\-W\-L\-Class} objects. The top node contains {\ttfamily owl\-:Thing} (and any other named classes that are equivalent to {\ttfamily owl\-:Thing}). The bottom node contains {\ttfamily owl\-:Nothing} (and any other named classes that are equivalent to {\ttfamily owl\-:Nothing} -\/ these classes are {\itshape unsatisfiable} classes). 
+
+In an object property hierarchy, the nodes contain {\ttfamily O\-W\-L\-Object\-Property} objects. The top node contains {\ttfamily owl\-:top\-Object\-Property} (and any other named object properties that are equivalent to {\ttfamily owl\-:top\-Object\-Property}). The bottom node contains {\ttfamily owl\-:bottom\-Object\-Property} (and any other named object properties that are equivalent to {\ttfamily owl\-:bottom\-Object\-Property}). 
+
+In a data property hierarchy, the nodes contain {\ttfamily O\-W\-L\-Data\-Property} objects. The top node contains {\ttfamily owl\-:top\-Data\-Property} (and any other data properties that are equivalent to {\ttfamily owl\-:top\-Data\-Property}). The bottom node contains {\ttfamily owl\-:bottom\-Data\-Property} (and any other data properties that are equivalent to {\ttfamily owl\-:bottom\-Data\-Property}).
+
+\subparagraph*{Class Hierarchy Example}
+
+The figure below shows an example class hierarchy. Each box in the hierarchy represents a {\ttfamily Node}. In this case the top node contains {\ttfamily owl\-:Thing} and the bottom node contains {\ttfamily owl\-:Nothing} because the nodes in the hierarchy are {\ttfamily O\-W\-L\-Class} nodes. In this case, class {\ttfamily G} is equivalent to {\ttfamily owl\-:Thing} so it appears as an entity in the top node. Similarly, class {\ttfamily K} is unsatisfiable, so it is equivalent to {\ttfamily owl\-:Nothing} and therefore appears in the bottom node containing {\ttfamily owl\-:Nothing}. 
+
+$<$div align=center\char`\"{}$>$
+ $<$img src=\char`\"{}../../../../doc-\/files/hierarchy.png"/$>$ 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$\-E$>$} & the type of elements represented in the Node \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_afe6ad3a743a2283339bc6a9fe28b66ab}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!contains@{contains}}
+\index{contains@{contains}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.contains (
+\begin{DoxyParamCaption}
+\item[{E}]{entity}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_afe6ad3a743a2283339bc6a9fe28b66ab}
+Determines if this node contains the specified entity. 
+\begin{DoxyParams}{Parameters}
+{\em entity} & The entity to check for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if this node contains {\ttfamily entity}, or {\ttfamily false} if this node does not contain {\ttfamily entity} 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!get\-Entities@{get\-Entities}}
+\index{get\-Entities@{get\-Entities}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Entities}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$E$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.get\-Entities (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}
+Gets the entities contained in this node. The entities are equivalent to each other. \begin{DoxyReturn}{Returns}
+The set of entities contained in this {\ttfamily Node}. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_abca8f89676c11e8317b113ddbffcfcd7}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!get\-Entities\-Minus@{get\-Entities\-Minus}}
+\index{get\-Entities\-Minus@{get\-Entities\-Minus}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Entities\-Minus}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$E$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.get\-Entities\-Minus (
+\begin{DoxyParamCaption}
+\item[{E}]{e}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_abca8f89676c11e8317b113ddbffcfcd7}
+Gets the entities contained in this node minus the specified entitie {\ttfamily e}. This essentially returns the entities that are returned by \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}{get\-Entities()} minus the specified entity {\ttfamily e} 
+\begin{DoxyParams}{Parameters}
+{\em e} & The entity that, is contained within this node, but should not be included in the return set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The set of entities that are contained in this node minus the specified entity, {\ttfamily e}. If {\ttfamily e} is not contained within this node then the full set of entities returned is the same as that returned by \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}{get\-Entities()} 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ad8b1aa8da815f16cdf869b7741cb364d}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!get\-Entities\-Minus\-Bottom@{get\-Entities\-Minus\-Bottom}}
+\index{get\-Entities\-Minus\-Bottom@{get\-Entities\-Minus\-Bottom}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Entities\-Minus\-Bottom}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$E$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.get\-Entities\-Minus\-Bottom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ad8b1aa8da815f16cdf869b7741cb364d}
+Gets the entities contained in this node minus the bottom entity. For a node of named classes the bottom entity is {\ttfamily owl\-:Nothing}. For a node of object properties the bottom entity is {\ttfamily owl\-:bottom\-Object\-Property}. For a node of data properties the bottom entity is {\ttfamily owl\-:bottom\-Data\-Property} \begin{DoxyReturn}{Returns}
+The set of entities contained within this node minus the bottom entity. If this node does not contain the bottom entity then the set of entities returned is the same as that returned by \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}{get\-Entities()}. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ae77b3136c87a996c14652f5bb88e2d75}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!get\-Entities\-Minus\-Top@{get\-Entities\-Minus\-Top}}
+\index{get\-Entities\-Minus\-Top@{get\-Entities\-Minus\-Top}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Entities\-Minus\-Top}]{\setlength{\rightskip}{0pt plus 5cm}Set$<$E$>$ org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.get\-Entities\-Minus\-Top (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ae77b3136c87a996c14652f5bb88e2d75}
+Gets the entities contained in this node minus the top entity. For a node of named classes the top entity is {\ttfamily owl\-:Thing}. For a node of object properties the top entity is {\ttfamily owl\-:top\-Object\-Property}. For a node of data properties the top entity is {\ttfamily owl\-:top\-Data\-Property} \begin{DoxyReturn}{Returns}
+The set of entities contained within this node minus the top entity. If this node does not contain the top entity then the set of entities returned is the same as that returned by \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa23540f57baa1803e015299b44c5e269}{get\-Entities()}. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_afab442c5ec023d12d1bf8ba50d1fa296}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!get\-Representative\-Element@{get\-Representative\-Element}}
+\index{get\-Representative\-Element@{get\-Representative\-Element}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Representative\-Element}]{\setlength{\rightskip}{0pt plus 5cm}E org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.get\-Representative\-Element (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_afab442c5ec023d12d1bf8ba50d1fa296}
+Gets one of the entities contained in this entity set. If this is a singleton set it will be the one and only entity. \begin{DoxyReturn}{Returns}
+An entity from the set of entities contained within this node 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\-Exception} & if this node is empty (it does not contain any entities). \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa9aab031ff6705f2fc83ec631be9cd69}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_aa9aab031ff6705f2fc83ec631be9cd69}
+Gets the number of entities contained in this {\ttfamily Node} \begin{DoxyReturn}{Returns}
+The number of entities contained in this node. 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_a8bd280b9f58ea2a4bb677682a69e6d7e}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!is\-Bottom\-Node@{is\-Bottom\-Node}}
+\index{is\-Bottom\-Node@{is\-Bottom\-Node}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{is\-Bottom\-Node}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.is\-Bottom\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_a8bd280b9f58ea2a4bb677682a69e6d7e}
+Determines if this node represents the bottom node (in a hierarchy). For a named class node, the bottom node is the node that contains {\ttfamily owl\-:Nothing}. For an object property node, the bottom node is the node that contains {\ttfamily owl\-:bottom\-Object\-Property}. For a data property node, the bottom node is the node that contains {\ttfamily owl\-:bottom\-Data\-Property} \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this node is an {\ttfamily O\-W\-L\-Class} node and it contains {\ttfamily owl\-:Nothing}. 
+\end{DoxyReturn}
+{\ttfamily true} if this node is an {\ttfamily O\-W\-L\-Object\-Property} node and it contains {\ttfamily owl\-:bottom\-Object\-Property}. 
+
+{\ttfamily true} if this node is an {\ttfamily O\-W\-L\-Data\-Property} node and it contains {\ttfamily owl\-:bottom\-Data\-Property}. 
+
+{\ttfamily false} if none of the above. \hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_a38ddd9706637f785d0ccc7c865f8ee81}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!is\-Singleton@{is\-Singleton}}
+\index{is\-Singleton@{is\-Singleton}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{is\-Singleton}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.is\-Singleton (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_a38ddd9706637f785d0ccc7c865f8ee81}
+Determines if this {\ttfamily Node} contains just one entity. \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this {\ttfamily Node} contains just one entity, otherwise {\ttfamily false} 
+\end{DoxyReturn}
+\hypertarget{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ad5ca51c94b170eceaeaf53ca3339d501}{\index{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}!is\-Top\-Node@{is\-Top\-Node}}
+\index{is\-Top\-Node@{is\-Top\-Node}!org::semanticweb::owlapi::reasoner::Node< E extends OWLObject >@{org\-::semanticweb\-::owlapi\-::reasoner\-::\-Node$<$ E extends O\-W\-L\-Object $>$}}
+\subsubsection[{is\-Top\-Node}]{\setlength{\rightskip}{0pt plus 5cm}boolean org.\-semanticweb.\-owlapi.\-reasoner.\-Node$<$ E extends {\bf O\-W\-L\-Object} $>$.is\-Top\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_node_3_01_e_01extends_01_o_w_l_object_01_4_ad5ca51c94b170eceaeaf53ca3339d501}
+Determines if this node represents the top node (in a hierarchy). For a named class node, the top node is the node that contains {\ttfamily owl\-:Thing}. For an object property node, the top node is the node that contains {\ttfamily owl\-:top\-Object\-Property}. For a data property node, the top node is the node that contains {\ttfamily owl\-:top\-Data\-Property} \begin{DoxyReturn}{Returns}
+{\ttfamily true} if this node is an {\ttfamily O\-W\-L\-Class} node and it contains {\ttfamily owl\-:Thing}. 
+\end{DoxyReturn}
+{\ttfamily true} if this node is an {\ttfamily O\-W\-L\-Object\-Property} node and it contains {\ttfamily owl\-:top\-Object\-Property}. 
+
+{\ttfamily true} if this node is an {\ttfamily O\-W\-L\-Data\-Property} node and it contains {\ttfamily owl\-:top\-Data\-Property}. 
+
+{\ttfamily false} if none of the above. 
+
+The documentation for this interface was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/reasoner/\hyperlink{api_2src_2main_2java_2org_2semanticweb_2owlapi_2reasoner_2_node_8java}{Node.\-java}\end{DoxyCompactItemize}

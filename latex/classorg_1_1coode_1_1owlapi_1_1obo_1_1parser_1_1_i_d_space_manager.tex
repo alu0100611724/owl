@@ -1,0 +1,112 @@
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager}{\section{org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager Class Reference}
+\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager}\index{org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager@{org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_adc576f5dce31f6e5db6706bbda37dbce}{I\-D\-Space\-Manager} ()
+\item 
+\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a4b683ba4ed86b877b2a95ef9a6591d88}{I\-D\-Space\-Manager} (\hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager}{I\-D\-Space\-Manager} id\-Space\-Manager)
+\item 
+String \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a66ef16de3b55920e093d0923f3162b40}{get\-Default\-I\-R\-I\-Prefix} ()
+\item 
+String \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ada8762a11cd6e115995dde410e515e41}{get\-I\-R\-I\-Prefix} (String id\-Prefix)
+\item 
+void \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ac3ae8c35cdcabfafba5202d0b9b9a54d}{set\-I\-R\-I\-Prefix} (String id\-Prefix, String iri\-Prefix)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Map$<$ String, String $>$ \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a20198478103c3e16aeaa3264ddf9e800}{id\-Prefix2\-I\-R\-I\-Prefix\-Map} = new Hash\-Map$<$String, String$>$()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ Stanford University\par
+ Bio-\/\-Medical Informatics Research Group\par
+ Date\-: 18/04/2012 
+
+Maps between id prefixes and I\-R\-I prefixes. By default an I\-R\-I prefix is the value defined by \hyperlink{enumorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_o_b_o_prefix_acdcb908b27fe98e31c8d2cb05d898fce}{O\-B\-O\-Prefix\#get\-Prefix()}, but this can be overridden using an idspace tag in the ontology header. 
+
+Note that the terminology used here, i.\-e. \char`\"{}id prefix\char`\"{} and \char`\"{}\-I\-R\-I prefix\char`\"{} is O\-B\-O terminology and is not related to the O\-W\-L notion of prefix name and prefix. \char`\"{}id prefix\char`\"{} is the substring before the colon in an O\-B\-O id. I\-R\-I prefix is the prefix of an I\-R\-I that is the result of translating an O\-B\-O id to an I\-R\-I. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_adc576f5dce31f6e5db6706bbda37dbce}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}!I\-D\-Space\-Manager@{I\-D\-Space\-Manager}}
+\index{I\-D\-Space\-Manager@{I\-D\-Space\-Manager}!org::coode::owlapi::obo::parser::IDSpaceManager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}}
+\subsubsection[{I\-D\-Space\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager.\-I\-D\-Space\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_adc576f5dce31f6e5db6706bbda37dbce}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a4b683ba4ed86b877b2a95ef9a6591d88}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}!I\-D\-Space\-Manager@{I\-D\-Space\-Manager}}
+\index{I\-D\-Space\-Manager@{I\-D\-Space\-Manager}!org::coode::owlapi::obo::parser::IDSpaceManager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}}
+\subsubsection[{I\-D\-Space\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager.\-I\-D\-Space\-Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf I\-D\-Space\-Manager}}]{id\-Space\-Manager}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a4b683ba4ed86b877b2a95ef9a6591d88}
+Creates an \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager}{I\-D\-Space\-Manager} and copying the id prefix to I\-R\-I prefix mappings contained in some other \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager}{I\-D\-Space\-Manager}. 
+\begin{DoxyParams}{Parameters}
+{\em id\-Space\-Manager} & The other \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager}{I\-D\-Space\-Manager} from where id prefix to I\-R\-I prefix mappings will be copied. Not null. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\-Pointer\-Exception} & if id\-Space\-Manager is null. \\
+\hline
+\end{DoxyExceptions}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a66ef16de3b55920e093d0923f3162b40}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}!get\-Default\-I\-R\-I\-Prefix@{get\-Default\-I\-R\-I\-Prefix}}
+\index{get\-Default\-I\-R\-I\-Prefix@{get\-Default\-I\-R\-I\-Prefix}!org::coode::owlapi::obo::parser::IDSpaceManager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}}
+\subsubsection[{get\-Default\-I\-R\-I\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager.\-get\-Default\-I\-R\-I\-Prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a66ef16de3b55920e093d0923f3162b40}
+Gets the default I\-R\-I prefix (which is returned by the \hyperlink{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ada8762a11cd6e115995dde410e515e41}{get\-I\-R\-I\-Prefix(\-String)} for unregistered id prefixes. \begin{DoxyReturn}{Returns}
+The default prefix. This is actually defined by \hyperlink{enumorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_o_b_o_prefix_a2caaeadeee7bf92de51200e3ab3f2bec}{O\-B\-O\-Prefix\#\-O\-B\-O}. 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ada8762a11cd6e115995dde410e515e41}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}!get\-I\-R\-I\-Prefix@{get\-I\-R\-I\-Prefix}}
+\index{get\-I\-R\-I\-Prefix@{get\-I\-R\-I\-Prefix}!org::coode::owlapi::obo::parser::IDSpaceManager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}}
+\subsubsection[{get\-I\-R\-I\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}String org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager.\-get\-I\-R\-I\-Prefix (
+\begin{DoxyParamCaption}
+\item[{String}]{id\-Prefix}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ada8762a11cd6e115995dde410e515e41}
+Gets an I\-R\-I prefix from an id prefix. 
+\begin{DoxyParams}{Parameters}
+{\em id\-Prefix} & The id prefix. May be null. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The I\-R\-I prefix for the given id prefix. Not null. If the specified id prefix is not registered/set with this manager, or it is null, then the default prefix will be returned, which is defined by \hyperlink{enumorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_o_b_o_prefix_a2caaeadeee7bf92de51200e3ab3f2bec}{O\-B\-O\-Prefix\#\-O\-B\-O}. 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ac3ae8c35cdcabfafba5202d0b9b9a54d}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}!set\-I\-R\-I\-Prefix@{set\-I\-R\-I\-Prefix}}
+\index{set\-I\-R\-I\-Prefix@{set\-I\-R\-I\-Prefix}!org::coode::owlapi::obo::parser::IDSpaceManager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}}
+\subsubsection[{set\-I\-R\-I\-Prefix}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager.\-set\-I\-R\-I\-Prefix (
+\begin{DoxyParamCaption}
+\item[{String}]{id\-Prefix, }
+\item[{String}]{iri\-Prefix}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_ac3ae8c35cdcabfafba5202d0b9b9a54d}
+Sets the I\-R\-I prefix for a given id prefix. This clears any previously set I\-R\-I prefix for the given id prefix. 
+\begin{DoxyParams}{Parameters}
+{\em id\-Prefix} & The id prefix to set. \\
+\hline
+{\em iri\-Prefix} & The I\-R\-I prefix that the id prefix maps to. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a20198478103c3e16aeaa3264ddf9e800}{\index{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}!id\-Prefix2\-I\-R\-I\-Prefix\-Map@{id\-Prefix2\-I\-R\-I\-Prefix\-Map}}
+\index{id\-Prefix2\-I\-R\-I\-Prefix\-Map@{id\-Prefix2\-I\-R\-I\-Prefix\-Map}!org::coode::owlapi::obo::parser::IDSpaceManager@{org\-::coode\-::owlapi\-::obo\-::parser\-::\-I\-D\-Space\-Manager}}
+\subsubsection[{id\-Prefix2\-I\-R\-I\-Prefix\-Map}]{\setlength{\rightskip}{0pt plus 5cm}Map$<$String, String$>$ org.\-coode.\-owlapi.\-obo.\-parser.\-I\-D\-Space\-Manager.\-id\-Prefix2\-I\-R\-I\-Prefix\-Map = new Hash\-Map$<$String, String$>$()\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1coode_1_1owlapi_1_1obo_1_1parser_1_1_i_d_space_manager_a20198478103c3e16aeaa3264ddf9e800}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+parsers/src/main/java/org/coode/owlapi/obo/parser/\hyperlink{_i_d_space_manager_8java}{I\-D\-Space\-Manager.\-java}\end{DoxyCompactItemize}

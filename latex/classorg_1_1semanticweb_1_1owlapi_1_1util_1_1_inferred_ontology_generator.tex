@@ -1,0 +1,138 @@
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator}{\section{org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator Class Reference}
+\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator}\index{org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator@{org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a20a318771567d4d86794b5f3b9cae1bd}{Inferred\-Ontology\-Generator} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a8ce0bb500eee27e86154042020116fda}{reasoner}, List$<$ Inferred\-Axiom\-Generator$<$?extends \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$$>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ab09a0a93f836a169c298b18df6ea7f04}{axiom\-Generators})
+\item 
+\hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_aa9b51c2ea3165bb39e283e7c0575538d}{Inferred\-Ontology\-Generator} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a8ce0bb500eee27e86154042020116fda}{reasoner})
+\item 
+List$<$ Inferred\-Axiom\-Generator$<$?$>$ $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ac0c3411f5adf94fec1ca0cad392e79a9}{get\-Axiom\-Generators} ()
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a42b2ca969cf747fea11640334eff2eb4}{add\-Generator} (Inferred\-Axiom\-Generator$<$?$>$ generator)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_af5dc44599407c597d86a8ffeab8bb38e}{remove\-Generator} (Inferred\-Axiom\-Generator$<$?$>$ generator)
+\item 
+void \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a9cd766194f413be60d3a27a1bd7c4cdf}{fill\-Ontology} (\hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology_manager}{O\-W\-L\-Ontology\-Manager} manager, \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_ontology}{O\-W\-L\-Ontology} ontology)  throws O\-W\-L\-Ontology\-Change\-Exception 
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1reasoner_1_1_o_w_l_reasoner}{O\-W\-L\-Reasoner} \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a8ce0bb500eee27e86154042020116fda}{reasoner}
+\item 
+final List\\*
+$<$ Inferred\-Axiom\-Generator\\*
+$<$?extends \hyperlink{interfaceorg_1_1semanticweb_1_1owlapi_1_1model_1_1_o_w_l_axiom}{O\-W\-L\-Axiom} $>$ $>$ \hyperlink{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ab09a0a93f836a169c298b18df6ea7f04}{axiom\-Generators}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Author\-: Matthew Horridge\par
+ The University Of Manchester\par
+ Bio-\/\-Health Informatics Group\par
+ Date\-: 27-\/\-Jul-\/2007\par
+\par
+ 
+
+Generates an ontology based on inferred axioms which are essentially supplied by a reasoner. The generator can be configured with {\ttfamily Inferred\-Axiom\-Generator}s which generate specific kinds of axioms e.\-g. subclass axioms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a20a318771567d4d86794b5f3b9cae1bd}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!Inferred\-Ontology\-Generator@{Inferred\-Ontology\-Generator}}
+\index{Inferred\-Ontology\-Generator@{Inferred\-Ontology\-Generator}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{Inferred\-Ontology\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-Inferred\-Ontology\-Generator (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Reasoner}}]{reasoner, }
+\item[{List$<$ Inferred\-Axiom\-Generator$<$?extends {\bf O\-W\-L\-Axiom} $>$$>$}]{axiom\-Generators}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a20a318771567d4d86794b5f3b9cae1bd}
+
+\begin{DoxyParams}{Parameters}
+{\em reasoner} & the reasoner to use \\
+\hline
+{\em axiom\-Generators} & the axiom generators to use \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_aa9b51c2ea3165bb39e283e7c0575538d}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!Inferred\-Ontology\-Generator@{Inferred\-Ontology\-Generator}}
+\index{Inferred\-Ontology\-Generator@{Inferred\-Ontology\-Generator}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{Inferred\-Ontology\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-Inferred\-Ontology\-Generator (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Reasoner}}]{reasoner}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_aa9b51c2ea3165bb39e283e7c0575538d}
+
+\begin{DoxyParams}{Parameters}
+{\em reasoner} & the reasoner to use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a42b2ca969cf747fea11640334eff2eb4}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!add\-Generator@{add\-Generator}}
+\index{add\-Generator@{add\-Generator}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{add\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-add\-Generator (
+\begin{DoxyParamCaption}
+\item[{Inferred\-Axiom\-Generator$<$?$>$}]{generator}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a42b2ca969cf747fea11640334eff2eb4}
+Adds a generator if it isn't already in the list of generators 
+\begin{DoxyParams}{Parameters}
+{\em generator} & The generator to be added. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a9cd766194f413be60d3a27a1bd7c4cdf}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!fill\-Ontology@{fill\-Ontology}}
+\index{fill\-Ontology@{fill\-Ontology}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{fill\-Ontology}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-fill\-Ontology (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-W\-L\-Ontology\-Manager}}]{manager, }
+\item[{{\bf O\-W\-L\-Ontology}}]{ontology}
+\end{DoxyParamCaption}
+) throws {\bf O\-W\-L\-Ontology\-Change\-Exception}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a9cd766194f413be60d3a27a1bd7c4cdf}
+Adds 'inferred axioms' to an ontology using the generators that have been registered with this {\ttfamily Inferred\-Axiom\-Generator} 
+\begin{DoxyParams}{Parameters}
+{\em manager} & The manager which can be used to obtain a data factory and apply changes. \\
+\hline
+{\em ontology} & The ontology which the inferred axioms will be added to \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em O\-W\-L\-Ontology\-Change\-Exception} & If there was a problem adding the inferred axioms to the specified ontology. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ac0c3411f5adf94fec1ca0cad392e79a9}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!get\-Axiom\-Generators@{get\-Axiom\-Generators}}
+\index{get\-Axiom\-Generators@{get\-Axiom\-Generators}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{get\-Axiom\-Generators}]{\setlength{\rightskip}{0pt plus 5cm}List$<$Inferred\-Axiom\-Generator$<$?$>$ $>$ org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-get\-Axiom\-Generators (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ac0c3411f5adf94fec1ca0cad392e79a9}
+\begin{DoxyReturn}{Returns}
+the axiom generators 
+\end{DoxyReturn}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_af5dc44599407c597d86a8ffeab8bb38e}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!remove\-Generator@{remove\-Generator}}
+\index{remove\-Generator@{remove\-Generator}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{remove\-Generator}]{\setlength{\rightskip}{0pt plus 5cm}void org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-remove\-Generator (
+\begin{DoxyParamCaption}
+\item[{Inferred\-Axiom\-Generator$<$?$>$}]{generator}
+\end{DoxyParamCaption}
+)}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_af5dc44599407c597d86a8ffeab8bb38e}
+Removes a generator 
+\begin{DoxyParams}{Parameters}
+{\em generator} & the generator to be removed \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ab09a0a93f836a169c298b18df6ea7f04}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!axiom\-Generators@{axiom\-Generators}}
+\index{axiom\-Generators@{axiom\-Generators}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{axiom\-Generators}]{\setlength{\rightskip}{0pt plus 5cm}final List$<$Inferred\-Axiom\-Generator$<$? extends {\bf O\-W\-L\-Axiom}$>$ $>$ org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-axiom\-Generators\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_ab09a0a93f836a169c298b18df6ea7f04}
+\hypertarget{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a8ce0bb500eee27e86154042020116fda}{\index{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}!reasoner@{reasoner}}
+\index{reasoner@{reasoner}!org::semanticweb::owlapi::util::InferredOntologyGenerator@{org\-::semanticweb\-::owlapi\-::util\-::\-Inferred\-Ontology\-Generator}}
+\subsubsection[{reasoner}]{\setlength{\rightskip}{0pt plus 5cm}final {\bf O\-W\-L\-Reasoner} org.\-semanticweb.\-owlapi.\-util.\-Inferred\-Ontology\-Generator.\-reasoner\hspace{0.3cm}{\ttfamily [private]}}}\label{classorg_1_1semanticweb_1_1owlapi_1_1util_1_1_inferred_ontology_generator_a8ce0bb500eee27e86154042020116fda}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+api/src/main/java/org/semanticweb/owlapi/util/\hyperlink{_inferred_ontology_generator_8java}{Inferred\-Ontology\-Generator.\-java}\end{DoxyCompactItemize}
